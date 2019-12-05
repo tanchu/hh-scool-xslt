@@ -1,0 +1,12 @@
+<doc>
+    <header>
+        <menu>
+            <item active="true" url="/">одежда</item>
+            <item url="/">одежда</item>
+            <item url="/">одежда</item>
+            <item url="/">одежда</item>
+            <item url="/">одежда</item>
+        </menu>
+        <login/>
+    </header>
+</doc>
