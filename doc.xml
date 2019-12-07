@@ -1,12 +1,28 @@
 <doc>
-    <header>
-        <menu>
-            <item active="true" url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-        </menu>
-        <login/>
-    </header>
+  <topSection >
+    <nav parentMode="top-section__nav">
+      <navItem url="/">Шоурум</navItem>
+      <navItem url="/">Оплата</navItem>
+      <navItem url="/">Доставка</navItem>
+      <navItem url="/">Самовывоз</navItem>
+      <navItem url="/">Контактная информация</navItem>
+    </nav>
+    <buttons>
+      <button type="button-link">Москва</button>
+    </buttons>
+  </topSection>
+  <header>
+    <nav parentMode="">
+      <navItem active="true" url="/">Одежда</navItem>
+      <navItem url="/">Сумки</navItem>
+      <navItem url="/">Аксессуары</navItem>
+      <navItem url="/">Офисные принадлежности</navItem>
+    </nav>
+    <buttons parentBlock="header__button">
+      <button type="header-button-icon" for="search">Поиск</button>
+      <button type="header-button-icon" for="login">Войти</button>
+      <button type="header-button" for="login">Войти</button>
+      <button type="header-button-icon" for="menu">Меню</button>
+    </buttons>
+  </header>
 </doc>
