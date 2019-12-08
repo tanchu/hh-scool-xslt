@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0" 
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:import href="templates/head.xsl"/>
     <xsl:import href="templates/menu.xsl"/>
 
@@ -21,8 +22,8 @@
             <div class="columns-wrapper">
                 <div class="header__content">
                     <div class="header__logo">
-                        <a href="https://leonidfeskov.github.io/hh-school-html/#" class="logo-link">
-                            <img class="logo" src="files/logo.6442b6d6.svg" alt="hh.ru"/>
+                        <a href="#" class="logo-link">
+                            <img class="logo" src="images/logo.svg" alt="hh.ru"/>
                         </a>
                     </div>
 
