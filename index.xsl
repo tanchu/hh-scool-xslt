@@ -3,6 +3,8 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:import href="templates/head.xsl"/>
     <xsl:import href="templates/menu.xsl"/>
+    <xsl:import href="templates/slide.xsl"/>
+    <xsl:import href="templates/area.xsl"/>
 
     <xsl:output method="html"/>
 
@@ -21,13 +23,9 @@
         <section class="navbar">
             <div class="columns-wrapper">
                 <div class="navbar__content">
-                    <div class="navbar__city">
-                        <a href="#" class="nav__link nav__link_city">Москва</a>
-                    </div>
+                    <xsl:apply-templates select="area" mode="navbar-city"/>
                     <div class="navbar__fill"></div>
-
                     <xsl:apply-templates select="navbar/menu" mode="navbar-menu"/>
-
                 </div>
             </div>
         </section>
@@ -56,6 +54,38 @@
                 </div>
             </div>
         </header>
+        <section class="carousel-section">
+            <div class="columns-wrapper">
+                <div class="columns-row">
+                    <div class="column column_s-2 column_m-3 column_l-6">
+
+                        <h1 class="carousel-section__heading heading heading_level-1">
+                            <xsl:apply-templates select="carousel/slides/slide[@active]" mode="slide-description"/>
+                        </h1>
+
+                        <div class="carousel-section__button">
+                            <button class="carousel-section-button">
+                             Перейти в каталог
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="column column_s-2 column_m-3 column_l-6 carousel-section__column">
+
+                        <xsl:apply-templates select="carousel/slides/slide[@active]" mode="slide-image"/>
+
+                    </div>
+                    <div class="column column_s-2 column_m-6 column_l-12 carousel-section__column">
+                        <div class="carousel-section__pagination pagination">
+                            <div class="pagination__dot pagination__dot_active"></div>
+                            <div class="pagination__dot"></div>
+                            <div class="pagination__dot"></div>
+                            <div class="pagination__dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </xsl:template>
 

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <doc>
+    <area>
+        <city url="#">Москва</city>
+    </area>
     <navbar>
-        <cityLocation>Москва</cityLocation>
         <menu>
             <item url="#">Шоурум</item>
             <item url="#">Оплата</item>
@@ -21,10 +23,14 @@
     </header>
     <carousel>
         <slides>
-            <slide isActive="true" imageSrc="images/slide-1.png">
-            Мужская и женская одежда с символикой HeadHunter</slide>
-            <slide imageSrc="images/slide-2.png">
-            Офисные принадлежности с символикой HeadHunter</slide>
+            <slide active="true">
+                <description>Мужская и женская одежда с символикой HeadHunter</description>
+                <image>slide-1.png</image>
+            </slide>
+            <slide>
+                <description>Офисные принадлежности с символикой HeadHunter</description>
+                <image>slide-2.png</image>
+            </slide>
         </slides>
         <pagination>
             <item isActive="true"></item>
