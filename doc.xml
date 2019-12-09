@@ -1,13 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <doc>
+    <navbar>
+        <cityLocation>Москва</cityLocation>
+        <menu>
+            <item url="#">Шоурум</item>
+            <item url="#">Оплата</item>
+            <item url="#">Доставка</item>
+            <item url="#">Самовывоз</item>
+            <item url="#">Контактная информация</item>
+        </menu>
+    </navbar>
     <header>
         <menu>
-            <item active="true" url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
+            <item url="#">Одежда</item>
+            <item url="#">Сумки</item>
+            <item url="#">Аксессуары</item>
+            <item url="#">Офисные принадлежности</item>
         </menu>
-        <login/>
+        <login isLoggedIn="false"/>
     </header>
+    <carousel>
+        <slides>
+            <slide isActive="true" imageSrc="images/slide-1.png">
+            Мужская и женская одежда с символикой HeadHunter</slide>
+            <slide imageSrc="images/slide-2.png">
+            Офисные принадлежности с символикой HeadHunter</slide>
+        </slides>
+        <pagination>
+            <item isActive="true"></item>
+            <item></item>
+            <item></item>
+            <item></item>
+        </pagination>
+    </carousel>
 </doc>

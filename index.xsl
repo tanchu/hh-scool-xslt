@@ -18,16 +18,29 @@
     </xsl:template>
 
     <xsl:template match="doc" mode="body">
+        <section class="navbar">
+            <div class="columns-wrapper">
+                <div class="navbar__content">
+                    <div class="navbar__city">
+                        <a href="#" class="nav__link nav__link_city">Москва</a>
+                    </div>
+                    <div class="navbar__fill"></div>
+
+                    <xsl:apply-templates select="navbar/menu" mode="navbar-menu"/>
+
+                </div>
+            </div>
+        </section>
         <header class="header">
             <div class="columns-wrapper">
                 <div class="header__content">
                     <div class="header__logo">
                         <a href="#" class="logo-link">
-                            <img class="logo" src="images/logo.svg" alt="hh.ru"/>
+                            <img class="logo" src="css/logo.f8860031.svg" alt="hh.ru"/>
                         </a>
                     </div>
 
-                    <xsl:apply-templates select="menu" mode="header-menu"/>
+                    <xsl:apply-templates select="header/menu" mode="header-menu"/>
 
                     <div class="header__fill"></div>
                     <div class="header__button">
@@ -43,6 +56,7 @@
                 </div>
             </div>
         </header>
+
     </xsl:template>
 
 </xsl:stylesheet>
