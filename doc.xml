@@ -1,42 +1,156 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xsl:stylesheet
+  [
+    <!ENTITY nbsp   "&#160;">
+  ]
+>
+
+
 <doc>
-    <area>
+    <userInfo>
+        <status logged="false"/>
+        <name>Иван</name>
+        <surname>Иванов</surname>
+    </userInfo>
+    <location>
+        <country>Россия</country>
         <city url="#">Москва</city>
-    </area>
-    <navbar>
-        <menu>
+    </location>
+    <currency>₽</currency>
+    <navigation>
+        <siteNavigation>
             <item url="#">Шоурум</item>
             <item url="#">Оплата</item>
             <item url="#">Доставка</item>
             <item url="#">Самовывоз</item>
             <item url="#">Контактная информация</item>
-        </menu>
-    </navbar>
-    <header>
-        <menu>
+        </siteNavigation>
+        <goodsNavigation>
             <item url="#">Одежда</item>
             <item url="#">Сумки</item>
             <item url="#">Аксессуары</item>
             <item url="#">Офисные принадлежности</item>
-        </menu>
-        <login isLoggedIn="false"/>
-    </header>
-    <carousel>
-        <slides>
-            <slide active="true">
-                <description>Мужская и женская одежда с символикой HeadHunter</description>
-                <image>slide-1.png</image>
-            </slide>
-            <slide>
-                <description>Офисные принадлежности с символикой HeadHunter</description>
-                <image>slide-2.png</image>
-            </slide>
-        </slides>
-        <pagination>
-            <item isActive="true"></item>
-            <item></item>
-            <item></item>
-            <item></item>
-        </pagination>
-    </carousel>
+        </goodsNavigation>
+    </navigation>
+    <pageSliders havePagination="true">
+        <slide active="true">
+            <description>Мужская и женская одежда с символикой HeadHunter</description>
+            <image url="images/slide-1.png"/>
+        </slide>
+        <slide>
+            <description>Офисные принадлежности с символикой HeadHunter</description>
+            <image url="images/slide-2.png"/>
+        </slide>
+    </pageSliders>
+    <popularGoods>
+        <item id="1" sale="false">
+            <title>Зонт</title>
+            <description>Красный зонт с логотипом HH</description>
+            <image url="images/product-1.jpg"/>
+            <price>1&nbsp;990</price>
+        </item>
+        <item id="2" sale="false">
+            <title>Сумка</title>
+            <description>Красная сумка с логотипом HH</description>
+            <image url="images/product-2.jpg"/>
+            <price>290</price>
+        </item>
+        <item id="3" sale="false">
+            <title>Шлепанцы</title>
+            <description>Красные шлепанцы с логотипом HH</description>
+            <image url="images/product-3.jpg"/>
+            <price>790</price>
+            <sizes>
+                <size available="true" type="xs"/>
+                <size available="true" type="x"/>
+                <size available="true" type="m"/>
+                <size available="true" type="l"/>
+                <size available="true" type="xl"/>
+                <size available="true" type="xxl"/>
+            </sizes>
+        </item>
+        <item id="4" sale="true">
+            <title>Футболка</title>
+            <description>Красная футболка с логотипом HH</description>
+            <image url="images/product-4.jpg"/>
+            <price>690</price>
+            <salePrice>390</salePrice>
+            <sizes>
+                <size available="true" type="xs"/>
+                <size available="true" type="x"/>
+                <size available="true" type="m"/>
+                <size available="true" type="l"/>
+                <size available="true" type="xl"/>
+                <size available="true" type="xxl"/>
+            </sizes>
+        </item>
+        <item id="5" sale="false">
+            <title>Толстовка</title>
+            <description>Красная толстовка с логотипом HH</description>
+            <image url="images/product-5.jpg"/>
+            <price>3 990</price>
+            <sizes>
+                <size available="true" type="xs"/>
+                <size available="true" type="x"/>
+                <size available="true" type="m"/>
+                <size available="true" type="l"/>
+                <size available="true" type="xl"/>
+                <size available="true" type="xxl"/>
+            </sizes>
+        </item>
+        <item id="6" sale="false">
+            <title>Подушка</title>
+            <description>Красная подушка с логотипом HH</description>
+            <image url="images/product-6.jpg"/>
+            <price>990</price>
+        </item>
+    </popularGoods>
+    <features>
+        <feature>
+            <description>Быстрая доставка по всей России</description>
+            <image url="images/support@3x.png"/>
+        </feature>
+        <feature>
+            <description>100% гарантия возврата и&nbsp;подлинность товара</description>
+            <image url="images/return@3x.png"/>
+        </feature>
+        <feature>
+            <description>Круглосуточная служба&nbsp;поддержки</description>
+            <image url="images/delivery@3x.png"/>
+        </feature>
+    </features>
+    <socialNetworks>
+        <socialNetwork name="facebook">#</socialNetwork>
+        <socialNetwork name="twitter">#</socialNetwork>
+        <socialNetwork name="vk">#</socialNetwork>
+        <socialNetwork name="instagram">#</socialNetwork>
+    </socialNetworks>
+    <mobileApps>
+        <mobileApp name="appStore">#</mobileApp>
+        <mobileApp name="googlePlay">#</mobileApp>
+    </mobileApps>
+    <statisticsInfo>
+        <copyRightYear>2019</copyRightYear>
+        <infoText>Сегодня на сайте 684 978 вакансий, 34 789 747 резюме, 858 923 компании
+        и за неделю 1 211 363 приглашения
+        </infoText>
+    </statisticsInfo>
+    <delivery>
+        <deliveryMethods>
+            <method type="selfPickup">Самовывоз</method>
+            <method type="deliveryPickup">Доставка</method>
+        </deliveryMethods>
+    </delivery>
+    <payment>
+        <paymentMethods>
+            <method type="paymentOnline">Оплата онлайн</method>
+            <method type="paymentCash">Наличными</method>
+            <method type="paymentCard">Картой при получении</method>
+        </paymentMethods>
+    </payment>
+    <notification>
+        <notificationMethods>
+            <method type="smsNotification">Хочу получать SMS уведомления</method>
+        </notificationMethods>
+    </notification>
 </doc>
