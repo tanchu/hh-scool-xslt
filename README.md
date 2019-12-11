@@ -27,4 +27,3 @@ P.S. Крайний срок близко - 23.12.2019
 -download msxsl.exe
 -save it in System32 folder
 -in cli run: msxsl doc.xml index.xsl -o index.html
--msxsl set wrond encoding. So save index.html in UTF-8 after transformation
