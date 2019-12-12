@@ -12,6 +12,9 @@
     <xsl:import href="templates/buttonLogin.xsl"/>
     <xsl:import href="templates/carousel.xsl"/>
     <xsl:import href="templates/popularGoods.xsl"/>
+    <xsl:import href="templates/currencyCash.xsl"/>
+
+
 
     <xsl:output method="html" encoding = "utf-8"/>
 

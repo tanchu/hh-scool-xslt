@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE xsl:stylesheet
   [
-    <!ENTITY nbsp   "&#160;">
+    <!ENTITY nbsp "&#160;">
   ]
 >
+
 
 
 <doc>
@@ -12,7 +13,7 @@
         <name>Иван</name>
         <surname>Иванов</surname>
     </userInfo>
-    <currency>₽</currency>
+    <currency type="ru" value="₽"/>
     <navigation>
         <location>
             <country>Россия</country>

@@ -48,6 +48,8 @@
                 <xsl:value-of select="price"/>
             </div>
             <xsl:value-of select="salePrice"/>
+            <xsl:text> </xsl:text>
+            <xsl:apply-templates select="key('currency-cache', 'ru')" mode="currencyCash"/>
         </div>
     </xsl:template>
 
@@ -56,6 +58,8 @@
 
         <div class="product-card__price">
             <xsl:value-of select="price"/>
+            <xsl:text> </xsl:text>
+            <xsl:apply-templates select="key('currency-cache', 'ru')" mode="currencyCash"/>
         </div>
     </xsl:template>
 
