@@ -2,9 +2,9 @@
 <xsl:stylesheet version="1.0" 
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-    <xsl:template name="logo" mode="logo-svg">
+    <xsl:template name="logo">
         <a href="#" class="logo-link">
-            <img class="logo" src="/css/blocks/logo/logo.svg" alt="hh.ru" />
+            <img class="logo" src="css/logo.f8860031.svg" alt="hh.ru" />
         </a>
     </xsl:template>
 

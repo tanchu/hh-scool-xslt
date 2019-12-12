@@ -6,42 +6,8 @@
     <xsl:template match="doc" mode="body">
         <body>
             <xsl:apply-templates select="navigation" mode="page-navbar-section"/>
-
-            <!-- 
-            <section class="navbar">
-                <div class="columns-wrapper">
-                    <div class="navbar__content">
-                        <xsl:apply-templates select="area" mode="navbar-city"/>
-                        <div class="navbar__fill"></div>
-                        <xsl:apply-templates select="navbar/menu" mode="navbar-menu"/>
-                    </div>
-                </div>
-            </section>
-            <header class="header">
-                <div class="columns-wrapper">
-                    <div class="header__content">
-                        <div class="header__logo">
-                            <a href="#" class="logo-link">
-                                <img class="logo" src="css/logo.f8860031.svg" alt="hh.ru"/>
-                            </a>
-                        </div>
-
-                        <xsl:apply-templates select="header/menu" mode="header-menu"/>
-
-                        <div class="header__fill"></div>
-                        <div class="header__button">
-                            <button class="header-button-icon header-button-icon_search">Поиск</button>
-                        </div>
-                        <div class="header__button">
-                            <button class="header-button-icon header-button-icon_login">Войти</button>
-                            <button class="header-button header-button_login">Войти</button>
-                        </div>
-                        <div class="header__button header__button_menu">
-                            <button class="header-button-icon header-button-icon_menu">Меню</button>
-                        </div>
-                    </div>
-                </div>
-            </header>
+            <xsl:call-template name="header"/>
+            <!--
             <section class="carousel-section">
                 <div class="columns-wrapper">
                     <div class="columns-row">

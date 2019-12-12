@@ -6,6 +6,10 @@
     <xsl:import href="templates/navbar.xsl"/>
     <xsl:import href="templates/location.xsl"/>
     <xsl:import href="templates/siteNavigation.xsl"/>
+    <xsl:import href="templates/header.xsl"/>
+    <xsl:import href="templates/logo.xsl"/>
+    <xsl:import href="templates/goodsNavigation.xsl"/>
+    <xsl:import href="templates/buttonLogin.xsl"/>
 
     <xsl:output method="html" encoding = "utf-8"/>
 
