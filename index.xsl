@@ -10,6 +10,7 @@
     <xsl:import href="templates/logo.xsl"/>
     <xsl:import href="templates/goodsNavigation.xsl"/>
     <xsl:import href="templates/buttonLogin.xsl"/>
+    <xsl:import href="templates/carousel.xsl"/>
 
     <xsl:output method="html" encoding = "utf-8"/>
 

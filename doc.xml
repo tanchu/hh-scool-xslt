@@ -32,14 +32,16 @@
             <item url="#">Офисные принадлежности</item>
         </goodsNavigation>
     </navigation>
-    <pageSliders havePagination="true">
+    <pageSliders>
         <slide active="true">
             <description>Мужская и женская одежда с символикой HeadHunter</description>
             <image url="images/slide-1.png"/>
+            <descriptionCta>Перейти в каталог</descriptionCta>
         </slide>
         <slide>
             <description>Офисные принадлежности с символикой HeadHunter</description>
             <image url="images/slide-2.png"/>
+            <descriptionCta>Перейти в каталог</descriptionCta>
         </slide>
     </pageSliders>
     <popularGoods>
