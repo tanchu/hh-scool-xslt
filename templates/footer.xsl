@@ -8,6 +8,7 @@
                 <div class="columns-row">
                     <xsl:apply-templates select="socialNetworks" mode="footer-social-networks-section"/>
                     <div class="footer__fill"></div>
+                    <xsl:apply-templates select="mobileApps" mode="footer-mobile-apps-section"/>
                 </div>
             </div>
         </footer>

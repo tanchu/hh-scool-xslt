@@ -129,8 +129,8 @@
         <socialNetwork name="instagram">#</socialNetwork>
     </socialNetworks>
     <mobileApps>
-        <mobileApp name="appStore">#</mobileApp>
-        <mobileApp name="googlePlay">#</mobileApp>
+        <mobileApp name="app-store">#</mobileApp>
+        <mobileApp name="google-play">#</mobileApp>
     </mobileApps>
     <statisticsInfo>
         <copyRightYear>2019</copyRightYear>
