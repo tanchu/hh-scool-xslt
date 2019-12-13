@@ -1,0 +1,18 @@
+{
+    "name": "hh-school-html",
+    "version": "1.0.0",
+    "homepage": "http://grits-tatiana.github.io/hh-school-html/",
+    "main": "index.js",
+    "author": "Tatiana Gritsenko",
+    "license": "MIT",
+    "scripts": {
+        "dev": "parcel default-main-page.html",
+        "build": "parcel build default-main-page.html --public-url .",
+        "deploy": "yarn build && gh-pages -d dist"
+    },
+    "devDependencies": {
+        "cssnano": "^4.1.10",
+        "gh-pages": "^2.1.1",
+        "less": "^3.10.3"
+    }
+}
