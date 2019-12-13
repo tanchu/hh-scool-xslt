@@ -1,12 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <doc>
-    <header>
-        <menu>
-            <item active="true" url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-        </menu>
-        <login/>
-    </header>
+    <informationAboutUser>
+        <loginStatus isLogged="false"/>
+        <nickName>User123</nickName>
+        <currency type="rub" value="₽"/>
+    </informationAboutUser>
+
+    <navigationBar>
+        <userLocation>
+            <country>Россия</country>
+            <city url="#">Москва</city>
+        </userLocation>
+        <navigationContent>
+            <item url="#">Шоурум</item>
+            <item url="#">Оплата</item>
+            <item url="#">Доставка</item>
+            <item url="#">Самовывоз</item>
+            <item url="#">Контактная информация</item>
+        </navigationContent>
+
+        <navigationProducts>
+            <item url="#">Одежда</item>
+            <item url="#">Сумки</item>
+            <item url="#">Аксессуары</item>
+            <item url="#">Офисные принадлежности</item>
+        </navigationProducts>
+    </navigationBar>
 </doc>
