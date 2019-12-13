@@ -17,6 +17,7 @@
     <xsl:import href="templates/footer.xsl"/>
     <xsl:import href="templates/socialNetworks.xsl"/>
     <xsl:import href="templates/mobileApps.xsl"/>
+    <xsl:import href="templates/statisticsInfo.xsl"/>
 
     <xsl:output method="html" encoding = "utf-8"/>
 

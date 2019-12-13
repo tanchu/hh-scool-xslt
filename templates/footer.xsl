@@ -9,7 +9,17 @@
                     <xsl:apply-templates select="socialNetworks" mode="footer-social-networks-section"/>
                     <div class="footer__fill"></div>
                     <xsl:apply-templates select="mobileApps" mode="footer-mobile-apps-section"/>
+                    <div class="column column_s-2 column_m-2 column_l-4">
+                        <div class="footer__logo logo">
+                            <a href="#" class="logo-link">
+                                <img class="logo" src="css/logo-dark.2d96f65b.svg" alt="hh.ru">
+                                </img>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+                <hr class="footer__line"></hr>
+                <xsl:apply-templates select="statisticsInfo" mode="footer-statistics-info-section"/>
             </div>
         </footer>
     </xsl:template>
