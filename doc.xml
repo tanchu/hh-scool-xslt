@@ -7,15 +7,9 @@
             <item url="/">Самовывоз</item>
             <item url="/" >Контактная информация</item>
     </mainMenu>
-
-    <header>
-        <menu>
-            <item active="true" url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-        </menu>
-        <login/>
-    </header>
+    <services>
+        <item url="icons/services/delivery-icon.svg"><![CDATA[Быстрая доставка по&nbsp;всей России]]></item>
+        <item url="icons/services/return-icon.svg"><![CDATA[100% гарантия возврата и&nbsp;подлинность товара]]></item>
+        <item url="icons/services/support-icon.svg"><![CDATA[Круглосуточная служба поддержки]]></item>
+    </services>
 </doc>
