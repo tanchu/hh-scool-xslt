@@ -13,7 +13,7 @@
     <xsl:import href="templates/carousel.xsl"/>
     <xsl:import href="templates/popularGoods.xsl"/>
     <xsl:import href="templates/currencyCash.xsl"/>
-
+    <xsl:import href="templates/features.xsl"/>
 
 
     <xsl:output method="html" encoding = "utf-8"/>
