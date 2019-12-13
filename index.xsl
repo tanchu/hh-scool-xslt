@@ -14,7 +14,8 @@
     <xsl:import href="templates/popularGoods.xsl"/>
     <xsl:import href="templates/currencyCash.xsl"/>
     <xsl:import href="templates/features.xsl"/>
-
+    <xsl:import href="templates/footer.xsl"/>
+    <xsl:import href="templates/socialNetworks.xsl"/>
 
     <xsl:output method="html" encoding = "utf-8"/>
 
