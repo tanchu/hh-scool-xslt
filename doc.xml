@@ -1,4 +1,13 @@
 <doc>
+    <currentCity>Москва</currentCity>
+    <mainMenu>
+            <item url="/">Шоурум</item>
+            <item url="/">Оплата</item>
+            <item url="/">Доставка</item>
+            <item url="/">Самовывоз</item>
+            <item url="/" >Контактная информация</item>
+    </mainMenu>
+
     <header>
         <menu>
             <item active="true" url="/">одежда</item>
