@@ -25,3 +25,6 @@
 Удачи. Я в вас верю! ;)
 
 P.S. Крайний срок близко - 23.12.2019
+
+
+msxsl doc.xml index.xsl -o index.html
