@@ -12,13 +12,10 @@
 
     <xsl:template match="socialNetwork" mode="social-network-button">
         <div class="social__button">
-            <a>
+            <a href="{.}">
                 <xsl:attribute name="class">
                     <xsl:text>social-button-icon social-button-icon_</xsl:text>
                     <xsl:value-of select="@name"/>
-                </xsl:attribute>
-                <xsl:attribute name="href">
-                    <xsl:value-of select="."/>
                 </xsl:attribute>
             </a>
         </div>

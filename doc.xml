@@ -1,11 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE xsl:stylesheet
-  [
-<!ENTITY nbsp "&#160;">
-  ]
->
-
-
+<?xml version="1.0" encoding="utf-8"?>
 
 <doc>
     <userInfo>
@@ -50,7 +43,7 @@
             <title>Зонт</title>
             <description>Красный зонт с логотипом HH</description>
             <image url="images/product-1.jpg"/>
-            <price>1&nbsp;990</price>
+            <price>1&#160;990</price>
         </item>
         <item id="2" sale="false">
             <title>Сумка</title>
@@ -114,11 +107,11 @@
             <image url="images/support@3x.png"/>
         </feature>
         <feature>
-            <description>100% гарантия возврата и&nbsp;подлинность товара</description>
+            <description>100% гарантия возврата и&#160;подлинность товара</description>
             <image url="images/return@3x.png"/>
         </feature>
         <feature>
-            <description>Круглосуточная служба&nbsp;поддержки</description>
+            <description>Круглосуточная служба&#160;поддержки</description>
             <image url="images/delivery@3x.png"/>
         </feature>
     </features>

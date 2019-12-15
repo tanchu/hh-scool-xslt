@@ -12,13 +12,10 @@
 
     <xsl:template match="mobileApp" mode="mobile-app-button">
         <div class="app__button">
-            <a>
+            <a href="{.}">
                 <xsl:attribute name="class">
                     <xsl:text>app-button-icon app-button-icon_</xsl:text>
                     <xsl:value-of select="@name"/>
-                </xsl:attribute>
-                <xsl:attribute name="href">
-                    <xsl:value-of select="."/>
                 </xsl:attribute>
             </a>
         </div>
