@@ -6,12 +6,12 @@
         <name>Иван</name>
         <surname>Иванов</surname>
     </userInfo>
+    <location>
+        <country>Россия</country>
+        <city url="#">Москва</city>
+    </location>
     <currency type="ru" value="₽"/>
     <navigation>
-        <location>
-            <country>Россия</country>
-            <city url="#">Москва</city>
-        </location>
         <siteNavigation>
             <item url="#">Шоурум</item>
             <item url="#">Оплата</item>
