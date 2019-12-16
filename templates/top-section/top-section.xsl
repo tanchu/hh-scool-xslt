@@ -3,7 +3,7 @@
     <xsl:import href="current-city/current-city.xsl"/>
     <xsl:import href="main-menu/main-menu.xsl"/>
 
-    <xsl:template match="/doc" mode="top-main-menu">
+    <xsl:template match="/doc" mode="top-section">
         <section class="menu-section">
             <div class="columns-wrapper">
                 <div class="menu-content">

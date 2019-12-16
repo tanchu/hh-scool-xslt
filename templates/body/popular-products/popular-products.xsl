@@ -8,12 +8,16 @@
             <div class="columns-wrapper">
                 <h2 class="heading heading_level-2">Популярные товары</h2>
                     <div class="columns-row">
-                        <div class="column column_s-1 column_m-2 column_l-4">
-                            <xsl:apply-templates select="." mode="product-card-short"/>
-                        </div>
+                        <xsl:apply-templates select="." mode="product-card-column"/>
                     </div>
             </div>
         </section>
+    </xsl:template>
+
+    <xsl:template match="products/product" mode="product-card-column">
+        <div class="column column_s-1 column_m-2 column_l-4">
+            <xsl:apply-templates select="." mode="product-card-short"/>
+        </div>
     </xsl:template>
 
 </xsl:stylesheet>
