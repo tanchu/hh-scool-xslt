@@ -5,7 +5,7 @@
         <body>
             <xsl:apply-templates select="navigation" mode="page-navbar-section"/>
             <xsl:call-template name="header"/>
-            <xsl:apply-templates select="pageSliders/slide[@active='true']" mode="goods-carousel-section-slide"/>
+            <xsl:apply-templates select="pageSliders" mode="goods-carousel-section"/>
             <xsl:apply-templates select="popularGoods" mode="popular-goods-section"/>
             <xsl:apply-templates select="features" mode="features-section"/>
             <xsl:call-template name="footer"/>
