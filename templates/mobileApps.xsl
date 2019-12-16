@@ -3,8 +3,10 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="mobileApps" mode="footer-mobile-apps-section">
         <div class="column column_s-2 column_m-3 column_l-4">
-            <div class="footer__app app">
-                <xsl:apply-templates select="mobileApp" mode="mobile-app-button"/>
+            <div class="footer__app">
+                <div class="app"> 
+                    <xsl:apply-templates select="mobileApp" mode="mobile-app-button"/>
+                </div>
             </div>
         </div>
     </xsl:template>

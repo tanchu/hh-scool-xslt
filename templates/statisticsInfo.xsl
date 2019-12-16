@@ -13,16 +13,16 @@
                     <xsl:text> </xsl:text> 
                     <xsl:value-of select="./../copyRightHeading"/>
                 </div>
-                <div class="footer__statistics-info statistics-info">
-                    <xsl:text>Сегодня на сайте </xsl:text>
-                    <xsl:value-of select="numOfVacancies"/>
-                    <xsl:text> вакансий, </xsl:text>
-                    <xsl:value-of select="numOfResumes"/>
-                    <xsl:text> резюме, </xsl:text>
-                    <xsl:value-of select="numOfCompanies"/>
-                    <xsl:text> компании и за неделю </xsl:text>
-                    <xsl:value-of select="numOfInvitations"/>
-                    <xsl:text> приглашения</xsl:text>
+                <div class="statistics-info">
+                        <xsl:text>Сегодня на сайте </xsl:text>
+                        <xsl:value-of select="numOfVacancies"/>
+                        <xsl:text> вакансий, </xsl:text>
+                        <xsl:value-of select="numOfResumes"/>
+                        <xsl:text> резюме, </xsl:text>
+                        <xsl:value-of select="numOfCompanies"/>
+                        <xsl:text> компании и за неделю </xsl:text>
+                        <xsl:value-of select="numOfInvitations"/>
+                        <xsl:text> приглашения</xsl:text>
                 </div>
             </div>
         </div>

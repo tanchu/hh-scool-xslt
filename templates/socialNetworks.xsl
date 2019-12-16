@@ -3,8 +3,10 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="socialNetworks" mode="footer-social-networks-section">
         <div class="column column_s-2 column_m-3 column_l-4">
-            <div class="footer__social social">
-                <xsl:apply-templates select="socialNetwork" mode="social-network-button"/>
+            <div class="footer__social">
+                <div class="social">
+                    <xsl:apply-templates select="socialNetwork" mode="social-network-button"/>
+                </div>
             </div>
         </div>
     </xsl:template>
