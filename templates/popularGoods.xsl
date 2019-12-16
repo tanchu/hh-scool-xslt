@@ -25,43 +25,36 @@
                             <xsl:value-of select="title"/>
                         </xsl:attribute>
                     </img>
-                    <xsl:apply-templates select="self::node()[@sale='true']" mode="goods-item-sale-icon"/>
+                    <xsl:apply-templates select="current()[@sale='true']" mode="goods-item-sale-icon"/>
                 </div>
                 <div class="product-card__name">
                     <xsl:value-of select="title"/>
                 </div>
-                <xsl:apply-templates select="self::node()[@sale='true']" mode="goods-item-sale-price"/>
-                <xsl:apply-templates select="self::node()[@sale='false']" mode="goods-item-normal-price"/>
-
+                <xsl:apply-templates select="." mode="goods-item-price"/>
             </div>
         </div>
     </xsl:template>
 
-    <xsl:template match="item[@sale='true']" mode="goods-item-sale-icon">
+    <xsl:template match="item" mode="goods-item-sale-icon">
         <div class="product-card__sale">sale</div>
     </xsl:template>
 
-    <xsl:template match="item" mode="goods-item-sale-price">
-
+    <xsl:template match="item" mode="goods-item-price">
         <div class="product-card__price">
-            <div class="product-card__old-price">
+            <xsl:if test="@sale = 'true'">
+                <div class="product-card__old-price">
+                    <xsl:value-of select="price"/>
+                </div>
+                <xsl:value-of select="salePrice"/>
+            </xsl:if>
+            <xsl:if test="@sale = 'false'">
                 <xsl:value-of select="price"/>
-            </div>
-            <xsl:value-of select="salePrice"/>
+            </xsl:if>
             <xsl:text> </xsl:text>
-            <xsl:apply-templates select="key('currency-cache', 'ru')" mode="currencyCash"/>
+            <xsl:apply-templates select="key('currency-cache', price/@type )" mode="currencyCash"/>
         </div>
     </xsl:template>
 
-
-    <xsl:template match="item" mode="goods-item-normal-price">
-
-        <div class="product-card__price">
-            <xsl:value-of select="price"/>
-            <xsl:text> </xsl:text>
-            <xsl:apply-templates select="key('currency-cache', 'ru')" mode="currencyCash"/>
-        </div>
-    </xsl:template>
 
 </xsl:stylesheet>
 
