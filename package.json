@@ -6,8 +6,8 @@
     "author": "Tatiana Gritsenko",
     "license": "MIT",
     "scripts": {
-        "dev": "parcel default-main-page.html",
-        "build": "parcel build default-main-page.html --public-url .",
+        "dev": "parcel index.html",
+        "build": "parcel build index.html --public-url .",
         "deploy": "yarn build && gh-pages -d dist"
     },
     "devDependencies": {

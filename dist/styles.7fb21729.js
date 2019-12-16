@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"C:\\Users\\tata9\\Desktop\\hh\\hh-school-xslt\\hh-scool-xslt\\css\\common\\checkbox\\checked.svg":[["checked.5bce1e3e.svg","css/common/checkbox/checked.svg"],"css/common/checkbox/checked.svg"],"./common\\select\\arrow.svg":[["arrow.5e8e0211.svg","css/common/select/arrow.svg"],"css/common/select/arrow.svg"],"./blocks\\header\\search-icon.svg":[["search-icon.2c36ba85.svg","css/blocks/header/search-icon.svg"],"css/blocks/header/search-icon.svg"],"./blocks\\header\\login-icon.svg":[["login-icon.68986608.svg","css/blocks/header/login-icon.svg"],"css/blocks/header/login-icon.svg"],"./blocks\\header\\menu-icon.svg":[["menu-icon.d0bcd458.svg","css/blocks/header/menu-icon.svg"],"css/blocks/header/menu-icon.svg"],"./blocks\\footer\\logo-icon.svg":[["logo-icon.705feb2f.svg","css/blocks/footer/logo-icon.svg"],"css/blocks/footer/logo-icon.svg"],"./common\\nav-close\\nav_close.svg":[["nav_close.7c642b61.svg","css/common/nav-close/nav_close.svg"],"css/common/nav-close/nav_close.svg"],"_css_loader":"../../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"C:\\Users\\tata9\\Desktop\\hh\\hh-school-xslt\\hh-scool-xslt\\css\\common\\checkbox\\checked.svg":[["checked.5bce1e3e.svg","css/common/checkbox/checked.svg"],"css/common/checkbox/checked.svg"],"./common\\select\\arrow.svg":[["arrow.5e8e0211.svg","css/common/select/arrow.svg"],"css/common/select/arrow.svg"],"./blocks\\header\\search-icon.svg":[["search-icon.2c36ba85.svg","css/blocks/header/search-icon.svg"],"css/blocks/header/search-icon.svg"],"./blocks\\header\\login-icon.svg":[["login-icon.68986608.svg","css/blocks/header/login-icon.svg"],"css/blocks/header/login-icon.svg"],"./blocks\\header\\menu-icon.svg":[["menu-icon.d0bcd458.svg","css/blocks/header/menu-icon.svg"],"css/blocks/header/menu-icon.svg"],"./common\\nav-close\\nav_close.svg":[["nav_close.7c642b61.svg","css/common/nav-close/nav_close.svg"],"css/common/nav-close/nav_close.svg"],"_css_loader":"../../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53399" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50670" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

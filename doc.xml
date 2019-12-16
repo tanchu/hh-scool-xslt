@@ -1,15 +1,57 @@
 <doc>
     <currentCity>Москва</currentCity>
     <mainMenu>
-            <item url="/">Шоурум</item>
-            <item url="/">Оплата</item>
-            <item url="/">Доставка</item>
-            <item url="/">Самовывоз</item>
-            <item url="/" >Контактная информация</item>
+        <item url="/">Шоурум</item>
+        <item url="/">Оплата</item>
+        <item url="/">Доставка</item>
+        <item url="/">Самовывоз</item>
+        <item url="/" >Контактная информация</item>
     </mainMenu>
+    <slider>
+        <sliderToCatalog>
+            <slide active="true" img="images/img-01.png" img_x="images/img-01.png 1x, images/img-01@2x.png 2x, images/img-01@3x.png 3x">
+                Мужская и женская одежда с&#160;символикой HeadHunter
+            </slide>
+            <slide text="" img="" img_x=""/>
+            <slide text="" img="" img_x=""/>
+            <slide text="" img="" img_x=""/>
+        </sliderToCatalog>
+    </slider>
     <services>
-        <item url="icons/services/delivery-icon.svg"><![CDATA[Быстрая доставка по&nbsp;всей России]]></item>
-        <item url="icons/services/return-icon.svg"><![CDATA[100% гарантия возврата и&nbsp;подлинность товара]]></item>
-        <item url="icons/services/support-icon.svg"><![CDATA[Круглосуточная служба поддержки]]></item>
+        <item img="icons/services/delivery-icon.svg">Быстрая доставка по&#160;всей России</item>
+        <item img="icons/services/return-icon.svg">100% гарантия возврата и&#160;подлинность товара</item>
+        <item img="icons/services/support-icon.svg">Круглосуточная служба поддержки</item>
     </services>
+    <socials>
+        <item url="https://ru-ru.facebook.com/" img="icons/socials/facebook-icon.svg">Facebook</item>
+        <item url="https://twitter.com/" img="icons/socials/twitter-icon.svg">Twitter</item>
+        <item url="https://vk.com/" img="icons/socials/vk-icon.svg">VK</item>
+        <item url="https://www.instagram.com/" img="icons/socials/instagram-icon.svg">Instagram</item>
+    </socials>
+    <apps>
+        <item url="https://www.apple.com/ru/ios/app-store/" img="icons/apps/appstore-icon.svg">App Store</item>
+        <item url="https://play.google.com/store" img="icons/apps/googleplay-icon.svg">Google Play</item>
+    </apps>
+    <stats>
+        <vacansies>684&#160;978&#160;</vacansies>
+        <resumes>34&#160;789&#160;747&#160;</resumes>
+        <companies>858&#160;923&#160;</companies>
+        <invitations>1&#160;211&#160;363&#160;</invitations>
+    </stats>
+    <currentYear>2019</currentYear>
+    <products>
+        <product id="1">
+            <image img="images/product-4.jpg"/>
+            <name>Футболка</name>
+            <price>
+                <default>690Р</default>
+                <sale>390Р</sale>
+            </price>
+            <description>Красная хлопковая футболка с коротким рукавом</description>
+        </product>
+    </products>
+    <logo>
+        <first img="css/blocks/logo/logo.svg"></first>
+        <second img="/icons/second-logo.svg"></second>
+    </logo>
 </doc>
