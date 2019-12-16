@@ -1,12 +1,161 @@
 <doc>
-    <header>
-        <menu>
-            <item active="true" url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-        </menu>
-        <login/>
-    </header>
+    <isAuthenticated name="isAuthenticated">false</isAuthenticated>
+    <language>ru</language>
+    <location>
+        <country>Россия</country>
+        <sity>Москва</sity>
+    </location>
+    <logo srcRed="/css/blocks/logo/logo-red.svg" srcGrey="/css/blocks/logo/logo-grey.svg" url="" />
+    <currency name="currency">₽</currency>
+    <pageNavigation>
+        <link url="/#">Шоурум</link>
+        <link url="/#">Оплата</link>
+        <link url="/#">Доставка</link>
+        <link url="/#">Самовывоз</link>
+        <link url="/#">Контактная информация</link>
+    </pageNavigation>
+    <contentNavigation>
+        <link url="/#">Одежда</link>
+        <link url="/#">Сумки</link>
+        <link url="/#">Аксессуары</link>
+        <link url="/#">Офисные принадлежности</link>
+    </contentNavigation>
+    <searchAllowed />
+    <authAllowed url="/">Войти</authAllowed>
+    <slider>
+        <slide>
+            <heading>Мужская и женская одежда с символикой HeadHunter</heading>
+            <button url="/#">Перейти в каталог</button>
+            <image>css/blocks/slider/slider-1-s.png 290w,
+                                                            css/blocks/slider/slider-1-m.png 333w,
+                                                            css/blocks/slider/slider-1-l.png 530w"</image>
+        </slide>
+        <sliderNavigation>
+            <dot active="true"/>
+            <dot/>
+        </sliderNavigation>
+    </slider>
+    <popularGoods>
+        <good>
+            <id>1</id>
+            <name>Зонт</name>
+            <img>images/product-1.jpg</img>
+            <price>1&#160;990&#160;</price>
+        </good>
+        <good>
+            <id>2</id>
+            <name>Сумка</name>
+            <img>images/product-2.jpg</img>
+            <price>290&#160;</price>
+        </good>
+        <good>
+            <id>3</id>
+            <name>Шлепанцы</name>
+            <img>images/product-3.jpg</img>
+            <price>790&#160;</price>
+        </good>
+        <good>
+            <id>4</id>
+            <name>Толстовка</name>
+            <img>images/product-5.jpg</img>
+            <price>3&#160;990&#160;</price>
+        </good>
+        <good>
+            <id>5</id>
+            <name>Футболка</name>
+            <img>images/product-4.jpg</img>
+            <price>390&#160;</price>
+            <oldPrice>690</oldPrice>
+        </good>
+        <good>
+            <id>6</id>
+            <name>Подушка</name>
+            <img>images/product-6.jpg</img>
+            <price>990&#160;</price>
+        </good>
+    </popularGoods>
+    <howWeWork>
+        <point>
+            <iconSrc>/css/blocks/how-we-work/service-icon.svg</iconSrc>
+            <description>Быстрая доставка по всей России</description>
+        </point>
+        <point>
+            <iconSrc>/css/blocks/how-we-work/return-icon.svg</iconSrc>
+            <description>100%&#160;гарантия возврат и подлинность товара</description>
+        </point>
+        <point>
+            <iconSrc>/css/blocks/how-we-work/delivery-icon.svg</iconSrc>
+            <description>Круглосуточная служба поддержки</description>
+        </point>
+    </howWeWork>
+    <socialNetworks>
+        <link iconSrc="/css/common/social-media-icons-container/facebook.svg" url="/" />
+        <link iconSrc="/css/common/social-media-icons-container/twitter.svg" url="/" />
+        <link iconSrc="/css/common/social-media-icons-container/vk.svg" url="/" />
+        <link iconSrc="/css/common/social-media-icons-container/instagram.svg" url="/" />
+    </socialNetworks>
+    <mobileAppLinks>
+        <link iconSrc="/css/blocks/app-store-icons/playmarket.svg" url="/" />
+        <link iconSrc="/css/blocks/app-store-icons/apple.svg" url="/" />
+    </mobileAppLinks>
+    <statistics>
+        Сегодня на сайте 684<![CDATA[&nbsp;]]>978<![CDATA[&nbsp;]]>вакансий, 34                                <![CDATA[&nbsp;]]>789                                <![CDATA[&nbsp;]]>747                                <![CDATA[&nbsp;]]>резюме, 858                                <![CDATA[&nbsp;]]>923                                <![CDATA[&nbsp;]]>компании и за неделю 1                                <![CDATA[&nbsp;]]>211                                <![CDATA[&nbsp;]]>363                                <![CDATA[&nbsp;]]>приглашения
+    </statistics>
+    <copyright>
+        ©<![CDATA[&nbsp;]]>2019 Группа компаний HeadHunter
+    </copyright>
+    <popup-data>
+        <good>
+            <id>5</id>
+            <name>Футболка</name>
+            <img>images/product-4.jpg</img>
+            <description>Красная хлопоковая футболка с коротким рукавом</description>
+            <price>390&#160;</price>
+            <oldPrice>690</oldPrice>
+            <sizes>
+                <size avalible="true">XS</size>
+                <size avalible="true">S</size>
+                <size avalible="true">M</size>
+                <size avalible="true">L</size>
+                <size avalible="true">XL</size>
+                <size avalible="true">XXL</size>
+            </sizes>
+            <closeButton>/css/blocks/product-card/close-button.svg</closeButton>
+        </good>
+    </popup-data>
+    <form-data>
+        <closeButton src="/css/blocks/order-form/close-button.svg"/>
+        <deliveryMethods>
+            <point>Самовывоз</point>
+            <point>Доставка</point>
+        </deliveryMethods>
+        <sities> 
+            <sity>Москва</sity>
+            <sity>Тверь</sity>
+            <sity>Тула</sity>
+            <sity>Калуга</sity>
+            <sity>Рязань</sity>
+        </sities>
+        <paymentMethods>
+            <point type="online-payment">Онлайн</point>
+            <point type="cash-payment">Наличными</point>
+            <point type="card-payment">Картой при получении</point>
+        </paymentMethods>
+        <good>
+            <id>5</id>
+            <name>Футболка</name>
+            <img>images/product-4.jpg</img>
+            <description>Красная хлопоковая футболка с коротким рукавом</description>
+            <price>390&#160;</price>
+            <oldPrice>690</oldPrice>
+            <sizes>
+                <size avalible="true">XS</size>
+                <size avalible="true">S</size>
+                <size avalible="true">M</size>
+                <size avalible="true">L</size>
+                <size avalible="true">XL</size>
+                <size avalible="true">XXL</size>
+            </sizes>
+        </good>
+    </form-data>
 </doc>

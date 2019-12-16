@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" 
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <xsl:import href="common\close-button\close-button.xsl" />
+    <xsl:import href="keys.xsl" />
+    
+
+
+    <xsl:template match="popularGoods" mode="popular-goods">
+        <section class="content-section">
+            <div class="columns-wrapper">
+                <h2 class="heading heading_level-2">Популярные товары</h2>
+                <div class="columns-row">
+                    <xsl:apply-templates select="good" mode="good-column" />
+                </div>
+            </div>
+        </section>
+    </xsl:template>
+
+    <xsl:template match="good" mode="good-column">
+        <div class="column column_s-1 column_m-2 column_l-4">
+            <xsl:apply-templates select="." mode="good" />
+        </div>
+    </xsl:template>
+
+    <xsl:template match="good" mode="good-form">
+        <div class="product-card-form-wrapper">
+            <xsl:apply-templates select="." mode="good" />
+        </div>
+    </xsl:template>
+
+    <xsl:template match="good" mode="good">
+        <div class="product-card">
+            <div class="product-card__image-container">
+                <img class="product-card__image" src="{img}" />
+                <xsl:apply-templates select="oldPrice" mode="sale" />
+                <xsl:apply-templates select="closeButton" mode="close-button-good" />
+            </div>
+            <div class="product-card__name">
+                <xsl:value-of select="name" />
+            </div>
+            <div class="product-card__price">
+                <xsl:apply-templates select="oldPrice" mode="old-price" />
+                <xsl:value-of select="price" />
+                <xsl:value-of select="key('keyCurrency','currency')"/>
+                
+            </div>
+            <xsl:apply-templates select="description" mode="description" />
+            <xsl:apply-templates select="sizes" mode="good-sizes" />
+        </div>
+    </xsl:template>
+
+    <xsl:template match="description" mode="description">
+        <div class="product-card__description">
+                <xsl:value-of select="." />
+            </div>
+    </xsl:template>
+
+    <xsl:template match="oldPrice" mode="sale">
+        <div class="product-card__sale">sale</div>
+    </xsl:template>
+
+    <xsl:template match="oldPrice" mode="old-price">
+        <span class="product-card__old-price">
+            <xsl:value-of select="." />
+        </span>
+    </xsl:template>
+
+    <xsl:template match="good/sizes" mode="good-sizes">
+        <div class="product-card__sizes">
+            <xsl:apply-templates select="size" mode="good-size" />
+        </div>
+    </xsl:template>
+
+    <xsl:template match="sizes/size" mode="good-size">
+        <div class="product-card__size">
+            <label class="radio-box">
+                <input class="radio-box__input" type="radio" name="size" />
+                <span class="radio-box__text">
+                    <xsl:value-of select="." />
+                </span>
+            </label>
+        </div>
+    </xsl:template>
+
+</xsl:stylesheet>

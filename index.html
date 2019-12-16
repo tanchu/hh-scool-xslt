@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>HTML и CSS</title>
+    <link rel="stylesheet" href="css/styles.less" />
+</head>
+
+<body>
+    <div class="main-container">
+        <form class="order-form">
+            <div class="columns-wrapper">
+                <div class="close-button-form">
+                    <a href="#"><img class="close-button" src="/css/blocks/order-form/close-button.svg"></a>
+                </div>
+                <div class="columns-row">
+                    <div class="column column_s-2 column_m-3 column_l-7">
+                        <h1 class="heading">Оформление заказа</h1>
+                        <fieldset class="order-form__section">
+                            <legend class="order-form__legend">Контактное лицо</legend>
+                            <input class="input" type="text" name="username" placeholder="ФИО">
+                            <input class="input" type="email" name="email" placeholder="Электронная почта">
+                            <div class="telephone-input">
+                                <div class="telephone-input__country-code">
+                                    <input class="input" type="text" name="code" value="+7" disabled>
+                                </div>
+                                <div class="telephone-input__code">
+                                    <input class="input" type="text" name="code" placeholder="Код">
+                                </div>
+                                <div class="telephone-input__number">
+                                    <input class="input" type="text" name="tel" placeholder="Номер">
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="order-form__section">
+                            <legend class="order-form__legend">Способ получения</legend>
+                            <div class="order-form__delivery-way-radio-wrapper">
+                                <div class="order-form__delivery-way-item">
+                                    <label class="radio-box">
+                                        <input class="radio-box__input" type="radio" name="delivery-way">
+                                        <span class="radio-box__text">Самовывоз</span>
+                                    </label>
+                                </div>
+                                <div class="order-form__delivery-way-item">
+                                    <label class="radio-box">
+                                        <input class="radio-box__input" type="radio" name="delivery-way">
+                                        <span class="radio-box__text">Доставка</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="order-form__section">
+                            <legend class="order-form__legend">Адрес</legend>
+                            <div class="order-form__sity-select">
+                                <select class="select">
+                                    <option disabled value="null" class="adress-select__option" selected>Город</option>
+                                    <option value="Москва">Москва</option>
+                                    <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                    <option value="Новосибирск">Новосибирск</option>
+                                </select>
+                            </div>
+                            <textarea class="textarea" name="adress" placeholder="Адрес" required></textarea>
+                        </fieldset>
+                        <fieldset class="order-form__section">
+                            <legend class="order-form__legend">Оплата</legend>
+                            <div class="radio-wrapper">
+                                <label for="online-payment" class="radio">
+                                    <input type="radio" name="pay" id="online-payment" class="radio__input" />
+                                    <span class="radio__box"></span>
+                                    <span class="radio__text">Онлайн</span>
+                                </label>
+                                <label for="cash-payment" class="radio">
+                                    <input type="radio" name="pay" id="cash-payment" class="radio__input" />
+                                    <span class="radio__box"></span>
+                                    <span class="radio__text">Наличными</span>
+                                </label>
+                                <label for="card-payment" class="radio">
+                                    <input type="radio" name="pay" id="card-payment" class="radio__input" />
+                                    <span class="radio__box"></span>
+                                    <span class="radio__text">Картой при получении</span>
+                                </label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="order-form__section">
+                            <legend class="order-form__legend">Уведомления</legend>
+                            <label class="checkbox">
+                                <input type="checkbox" name="checkbox-sms" class="checkbox__input" />
+                                <span class="checkbox__box"></span>
+                                <span class="checkbox__text">Хочу получать SMS уведомления</span>
+                            </label>
+                        </fieldset>
+                        <button class="button button__long default-button">Оформить заказ</button>
+                    </div>
+                    <div class="column column_s-2 column_m-3 column_l-5">
+                        <div class="product-card-form-wrapper">
+                            <div class="product-card">
+                                <div class="product-card__image-container">
+                                    <img class="product-card__image" src="images/product-4.jpg" alt="Футболка">
+                                    <div class="product-card__sale">sale</div>
+                                </div>
+                                <div class="product-card__name">Футболка</div>
+                                <div class="product-card__price">
+                                    <span class="product-card__old-price">690</span>
+                                    390&nbsp;₽
+                                </div>
+                                <div class="product-card__description">Красная хлопоковая футболка с коротким рукавом
+                                </div>
+                                <div class="product-card__sizes">
+                                    <div class="product-card__size">
+                                        <label class="radio-box">
+                                            <input class="radio-box__input" type="radio" name="size">
+                                            <span class="radio-box__text">XS</span>
+                                        </label>
+                                    </div>
+                                    <div class="product-card__size">
+                                        <label class="radio-box">
+                                            <input class="radio-box__input" type="radio" name="size">
+                                            <span class="radio-box__text">S</span>
+                                        </label>
+                                    </div>
+                                    <div class="product-card__size">
+                                        <label class="radio-box">
+                                            <input class="radio-box__input" type="radio" name="size">
+                                            <span class="radio-box__text">M</span>
+                                        </label>
+                                    </div>
+                                    <div class="product-card__size">
+                                        <label class="radio-box">
+                                            <input class="radio-box__input" type="radio" name="size">
+                                            <span class="radio-box__text">L</span>
+                                        </label>
+                                    </div>
+                                    <div class="product-card__size">
+                                        <label class="radio-box">
+                                            <input class="radio-box__input" type="radio" name="size">
+                                            <span class="radio-box__text">XL</span>
+                                        </label>
+                                    </div>
+                                    <div class="product-card__size">
+                                        <label class="radio-box">
+                                            <input class="radio-box__input" type="radio" name="size">
+                                            <span class="radio-box__text">XXL</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+        <div class="popup-wrapper">
+            <div class="product-card-wrapper">
+                <div class="product-card">
+                    <div class="product-card__image-container">
+                        <img class="product-card__image" src="images/product-4.jpg" alt="Футболка">
+                        <div class="product-card__sale">sale</div>
+                        <div class="product-card__close-button">
+                            <a href="#"><img class="close-button" src="/css/blocks/product-card/close-button.svg"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                    <div class="product-card__name">Футболка</div>
+                    <div class="product-card__price">
+                        <span class="product-card__old-price">690</span>
+                        390&nbsp;₽
+                    </div>
+                    <div class="product-card__description">Красная хлопоковая футболка с коротким рукавом</div>
+                    <div class="product-card__sizes">
+                        <div class="product-card__size">
+                            <label class="radio-box">
+                                <input class="radio-box__input" type="radio" name="size">
+                                <span class="radio-box__text">XS</span>
+                            </label>
+                        </div>
+                        <div class="product-card__size">
+                            <label class="radio-box">
+                                <input class="radio-box__input" type="radio" name="size">
+                                <span class="radio-box__text">S</span>
+                            </label>
+                        </div>
+                        <div class="product-card__size">
+                            <label class="radio-box">
+                                <input class="radio-box__input" type="radio" name="size">
+                                <span class="radio-box__text">M</span>
+                            </label>
+                        </div>
+                        <div class="product-card__size">
+                            <label class="radio-box">
+                                <input class="radio-box__input" type="radio" name="size">
+                                <span class="radio-box__text">L</span>
+                            </label>
+                        </div>
+                        <div class="product-card__size">
+                            <label class="radio-box">
+                                <input class="radio-box__input" type="radio" name="size">
+                                <span class="radio-box__text">XL</span>
+                            </label>
+                        </div>
+                        <div class="product-card__size">
+                            <label class="radio-box">
+                                <input class="radio-box__input" type="radio" name="size">
+                                <span class="radio-box__text">XXL</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button class="button button__long default-button">Заказать</button>
+            </div>
+        </div>
+        <section class="navbar">
+            <div class="columns-wrapper">
+                <div class="navbar__content">
+                    <div class="navbar__city">
+                        <span class="city-text">Москва</span>
+                    </div>
+                    <div class="navbar__fill"></div>
+                    <ul class="navbar__list">
+                        <li class="navbar__item"><a class="navbar__link" href="#">Шоурум</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="#">Оплата</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="#">Доставка</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="#">Самовывоз</a></li>
+                        <li class="navbar__item"><a class="navbar__link" href="#">Контактная информация</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <header class="header">
+            <div class="columns-wrapper">
+                <div class="header__content">
+                    <div class="header__logo">
+                        <a href="#"><img class="logo logo__red" src="/css/blocks/logo/logo-red.svg" alt="hh.ru"></a>
+                    </div>
+                    <div class="header__nav">
+                        <ul class="nav">
+                            <li class="nav__item"><a class="nav__link" href="#">Одежда</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">Сумки</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">Аксессуары</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">Офисные принадлежности</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__fill"></div>
+                    <div class="header__button">
+                        <button class="header-button-icon header-button-icon_search">Поиск</button>
+                    </div>
+                    <div class="header__button">
+                        <button class="header-button-icon header-button-icon_login">Войти</button>
+                        <button class="header-button header-button_login">Войти</button>
+                    </div>
+                    <div class="header__button header__button-menu">
+                        <button class="header-button-icon header-button-icon_menu">Меню</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="slider">
+            <div class="columns-wrapper">
+                <div class="columns-row">
+                    <div class="column column_s-2 column_m-3 column_l-6">
+                        <div class="slider__image-container">
+                            <img class="slider__image" srcset="css/blocks/slider/slider-1-s.png 290w,
+                                                            css/blocks/slider/slider-1-m.png 333w,
+                                                            css/blocks/slider/slider-1-l.png 530w"
+                                alt="slider image 1">
+                        </div>
+                    </div>
+                    <div class="column column_s-2 column_m-6 column_l-12">
+                        <div class="slider-nav">
+                            <div class="slider-nav__dot slider-nav__dot__active"></div>
+                            <div class="slider-nav__dot"></div>
+                            <div class="slider-nav__dot"></div>
+                            <div class="slider-nav__dot"></div>
+                        </div>
+                    </div>
+                    <div class="column column_s-2 column_m-3 column_l-6 be-first">
+                        <div class="slider__heading-wrapper">
+                            <h1 class="heading">Мужская и женская одежда с символикой HeadHunter</h1>
+                            <button class="button default-button">Перейти в каталог</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section">
+            <div class="columns-wrapper">
+                <h2 class="heading heading_level-2">Популярные товары</h2>
+                <div class="columns-row">
+                    <div class="column column_s-1 column_m-2 column_l-4">
+                        <div class="product-card">
+                            <div class="product-card__image-container">
+                                <img class="product-card__image" src="images/product-1.jpg" alt="Зонт">
+                            </div>
+                            <div class="product-card__name">Зонт</div>
+                            <div class="product-card__price">
+                                1&nbsp;990 ₽
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column column_s-1 column_m-2 column_l-4">
+                        <div class="product-card">
+                            <div class="product-card__image-container">
+                                <img class="product-card__image" src="images/product-2.jpg" alt="Сумка">
+                            </div>
+                            <div class="product-card__name">Сумка</div>
+                            <div class="product-card__price">
+                                290&nbsp;₽
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column column_s-1 column_m-2 column_l-4">
+                        <div class="product-card">
+                            <div class="product-card__image-container">
+                                <img class="product-card__image" src="images/product-3.jpg" alt="Шлепанцы">
+                            </div>
+                            <div class="product-card__name">Шлепанцы</div>
+                            <div class="product-card__price">
+                                790&nbsp;₽
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column column_s-1 column_m-2 column_l-4">
+                        <div class="product-card">
+                            <div class="product-card__image-container">
+                                <img class="product-card__image" src="images/product-4.jpg" alt="Футболка">
+                                <div class="product-card__sale">sale</div>
+                            </div>
+                            <div class="product-card__name">Футболка</div>
+                            <div class="product-card__price">
+                                <span class="product-card__old-price">690</span>
+                                390&nbsp;₽
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column column_s-1 column_m-2 column_l-4">
+                        <div class="product-card">
+                            <div class="product-card__image-container">
+                                <img class="product-card__image" src="images/product-5.jpg" alt="Толстовка">
+                            </div>
+                            <div class="product-card__name">Толстовка</div>
+                            <div class="product-card__price">
+                                3&nbsp;990&nbsp;₽
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column column_s-1 column_m-2 column_l-4">
+                        <div class="product-card">
+                            <div class="product-card__image-container">
+                                <img class="product-card__image" src="images/product-6.jpg" alt="Подушка">
+                            </div>
+                            <div class="product-card__name">Подушка</div>
+                            <div class="product-card__price">
+                                990&nbsp;₽
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="how-we-work">
+            <div class="columns-wrapper">
+                <div class="columns-row">
+                    <div class="column column_s-2 column_m-2 column_l-4">
+                        <div class="how-we-work__item">
+                            <img class="how-we-work-icon" src="/css/blocks/how-we-work/service-icon.svg" alt="">
+                            <div class="how-we-work__text">Быстрая доставка по всей России</div>
+                        </div>
+                    </div>
+                    <div class="column column_s-2 column_m-2 column_l-4">
+                        <div class="how-we-work__item">
+                            <img class="how-we-work-icon" src="/css/blocks/how-we-work/return-icon.svg" alt="">
+                            <div class="how-we-work__text">100%&nbsp;гарантия возврат и подлинность товара</div>
+                        </div>
+                    </div>
+                    <div class="column column_s-2 column_m-2 column_l-4">
+                        <div class="how-we-work__item">
+                            <img class="how-we-work-icon" src="/css/blocks/how-we-work/delivery-icon.svg" alt="">
+                            <div class="how-we-work__text">Круглосуточная служба поддержки</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="columns-wrapper">
+                <div class="columns-row">
+                    <div class="column column_s-2 column_m-3 column_l-4">
+                        <div class="social-media-icons-container">
+                            <div class="social-media-icons-container__item">
+                                <a href="#"><img class="social-media-icon"
+                                        src="/css/common/social-media-icons-container/facebook.svg"
+                                        alt="facebook.com"></a>
+                            </div>
+                            <div class="social-media-icons-container__item">
+                                <a href="#"><img class="social-media-icon"
+                                        src="/css/common/social-media-icons-container/twitter.svg"
+                                        alt="twitter.com"></a>
+                            </div>
+                            <div class="social-media-icons-container__item">
+                                <a href="#"><img class="social-media-icon"
+                                        src="/css/common/social-media-icons-container/vk.svg" alt="vk.com"></a>
+                            </div>
+                            <div class="social-media-icons-container__item">
+                                <a href="#"><img class="social-media-icon"
+                                        src="/css/common/social-media-icons-container/instagram.svg"
+                                        alt="instagram.com"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column column_s-2 column_m-3 column_l-4">
+                        <div class="app-store-icons-container">
+                            <div class="app-store-icons-container__item">
+                                <a href="#"><img class="app-store-icon" src="/css/blocks/app-store-icons/apple.svg"
+                                        alt="appstore.com"></a>
+                            </div>
+                            <div class="app-store-icons-container__item">
+                                <a href="#"><img class="app-store-icon" src="/css/blocks/app-store-icons/playmarket.svg"
+                                        alt="playmarket.com"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column column_l-4">
+                        <div class="footer__logo">
+                            <a href="#"><img class="logo logo__grey" src="/css/blocks/logo/logo-grey.svg"
+                                    alt="hh.ru"></a>
+                        </div>
+                    </div>
+                    <div class="column column_s-2 column_m-6 column_l-12">
+                        <div class="footer__info">
+                            <hr class="footer__line">
+                            <div class="footer__statistics">©&nbsp;2019 Группа компаний HeadHunter <br> Сегодня на сайте
+                                684&nbsp;978&nbsp;вакансий, 34&nbsp;789&nbsp;747&nbsp;резюме, 858&nbsp;923&nbsp;компании
+                                и
+                                за неделю 1&nbsp;211&nbsp;363&nbsp;приглашения</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
