@@ -1,12 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE doc SYSTEM "doc.dtd">
+
 <doc>
-    <header>
-        <menu>
-            <item active="true" url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-        </menu>
-        <login/>
-    </header>
+    <userInfo>
+        <loginStatus isLogged="false"/>
+        <nickName>User123</nickName>
+        <userCurrency type="rub" value="₽"/>
+        <userCountry>Россия</userCountry>
+        <userCity>Москва</userCity>
+    </userInfo>
+
+    <navigationReferences>
+        <reference src="#">Шоурум</reference>
+        <reference src="#">Оплата</reference>
+        <reference src="#">Доставка</reference>
+        <reference src="#">Самовывоз</reference>
+        <reference src="#">Контактная информация</reference>
+    </navigationReferences>
+
+    <headerReferences>
+        <reference src="#">Одежда</reference>
+        <reference src="#">Сумки</reference>
+        <reference src="#">Аксессуары</reference>
+        <reference src="#">Офисные принадлежности</reference>
+    </headerReferences>
+
+    <sliderSections>
+        <section isActive="true">
+            <description>Мужская и женская одежда
+                с символикой HeadHunter</description>
+            <productImage src="css/slider-1.3b5e737a.png" alt="Мужская и женская одежда" />
+        </section>
+        <section>
+            <description>Офисные принадлежности
+                с символикой HeadHunter</description>
+            <productImage src="css/slider-2.769fcb14.png" />
+        </section>
+    </sliderSections>
 </doc>

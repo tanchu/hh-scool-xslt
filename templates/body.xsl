@@ -9,5 +9,4 @@
             <xsl:apply-templates select="sliderSections" mode="sliderSections"/>
         </body>
     </xsl:template>
-
 </xsl:stylesheet>

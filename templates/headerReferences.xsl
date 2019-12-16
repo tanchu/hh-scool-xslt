@@ -30,7 +30,6 @@
             </div>
         </header>
     </xsl:template>
-
     <xsl:template match="reference" mode="headerReferences-reference">
         <li class="nav__item">
             <a href="{@src}" class="nav__link">
@@ -38,7 +37,6 @@
             </a>
         </li>
     </xsl:template>
-
     <xsl:template match="loginStatus[@isLogged='false']" mode="headerReferences-loginButton">
         <button class="header-button-icon header-button-icon_login">Войти</button>
         <button class="header-button header-button_login">Войти</button>
