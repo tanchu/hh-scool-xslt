@@ -8,18 +8,25 @@
                 <div class="footer__copyright-info copyright-info">
                     <xsl:text>&#169; </xsl:text>
                     <span class="copyright-info__year">
-                        <xsl:value-of select="copyRightYear"/>
+                        <xsl:value-of select="./../copyRightYear"/>
                     </span>
-                    <xsl:text> Группа компаний HeadHunter </xsl:text>
+                    <xsl:text> </xsl:text> 
+                    <xsl:value-of select="./../copyRightHeading"/>
                 </div>
                 <div class="footer__statistics-info statistics-info">
-                    <xsl:value-of select="infoText"/>
+                    <xsl:text>Сегодня на сайте </xsl:text>
+                    <xsl:value-of select="numOfVacancies"/>
+                    <xsl:text> вакансий, </xsl:text>
+                    <xsl:value-of select="numOfResumes"/>
+                    <xsl:text> резюме, </xsl:text>
+                    <xsl:value-of select="numOfCompanies"/>
+                    <xsl:text> компании и за неделю </xsl:text>
+                    <xsl:value-of select="numOfInvitations"/>
+                    <xsl:text> приглашения</xsl:text>
                 </div>
             </div>
         </div>
     </xsl:template>
-
-
 </xsl:stylesheet>
 
 

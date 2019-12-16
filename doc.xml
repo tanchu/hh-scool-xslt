@@ -128,11 +128,13 @@
         <mobileApp name="app-store">#</mobileApp>
         <mobileApp name="google-play">#</mobileApp>
     </mobileApps>
+    <copyRightYear>2019</copyRightYear>
+    <copyRightHeading>Группа компаний HeadHunter</copyRightHeading>
     <statisticsInfo>
-        <copyRightYear>2019</copyRightYear>
-        <infoText>Сегодня на сайте 684 978 вакансий, 34 789 747 резюме, 858 923 компании
-        и за неделю 1 211 363 приглашения
-        </infoText>
+        <numOfVacancies>684 978</numOfVacancies>
+        <numOfResumes>34 789 747</numOfResumes>
+        <numOfCompanies>858 923</numOfCompanies>
+        <numOfInvitations>1 211 363</numOfInvitations>
     </statisticsInfo>
     <delivery>
         <deliveryMethods>
