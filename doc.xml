@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE doc SYSTEM "doc.dtd">
 
 <doc>
     <userInfo>
@@ -10,31 +9,36 @@
         <userCity>Москва</userCity>
     </userInfo>
 
-    <navigationReferences>
+    <siteNavigation>
         <reference src="#">Шоурум</reference>
         <reference src="#">Оплата</reference>
         <reference src="#">Доставка</reference>
         <reference src="#">Самовывоз</reference>
         <reference src="#">Контактная информация</reference>
-    </navigationReferences>
+    </siteNavigation>
 
-    <headerReferences>
-        <reference src="#">Одежда</reference>
-        <reference src="#">Сумки</reference>
-        <reference src="#">Аксессуары</reference>
-        <reference src="#">Офисные принадлежности</reference>
-    </headerReferences>
+    <headerNavigation>
+        <headerReferences>
+            <reference src="#">Одежда</reference>
+            <reference src="#">Сумки</reference>
+            <reference src="#">Аксессуары</reference>
+            <reference src="#">Офисные принадлежности</reference>
+        </headerReferences>
+    </headerNavigation>
 
-    <sliderSections>
-        <section isActive="true">
-            <description>Мужская и женская одежда
-                с символикой HeadHunter</description>
-            <productImage src="css/slider-1.3b5e737a.png" alt="Мужская и женская одежда" />
-        </section>
-        <section>
-            <description>Офисные принадлежности
-                с символикой HeadHunter</description>
-            <productImage src="css/slider-2.769fcb14.png" />
-        </section>
-    </sliderSections>
+    <sliders>
+        <slider>
+            <slide isActive="true">
+                <description>Мужская и женская одежда
+                    с символикой HeadHunter</description>
+                <productImage src="css/slider-1.3b5e737a.png" alt="Мужская и женская одежда" />
+            </slide>
+            <slide>
+                <description>Офисные принадлежности
+                    с символикой HeadHunter</description>
+                <productImage src="css/slider-2.769fcb14.png" alt="Офисные принадлежности" />
+            </slide>
+        </slider>
+    </sliders>
+
 </doc>

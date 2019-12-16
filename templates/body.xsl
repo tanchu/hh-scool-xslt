@@ -4,9 +4,9 @@
 
     <xsl:template match="doc" mode="body">
         <body>
-            <xsl:apply-templates select="navigationReferences" mode="navigationReferences"/>
-            <xsl:apply-templates select="headerReferences" mode="headerReferences"/>
-            <xsl:apply-templates select="sliderSections" mode="sliderSections"/>
+            <xsl:apply-templates select="siteNavigation" mode="siteNavigation"/>
+            <xsl:apply-templates select="headerNavigation" mode="headerNavigation"/>
+            <xsl:apply-templates select="sliders" mode="sliders"/>
         </body>
     </xsl:template>
 </xsl:stylesheet>
