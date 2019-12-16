@@ -1,5 +1,12 @@
 <doc>
     <currentCity>Москва</currentCity>
+    <login state="no">
+        <name></name>
+        <surname></surname>
+        <patronymic></patronymic>
+        <email></email>
+        <number></number>
+    </login>
     <mainMenu>
         <item url="/">Шоурум</item>
         <item url="/">Оплата</item>
@@ -7,14 +14,20 @@
         <item url="/">Самовывоз</item>
         <item url="/" >Контактная информация</item>
     </mainMenu>
+    <navCatalog>
+        <item url="/">Одежда</item>
+        <item url="/">Сумки</item>
+        <item url="/">Аксессуары</item>
+        <item url="/">Офисные принадлежности</item>
+    </navCatalog>
     <slider>
         <sliderToCatalog>
             <slide active="true" img="images/img-01.png" img_x="images/img-01.png 1x, images/img-01@2x.png 2x, images/img-01@3x.png 3x">
                 Мужская и женская одежда с&#160;символикой HeadHunter
             </slide>
-            <slide text="" img="" img_x=""/>
-            <slide text="" img="" img_x=""/>
-            <slide text="" img="" img_x=""/>
+            <slide text="" img="" img_x=""></slide>
+            <slide text="" img="" img_x=""></slide>
+            <slide text="" img="" img_x=""></slide>
         </sliderToCatalog>
     </slider>
     <services>
@@ -51,7 +64,7 @@
         </product>
     </products>
     <logo>
-        <first img="css/blocks/logo/logo.svg"></first>
-        <second img="/icons/second-logo.svg"></second>
+        <first img="css/blocks/logo/logo.svg" alt="hh.ru" url="http://hh.ru"/>
+        <second img="/icons/second-logo.svg" alt="hh.ru" url="http://hh.ru/"/>
     </logo>
 </doc>

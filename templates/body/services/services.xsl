@@ -3,12 +3,12 @@
 
     <xsl:import href="services-item.xsl"/>
 
-    <xsl:template match="/doc" mode="services">
+    <xsl:template match="services" mode="services">
         <section class="services-section">
             <div class="columns-wrapper">
                 <div class="columns-row">
                     <div class="services-content">
-                        <xsl:apply-templates select="services" mode="services-column"/>
+                        <xsl:apply-templates select="." mode="services-column"/>
                     </div>
                 </div>
             </div>

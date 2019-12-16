@@ -19,7 +19,7 @@
                                 <xsl:apply-templates select="apps" mode="apps"/>
                             </div>
                             <div class="column column_s-2 column_m-3 column_l-4">
-                                <xsl:apply-templates select="logo/second" mode="second-logo"/>
+                                <xsl:apply-templates select="logo" mode="second-logo"/>
                             </div>
                         </div>
                     </div>

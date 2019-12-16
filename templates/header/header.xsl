@@ -3,10 +3,21 @@
 
     <xsl:import href="nav-catalog/nav-catalog.xsl"/>
     <xsl:import href="login/login.xsl"/>
-    <xsl:import href="search/search.xsl"/>
+    <xsl:import href="search-button/search-button.xsl"/>
     <xsl:import href="first-logo/first-logo.xsl"/>
 
     <xsl:template match="/doc" mode="header">
+        <header class="header">
+            <div class="columns-wrapper">
+                <div class="header__content">
+                    <xsl:apply-templates select="logo" mode="header-logo"/>
+                    <xsl:apply-templates select="navCatalog" mode="nav-catalog"/>
+                    <div class="header__fill"></div>
+                    <xsl:call-template name="search-button"/>
+                    <xsl:apply-templates select="login" mode="login"/>
+                </div>
+            </div>
+        </header>
 
     </xsl:template>
 
