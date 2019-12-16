@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-    <xsl:import href="../dots-for-slider/dots-for-slider.xsl"/>
+    <xsl:import href="../../dots-for-slider/dots-for-slider.xsl"/>
 
     <xsl:template match="slide[@active='true']" mode="slider-content">
         <div class="slider-content__image-container">

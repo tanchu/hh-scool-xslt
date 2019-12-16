@@ -572,6 +572,7 @@ input[type=radio]:checked + .radio-button-text::before {
   margin-bottom: 20px;
   text-align: center;
   cursor: pointer;
+  justify-content: center;
 }
 .product-card__image-container {
   margin-bottom: 10px;
@@ -585,7 +586,7 @@ input[type=radio]:checked + .radio-button-text::before {
   font: bold 16px/1.2 ProximaNovaCond, Arial, sans-serif;
   margin-bottom: 10px;
 }
-.product-card__name_order {
+.product-card__name_full {
   font: bold 18px/1.2 ProximaNovaCond, Arial, sans-serif;
   margin-bottom: 5px;
 }
@@ -606,16 +607,25 @@ input[type=radio]:checked + .radio-button-text::before {
   top: 10px;
   left: 10px;
 }
-.product-card__sale_order {
+.product-card__sale_full {
   width: 40px;
   height: 40px;
   font: 14px/40px ProximaNovaCond, Arial, sans-serif;
 }
 .product-card__description {
-  text-align: center;
+  width: 290px;
+  padding: 0 15px;
   font: 14/1.43 Arial;
   margin-top: 10px;
   color: #666;
+  text-align: center;
+  box-sizing: border-box;
+}
+.product-card__sizes {
+  width: 100%;
+  display: flex;
+  margin-top: 5px;
+  justify-content: center;
 }
 .services-section {
   background-color: #eee;
@@ -892,14 +902,15 @@ input[type=radio]:checked + .radio-button-text::before {
   width: 63px;
   flex-grow: 0;
   margin-left: -1px;
+  text-align: center;
 }
 .form-order-contact-info-number_number-number {
   flex-grow: 1;
   margin-left: -1px;
 }
 .group-buttons {
-  display: flex;
   width: 100%;
+  display: flex;
   margin-top: 5px;
 }
 .radio-button-text {

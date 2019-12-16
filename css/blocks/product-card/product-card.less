@@ -3,6 +3,7 @@
     margin-bottom: 20px;
     text-align: center;
     cursor: pointer;
+    justify-content: center;
 
     &__image-container {
         margin-bottom: 10px;
@@ -18,7 +19,7 @@
         font: bold 16px/1.2 @font-family-heading;
         margin-bottom: 10px;
 
-        &_order {
+        &_full {
             font: bold 18px/1.2 @font-family-heading;
             margin-bottom: 5px;
         }
@@ -42,7 +43,7 @@
         top: 10px;
         left: 10px;
 
-        &_order {
+        &_full {
             width: 40px;
             height: 40px;
             font: 14px/40px @font-family-heading;
@@ -50,9 +51,19 @@
     }
 
     &__description {
-        text-align: center;
+        width: 290px;
+        padding: 0 15px;
         font: 14/1.43 Arial;
         margin-top: 10px;
         color: #666;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    &__sizes {
+        width: 100%;
+        display: flex;
+        margin-top: 5px;
+        justify-content: center;
     }
 }
