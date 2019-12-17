@@ -14,7 +14,7 @@
     <xsl:import href="templates/slider.xsl" />
     <xsl:import href="templates/header.xsl" />
     <xsl:import href="templates/footer.xsl" />
-    <xsl:import href="templates/goods.xsl" />
+    <xsl:import href="templates/product.xsl" />
     
     <xsl:output method="html" 
                 encoding = "utf-8"/>
@@ -35,7 +35,7 @@
                     <xsl:apply-templates select="." mode="navbar-section" />
                     <xsl:apply-templates select="." mode="header" />
                     <xsl:apply-templates select="slider" mode="slider" />
-                    <xsl:apply-templates select="popularGoods" mode="popular-goods" />
+                    <xsl:apply-templates select="popularProducts" mode="popular-products" />
                     <xsl:apply-templates select="howWeWork" mode="how-we-work" />
                     <xsl:apply-templates select="." mode="footer" />
                 </div>
@@ -47,7 +47,7 @@
     <xsl:template match="popup-data" mode="order-popup">
         <div class="popup-wrapper">
             <div class="product-card-wrapper">
-                <xsl:apply-templates select="good" mode="good" />
+                <xsl:apply-templates select="product" mode="product" />
                 <button class="button button__long default-button">Заказать</button>
             </div>
         </div>
@@ -68,7 +68,7 @@
                         <button class="button button__long default-button">Оформить заказ</button>
                     </div>
                     <div class="column column_s-2 column_m-3 column_l-5">
-                        <xsl:apply-templates select="good" mode="good-form" />
+                        <xsl:apply-templates select="product" mode="product-form" />
                     </div>
                 </div>
             </div>

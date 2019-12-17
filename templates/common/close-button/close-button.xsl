@@ -8,7 +8,7 @@
         </div>
     </xsl:template>
 
-    <xsl:template match="closeButton" mode="close-button-good">
+    <xsl:template match="closeButton" mode="close-button-product">
         <div class="product-card__close-button">
             <xsl:apply-templates select="." mode="close-button" />
         </div>

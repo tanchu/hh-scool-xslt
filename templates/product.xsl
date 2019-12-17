@@ -7,35 +7,35 @@
     
 
 
-    <xsl:template match="popularGoods" mode="popular-goods">
+    <xsl:template match="popularProducts" mode="popular-products">
         <section class="content-section">
             <div class="columns-wrapper">
                 <h2 class="heading heading_level-2">Популярные товары</h2>
                 <div class="columns-row">
-                    <xsl:apply-templates select="good" mode="good-column" />
+                    <xsl:apply-templates select="product" mode="product-column" />
                 </div>
             </div>
         </section>
     </xsl:template>
 
-    <xsl:template match="good" mode="good-column">
+    <xsl:template match="product" mode="product-column">
         <div class="column column_s-1 column_m-2 column_l-4">
-            <xsl:apply-templates select="." mode="good" />
+            <xsl:apply-templates select="." mode="product" />
         </div>
     </xsl:template>
 
-    <xsl:template match="good" mode="good-form">
+    <xsl:template match="product" mode="product-form">
         <div class="product-card-form-wrapper">
-            <xsl:apply-templates select="." mode="good" />
+            <xsl:apply-templates select="." mode="product" />
         </div>
     </xsl:template>
 
-    <xsl:template match="good" mode="good">
+    <xsl:template match="product" mode="product">
         <div class="product-card">
             <div class="product-card__image-container">
                 <img class="product-card__image" src="{img}" />
                 <xsl:apply-templates select="oldPrice" mode="sale" />
-                <xsl:apply-templates select="closeButton" mode="close-button-good" />
+                <xsl:apply-templates select="closeButton" mode="close-button-product" />
             </div>
             <div class="product-card__name">
                 <xsl:value-of select="name" />
@@ -47,7 +47,7 @@
                 
             </div>
             <xsl:apply-templates select="description" mode="description" />
-            <xsl:apply-templates select="sizes" mode="good-sizes" />
+            <xsl:apply-templates select="sizes" mode="product-sizes" />
         </div>
     </xsl:template>
 
@@ -67,13 +67,13 @@
         </span>
     </xsl:template>
 
-    <xsl:template match="good/sizes" mode="good-sizes">
+    <xsl:template match="product/sizes" mode="product-sizes">
         <div class="product-card__sizes">
-            <xsl:apply-templates select="size" mode="good-size" />
+            <xsl:apply-templates select="size" mode="product-size" />
         </div>
     </xsl:template>
 
-    <xsl:template match="sizes/size" mode="good-size">
+    <xsl:template match="sizes/size" mode="product-size">
         <div class="product-card__size">
             <label class="radio-box">
                 <input class="radio-box__input" type="radio" name="size" />
