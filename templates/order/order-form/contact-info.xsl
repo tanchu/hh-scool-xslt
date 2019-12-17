@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-    <xsl:template match="login" mode="contact-info">
+    <xsl:template match="account" mode="contact-info">
         <xsl:variable name="state" select="@state"/>
         <label class="form-order__label">Контактное лицо</label>
         <input class="input" type="text" placeholder="ФИО">

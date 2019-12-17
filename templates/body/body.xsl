@@ -13,7 +13,7 @@
     <xsl:template match="/doc" mode="body">
         <xsl:apply-templates select="." mode="top-section"/>
         <xsl:apply-templates select="." mode="header"/>
-        <xsl:apply-templates select="slider/sliderToCatalog" mode="slider-to-catalog"/>
+        <xsl:apply-templates select="sliders/sliderToCatalog" mode="slider-to-catalog"/>
         <xsl:apply-templates select="products" mode="popular-products"/>
         <xsl:apply-templates select="services" mode="services"/>
         <xsl:apply-templates select="." mode="footer"/>

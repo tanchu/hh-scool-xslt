@@ -20,7 +20,7 @@
                     <div class="column column_s-2 column_m-3 column_l-6">
                         <form class="popup-content-form-order">
                             <div class="form-order-group">
-                                <xsl:apply-templates select="login" mode="contact-info"/>
+                                <xsl:apply-templates select="account" mode="contact-info"/>
                             </div>
                             <div class="form-order-group">
                                 <xsl:apply-templates select="delivery" mode="type-delivery"/>

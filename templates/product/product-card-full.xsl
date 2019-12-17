@@ -1,34 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-    <xsl:import href="sizes.xsl"/>
+    <xsl:import href="product-card/product-sizes.xsl"/>
+    <xsl:import href="product-card/product-image.xsl"/>
+    <xsl:import href="product-card/product-sale.xsl"/>
+    <xsl:import href="product-card/product-name.xsl"/>
+    <xsl:import href="product-card/product-price.xsl"/>
+    <xsl:import href="product-card/product-desription.xsl"/>
 
     <xsl:template match="product" mode="product-card-full">
-        <xsl:variable name="sale" select="price/current/@sale"/>
         <div class="product-card">
             <div class="product-card__image-container">
-                <img class="product-card__image" src="{image/@img}" alt="{name}"/>
-                <xsl:if test="$sale=1">
-                    <div class="product-card__sale product-card__sale_full">sale</div>
+                <xsl:apply-templates select="." mode="product-image"/>
+                <xsl:if test="price/current/@sale=1">
+                    <xsl:apply-templates select="." mode="product-sale-full"/>
                 </xsl:if>
             </div>
-            <div class="product-card__name product-card__name_full"><xsl:value-of select="name"/></div>
-            <div class="product-card__price">
-                <xsl:if test="$sale=1">
-                    <span class="product-card__old-price">
-                        <xsl:value-of select="price/default"/>
-                        <xsl:text> </xsl:text>
-                        <xsl:value-of select="key('key-currency', price/@val)"/>
-                    </span>
-                </xsl:if>
-                <xsl:value-of select="price/current"/>
-                <xsl:text> </xsl:text>
-                <xsl:value-of select="key('key-currency', price/@val)"/>
-            </div>
-            <div class="product-card__description"><xsl:value-of select="description"/></div>
-            <div class="product-card__sizes">
-                <xsl:apply-templates select="sizes" mode="sizes-item"/>
-            </div>
+            <xsl:apply-templates select="." mode="product-name-full"/>
+            <xsl:apply-templates select="." mode="product-price"/>
+            <xsl:apply-templates select="." mode="product-description"/>
+            <xsl:apply-templates select="." mode="product-sizes"/>
         </div>
     </xsl:template>
 
