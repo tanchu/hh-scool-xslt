@@ -5,59 +5,57 @@
     <xsl:template match="pageSliders" mode="goods-carousel-section">
         <section class="carousel-section">
             <div class="columns-wrapper">
-                <div class="columns-row">
-                    <xsl:apply-templates select="slide" mode="carousel-section-slide-part-1"/>
-                    <xsl:apply-templates select="slide" mode="carousel-section-slide-part-2"/>
-                    <div class="column column_s-2 column_m-6 column_l-12 carousel-section__column">
-                        <div class="carousel-section__pagination">
-                            <div class="pagination">
-                                <xsl:apply-templates select="slide" mode="carousel-section-pagination"/>
-                            </div>
-                        </div>
+                <xsl:apply-templates select="slide" mode="carousel-section-slide"/>
+                <div class="carousel-section__pagination">
+                    <div class=" pagination">
+                        <xsl:apply-templates select="slide" mode="carousel-section-pagination"/>
                     </div>
                 </div>
             </div>
         </section>
     </xsl:template>
 
-    <xsl:template match="slide" mode="carousel-section-slide-part-1">
-        <div class="column column_s-2 column_m-3 column_l-6 carousel-section__slide-part-1">
+
+
+    <xsl:template match="slide" mode="carousel-section-slide">
+        <div>
+            <xsl:attribute name="class">
+                <xsl:text>carousel-section__slide </xsl:text>
+            </xsl:attribute>
             <xsl:if test="@active = 'false'">
                 <xsl:attribute name="class">
-                    <xsl:text>carousel-section__slide-part-1_hide</xsl:text>
+                    <xsl:text>carousel-section__slide carousel-section__slide_hide</xsl:text>
                 </xsl:attribute>
             </xsl:if>
-            <h1 class="carousel-section__heading heading heading_level-1">
-                <xsl:value-of select="description"/>
-            </h1>
-            <div class="carousel-section__button">
-                <button class="carousel-section-button">
-                    <xsl:value-of select="descriptionCallToAction"/>
-                </button>
+
+            <div class="columns-row">
+                <div class="column column_s-2 column_m-3 column_l-6">
+                    <h1 class="carousel-section__heading heading heading_level-1">
+                        <xsl:value-of select="description"/>
+                    </h1>
+                    <div class="carousel-section__button">
+                        <button class="carousel-section-button">
+                            <xsl:value-of select="descriptionCallToAction"/>
+                        </button>
+                    </div>
+                </div>
+                <div class="column column_s-2 column_m-3 column_l-6 carousel-section__column">
+                    <div class="carousel-section__image-container">
+                        <img class="carousel-section__image">
+                            <xsl:attribute name="src">
+                                <xsl:value-of select="image/@url"/>
+                            </xsl:attribute>
+                            <xsl:attribute name="alt">
+                                <xsl:apply-templates select="description"/>
+                            </xsl:attribute>
+                        </img>
+                    </div>
+                </div>
             </div>
         </div>
     </xsl:template>
 
 
-    <xsl:template match="slide" mode="carousel-section-slide-part-2">
-        <div class="column column_s-2 column_m-3 column_l-6 carousel-section__column carousel-section__slide-part-2">
-            <xsl:if test="@active = 'false'">
-                <xsl:attribute name="class">
-                    <xsl:text>carousel-section__slide-part-2_hide</xsl:text>
-                </xsl:attribute>
-            </xsl:if>
-            <div class="carousel-section__image-container">
-                <img class="carousel-section__image">
-                    <xsl:attribute name="src">
-                        <xsl:value-of select="image/@url"/>
-                    </xsl:attribute>
-                    <xsl:attribute name="alt">
-                        <xsl:apply-templates select="description"/>
-                    </xsl:attribute>
-                </img>
-            </div>
-        </div>
-    </xsl:template>
 
     <xsl:template match="slide" mode="carousel-section-pagination">
         <div>
