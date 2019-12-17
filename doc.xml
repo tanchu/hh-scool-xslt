@@ -9,6 +9,7 @@
     <location>
         <country>Россия</country>
         <city url="#">Москва</city>
+        <telCode>+7</telCode>
     </location>
     <currencies>
         <currency type="ru" value="₽"/>
@@ -46,19 +47,19 @@
             <title>Зонт</title>
             <description>Красный зонт с логотипом HH</description>
             <image url="images/product-1.jpg"/>
-            <price type="ru">1&#160;990</price>
+            <price currency="ru">1&#160;990</price>
         </item>
         <item id="2" sale="false">
             <title>Сумка</title>
             <description>Красная сумка с логотипом HH</description>
             <image url="images/product-2.jpg"/>
-            <price type="ru">290</price>
+            <price currency="ru">290</price>
         </item>
         <item id="3" sale="false">
             <title>Шлепанцы</title>
             <description>Красные шлепанцы с логотипом HH</description>
             <image url="images/product-3.jpg"/>
-            <price type="ru">790</price>
+            <price currency="ru">790</price>
             <sizes>
                 <size available="true" type="xs"/>
                 <size available="true" type="x"/>
@@ -72,7 +73,7 @@
             <title>Футболка</title>
             <description>Красная футболка с логотипом HH</description>
             <image url="images/product-4.jpg"/>
-            <price type="ru">690</price>
+            <price currency="ru">690</price>
             <salePrice>390</salePrice>
             <sizes>
                 <size available="true" type="xs"/>
@@ -87,7 +88,7 @@
             <title>Толстовка</title>
             <description>Красная толстовка с логотипом HH</description>
             <image url="images/product-5.jpg"/>
-            <price type="ru">3 990</price>
+            <price currency="ru">3 990</price>
             <sizes>
                 <size available="true" type="xs"/>
                 <size available="true" type="x"/>
@@ -101,7 +102,7 @@
             <title>Подушка</title>
             <description>Красная подушка с логотипом HH</description>
             <image url="images/product-6.jpg"/>
-            <price type="ru">990</price>
+            <price currency="ru">990</price>
         </item>
     </popularGoods>
     <features>

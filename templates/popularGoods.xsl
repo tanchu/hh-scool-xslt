@@ -51,7 +51,7 @@
                 <xsl:value-of select="price"/>
             </xsl:if>
             <xsl:text> </xsl:text>
-            <xsl:apply-templates select="key('currency-cache', price/@type )" mode="currencyCash"/>
+            <xsl:apply-templates select="key('currency-cache', price/@currency )" mode="currencyCash"/>
         </div>
     </xsl:template>
 
