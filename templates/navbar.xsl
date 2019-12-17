@@ -6,7 +6,7 @@
         <section class="navbar">
             <div class="columns-wrapper">
                 <div class="navbar__content">
-                    <xsl:apply-templates select="./../location/city" mode="page-navbar-location-city"/>
+                    <xsl:apply-templates select="/doc/location/city" mode="page-navbar-location-city"/>
                     <div class="navbar__fill"></div>
                     <xsl:apply-templates select="siteNavigation" mode="page-navbar-site-navigation"/>
                 </div>
