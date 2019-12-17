@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <xsl:template match="siteNavigation" mode="siteNavigation">
+    <xsl:template match="siteNavigation" mode="site-navigation">
         <section class="navbar">
             <div class="columns-wrapper">
                 <div class="navbar__content">
@@ -12,7 +12,7 @@
                     </div>
                     <nav class="navbar__nav">
                         <ul class="nav navbar__nav-list">
-                            <xsl:apply-templates select="reference" mode="siteNavigation-reference" />
+                            <xsl:apply-templates select="item" mode="site-navigation-item" />
                         </ul>
                     </nav>
                 </div>
@@ -20,7 +20,7 @@
         </section>
     </xsl:template>
 
-    <xsl:template match="reference" mode="siteNavigation-reference">
+    <xsl:template match="item" mode="site-navigation-item">
         <li class="nav__item navbar__nav-item">
             <a href="{@src}" class="nav__link navbar__nav-link">
                 <xsl:value-of select="."/>

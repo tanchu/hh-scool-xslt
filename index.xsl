@@ -5,11 +5,18 @@
     <xsl:import href="templates/body.xsl"/>
     <xsl:import href="templates/siteNavigation.xsl"/>
     <xsl:import href="templates/headerNavigation.xsl"/>
-    <xsl:import href="templates/headerReferences.xsl"/>
     <xsl:import href="templates/headerLogo.xsl"/>
     <xsl:import href="templates/headerLoginButton.xsl"/>
     <xsl:import href="templates/sliders.xsl"/>
+    <xsl:import href="templates/products.xsl"/>
+    <xsl:import href="templates/key.xsl"/>
 
+    <xsl:import href="templates/advantages.xsl"/>
+    <xsl:import href="templates/footer.xsl"/>
+    <xsl:import href="templates/footerSocials.xsl"/>
+    <xsl:import href="templates/footerMobile.xsl"/>
+    <xsl:import href="templates/footerLogo.xsl"/>
+    <xsl:import href="templates/statisticalInformation.xsl"/>
     <xsl:output method="html"/>
 
     <xsl:template match="/doc">
