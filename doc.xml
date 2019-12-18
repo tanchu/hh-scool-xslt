@@ -13,10 +13,21 @@
     <navItem url="/">Аксессуары</navItem>
     <navItem url="/">Офисные принадлежности</navItem>
   </shopNav>
+  <userInfo>
+    <login auth="true"></login>
+    <name>Matania</name>
+  </userInfo>
+  <mainSlider>
+    <slide id="1">
+      <description>Мужская и женская одежда с символикой HeadHunter</description>
+      <image src="images/carousel-product-1.png">Мужская и женская одежда</image>
+    </slide>
+    <slide id="2">
+      <description>Офисные принадлежности с символикой HeadHunter</description>
+      <image src="images/carousel-product-2.png">Офисные принадлежности</image>
+    </slide>
+  </mainSlider>
 
-
-  <buttons>
-    <button type="login">Войти</button>
-  </buttons>
+  <buttons>КНОПКА</buttons>
 
 </doc>

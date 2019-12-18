@@ -26,5 +26,8 @@
 
 P.S. Крайний срок близко - 23.12.2019
 
-
-msxsl doc.xml index.xsl -o index.html
+## Запуск на windows:
+----преобразование
+    msxsl doc.xml index.xsl -o index.html
+----преобразование и поднятие localhost
+    yarn proc-dev
