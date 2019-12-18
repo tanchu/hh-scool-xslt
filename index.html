@@ -3,8 +3,11 @@
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width">
 <title>HTML и CSS</title>
+<link rel="icon" type="image/png" sizes="32x32" href="css/favicon-32x32.6144d4ff.png">
+<link rel="icon" type="image/png" sizes="16x16" href="css/favicon-16x16.29f0286c.png">
 <link rel="stylesheet" href="css/styles.348d50ad.css">
 </head>
 </head>
@@ -63,7 +66,7 @@
 <button class="header-button-icon header-button-icon_search">Поиск</button>
 </div>
 <div class="header__button">
-<button class="header-button-icon header-button-icon_login">Войти</button>
+<button class="header-button-icon header-button-icon_login">Войти</button><button class="header-button header-button_login">Войти</button>
 </div>
 <div class="header__button header__button_menu">
 <button class="header-button-icon header-button-icon_menu">Меню</button>
@@ -130,7 +133,8 @@
 <div class="column column_s-1 column_m-2 column_l-4">
 <div class="product-card">
 <div class="product-card__image-container">
-<img class="product-card__image" src="css/product-4.0431c0da.jpg"></div>
+<img class="product-card__image" src="css/product-4.0431c0da.jpg"><div class="product-card__sale">sale</div>
+</div>
 <div class="product-card__name">Футболка</div>
 <div class="product-card__price">
 <span class="product-card__old-price">690</span>390 ₽</div>
@@ -210,6 +214,103 @@
 </div>
 </div>
 </footer>
+<div class="popup-order">
+<div class="columns-wrapper">
+<div class="columns-row">
+<div class="column column_s-2 column_m-3 column_l-7">
+<div class="popup-order__form-container">
+<form action="#" class="form popup-order__form">
+<div class="form__items">
+<div class="heading popup-order__form-title">Оформление заказа</div>
+<div class="form__block">
+<h3 class="heading heading_level-3">Контактное лицо</h3>
+<div class="form__item">
+<input type="text" class="input" placeholder="ФИО" required="">
+</div>
+<div class="form__item">
+<input type="text" class="input" placeholder="Электронная почта" required="">
+</div>
+<div class="form__item">
+<input type="text" class="input input_phone-pre" placeholder="+7" maxlength="2" required=""><input type="text" class="input input_phone-code" placeholder="Код" maxlength="3" pattern="[0-9]3" required=""><input type="text" class="input input_phone-number" placeholder="Номер" pattern="[0-9]7" maxlength="7" required="">
+</div>
+</div>
+<div class="form__block">
+<h3 class="heading heading_level-3">Способ получения заказа</h3>
+<div class="form__item">
+<label class="form__label popup-order__form-label" for="delivery-1"><input type="radio" id="delivery-1" name="delivery" class="radio" value="devivery-1"><span class="radio-button popup-order__form-button">Самовывоз</span></label><label class="form__label popup-order__form-label" for="delivery-2"><input type="radio" id="delivery-2" name="delivery" class="radio" value="devivery-2" checked=""><span class="radio-button popup-order__form-button">Доставка</span></label>
+</div>
+</div>
+<div class="form__block">
+<h3 class="heading heading_level-3">Адрес</h3>
+<div class="form__item">
+<select name="city" class="select select_arrows"><option disabled="" value="null" class="option" selected="">Город</option><option value="0" class="option">Москва</option><option value="1" class="option">Санкт-Петербург</option><option value="2" class="option">Владимир</option></select>
+</div>
+<div class="form__item">
+<textarea name="address" class="textarea" placeholder="Адрес" required=""></textarea>
+</div>
+</div>
+<div class="form__block">
+<h3 class="heading heading_level-3">Оплата</h3>
+<div class="form__item">
+<label for="online" class="form__label"><input type="radio" name="pay" id="online" class="radio" value="online" checked=""><span class="radio-box"></span><span class="radio-text">Online-оплата</span></label>
+</div>
+<div class="form__item">
+<label for="cash" class="form__label"><input type="radio" name="pay" id="cash" class="radio" value="cash"><span class="radio-box"></span><span class="radio-text">Наличными</span></label>
+</div>
+<div class="form__item">
+<label for="card" class="form__label"><input type="radio" name="pay" id="card" class="radio" value="card"><span class="radio-box"></span><span class="radio-text">Картой при получении</span></label>
+</div>
+</div>
+<div class="form__block">
+<h3 class="heading heading_level-3">Уведомления</h3>
+<div class="form__item">
+<label for="sms" class="form__label"><input type="checkbox" name="sms" id="sms" class="checkbox"><span class="checkbox-box"></span><span class="checkbox-text">Хочу получать SMS уведомления</span></label>
+</div>
+</div>
+<div class="form__item">
+<button type="submit" class="button popup-order__form-button popup-order__form-button_submit">Оформить заказ</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class="column column_s-0 column_m-0 column_l-1"></div>
+<div class="column column_s-0 column_m-3 column_l-4">
+<div class="popup-order__product">
+<div class="product-card popup-order__card">
+<div class="product-card__image-container">
+<img class="product-card__image" src="css/product-4.0431c0da.jpg"><div class="product-card__sale">sale</div>
+</div>
+<div class="product-card__name">Футболка</div>
+<div class="product-card__price">
+<span class="product-card__old-price">690</span>390 ₽</div>
+<div class="product-card__description">Красная хлопоковая футболка с&nbsp;коротким руковом</div>
+<div class="product-card__sizing-container">
+<div class="product-card__sizing-box">
+<label><input type="radio" name="size" class="radio" value="XS"><span class="radio-button product-card__sizing-button">XS</span></label>
+</div>
+<div class="product-card__sizing-box">
+<label><input type="radio" name="size" class="radio" value="X"><span class="radio-button product-card__sizing-button">X</span></label>
+</div>
+<div class="product-card__sizing-box">
+<label><input type="radio" name="size" class="radio" value="M"><span class="radio-button product-card__sizing-button">M</span></label>
+</div>
+<div class="product-card__sizing-box">
+<label><input type="radio" name="size" class="radio" value="L"><span class="radio-button product-card__sizing-button">L</span></label>
+</div>
+<div class="product-card__sizing-box">
+<label><input type="radio" name="size" class="radio" value="XL"><span class="radio-button product-card__sizing-button">XL</span></label>
+</div>
+<div class="product-card__sizing-box">
+<label><input type="radio" name="size" class="radio" value="XXL"><span class="radio-button product-card__sizing-button product-card__sizing-button_last">XXL</span></label>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </body>
 </body>
 </html>

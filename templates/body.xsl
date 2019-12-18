@@ -10,6 +10,7 @@
             <xsl:apply-templates select="products" mode="products"/>
             <xsl:apply-templates select="advantages" mode="advantages"/>
             <xsl:apply-templates select="footer" mode="footer"/>
+            <xsl:apply-templates select="popupOrder" mode="popup-order"/>
         </body>
     </xsl:template>
 </xsl:stylesheet>

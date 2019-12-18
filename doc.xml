@@ -2,11 +2,31 @@
 
 <doc>
     <userInfo>
-        <loginStatus isLogged="false"/>
-        <nickName>User123</nickName>
+        <id type="integer">123</id>
+        <!-- <login>user123</login> -->
+        <email>a@gmail.com</email>
+        <purchasingUser type="boolean">true</purchasingUser>
+        <firstname>Name</firstname>
+        <lastname>Lastname</lastname>
+        <active type="boolean">true</active>
+        <defaultLocale>ru</defaultLocale>
         <userCurrency type="currency">₽</userCurrency>
         <userCountry>Россия</userCountry>
         <userCity>Москва</userCity>
+        <role>
+            <id type="integer">3</id>
+            <createdAt type="dateTime">2019-08-05T19:46:31+03:00</createdAt>
+            <updatedAt type="dateTime">2019-08-05T19:46:31+03:00</updatedAt>
+            <name>User</name>
+            <description>Standard role for all users who need to create and/or approve requisitions</description>
+            <omnipotent type="boolean">false</omnipotent>
+            <systemRole type="boolean">true</systemRole>
+        </role>
+        <defaultCurrency>
+            <id type="integer">1</id>
+            <code>RUB</code>
+            <decimals type="integer">2</decimals>
+        </defaultCurrency>
     </userInfo>
 
     <siteNavigation>
@@ -61,9 +81,17 @@
         <item id="4" sale="true">
             <image>css/product-4.0431c0da.jpg</image>
             <name>Футболка</name>
-            <description>Красная футболка с логотипом HH</description>
+            <description>Красная хлопоковая футболка с&#160;коротким руковом</description>
             <oldPrice type="rub">690</oldPrice>
             <price>390</price>
+            <sizes>
+                <size type="XS" available="true"/>
+                <size type="X" available="true"/>
+                <size type="M" available="true"/>
+                <size type="L" available="true"/>
+                <size type="XL" available="true"/>
+                <size type="XXL" available="true"/>
+            </sizes>
         </item>
         <item id="5" sale="false">
             <image>css/product-5.50c4247e.jpg</image>
@@ -118,4 +146,6 @@
             <countOfInvitations value="1211363" one="приглашение" two="приглашения" five="приглашений">1&#160;211&#160;363</countOfInvitations>
         </statisticalInformation>
     </footer>
+
+    <popupOrder></popupOrder>
 </doc>

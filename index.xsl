@@ -17,6 +17,7 @@
     <xsl:import href="templates/footerMobile.xsl"/>
     <xsl:import href="templates/footerLogo.xsl"/>
     <xsl:import href="templates/statisticalInformation.xsl"/>
+    <xsl:import href="templates/popupOrder.xsl"/>
     <xsl:output method="html"/>
 
     <xsl:template match="/doc">

@@ -16,7 +16,7 @@
             <div class="product-card">
                 <div class="product-card__image-container">
                     <img class="product-card__image" src="{image}" />
-                    <xsl:apply-templates select="salePrice" mode="sale" />
+                    <xsl:apply-templates select="oldPrice" mode="sale" />
                 </div>
                 <div class="product-card__name">
                     <xsl:value-of select="name" />
@@ -31,7 +31,7 @@
         </div>
     </xsl:template>
 
-    <xsl:template match="salePrice" mode="sale">
+    <xsl:template match="oldPrice" mode="sale">
         <div class="product-card__sale">sale</div>
     </xsl:template>
 

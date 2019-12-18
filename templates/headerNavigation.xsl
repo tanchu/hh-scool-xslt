@@ -16,6 +16,7 @@
                     </div>
 
                     <xsl:apply-templates select="/doc/userInfo" mode="header-navigation-header-login-button" />
+
                     <div class="header__button header__button_menu">
                         <button class="header-button-icon header-button-icon_menu">Меню</button>
                     </div>
