@@ -2,9 +2,10 @@
 
 <doc>
     <userInfo>
-        <status logged="false"/>
-        <name>Иван</name>
-        <surname>Иванов</surname>
+        <fullName>Иванов Иван Иванович</fullName>
+        <email>ivan@mail.ru</email>
+        <photo>ivan.jpg</photo>
+        <role>anonymous</role>
     </userInfo>
     <location>
         <country>Россия</country>
@@ -78,7 +79,7 @@
             <sizes>
                 <size available="true" type="xs"/>
                 <size available="true" type="x"/>
-                <size available="true" type="m"/>
+                <size available="false" type="m"/>
                 <size available="true" type="l"/>
                 <size available="true" type="xl"/>
                 <size available="true" type="xxl"/>
@@ -132,27 +133,30 @@
     <copyRightYear>2019</copyRightYear>
     <copyRightHeading>Группа компаний HeadHunter</copyRightHeading>
     <statisticsInfo>
-        <numOfVacancies>684 978</numOfVacancies>
+        <numOfVacancies wordBase="ваканс">684 978</numOfVacancies>
         <numOfResumes>34 789 747</numOfResumes>
-        <numOfCompanies>858 923</numOfCompanies>
-        <numOfInvitations>1 211 363</numOfInvitations>
+        <numOfCompanies wordBase="компан">858 923</numOfCompanies>
+        <numOfInvitations wordBase="приглашен">1 211 363</numOfInvitations>
     </statisticsInfo>
     <delivery>
         <deliveryMethods>
-            <method type="selfPickup">Самовывоз</method>
-            <method type="deliveryPickup">Доставка</method>
+            <deliveryMethod type="selfPickup">Самовывоз</deliveryMethod>
+            <deliveryMethod type="deliveryPickup">Доставка</deliveryMethod>
         </deliveryMethods>
+        <cityLocation size="1">
+            <city>Город</city>
+        </cityLocation>
     </delivery>
     <payment>
         <paymentMethods>
-            <method type="paymentOnline">Оплата онлайн</method>
-            <method type="paymentCash">Наличными</method>
-            <method type="paymentCard">Картой при получении</method>
+            <paymentMethod type="paymentOnline">Онлайн-оплата</paymentMethod>
+            <paymentMethod type="paymentCash">Наличными</paymentMethod>
+            <paymentMethod type="paymentCard">Картой при получении</paymentMethod>
         </paymentMethods>
     </payment>
     <notification>
         <notificationMethods>
-            <method type="smsNotification">Хочу получать SMS уведомления</method>
+            <notificationMethod type="smsNotification">Хочу получать SMS уведомления</notificationMethod>
         </notificationMethods>
     </notification>
 </doc>

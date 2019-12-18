@@ -5,7 +5,7 @@
     <xsl:template name="head">
         <head>
             <meta name="viewport" content="width=device-width"/>
-            <title>HTML и CSS</title>
+            <title>XSLT and XPath</title>
             <link rel="stylesheet" href="css/styles.css"/>
         </head>
     </xsl:template>

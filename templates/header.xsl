@@ -12,7 +12,7 @@
                     <div class="header__button">
                         <button class="header-button-icon header-button-icon_search">Поиск</button>
                     </div>
-                    <xsl:apply-templates select="/doc/userInfo/status" mode="user-login-status"/>
+                    <xsl:apply-templates select="/doc/userInfo/role" mode="user-login-status"/>
                     <div class="header__button header__button_menu">
                         <button class="header-button-icon header-button-icon_menu">Меню</button>
                     </div>

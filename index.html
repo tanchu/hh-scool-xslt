@@ -2,7 +2,7 @@
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width">
-<title>HTML и CSS</title>
+<title>XSLT and XPath</title>
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body><section class="navbar"><div class="columns-wrapper">
@@ -34,28 +34,32 @@
 <div class="header__button header__button_menu"><button class="header-button-icon header-button-icon_menu">Меню</button></div>
 </div>
 </div></header><section class="carousel-section"><div class="columns-wrapper">
+<div class="carousel-section__slide ">
 <div class="columns-row">
-<div class="column column_s-2 column_m-3 column_l-6 carousel-section__slide-part-1">
+<div class="column column_s-2 column_m-3 column_l-6">
 <h1 class="carousel-section__heading heading heading_level-1">Мужская и женская одежда с символикой HeadHunter</h1>
 <div class="carousel-section__button"><button class="carousel-section-button">Перейти в каталог</button></div>
 </div>
-<div class="carousel-section__slide-part-1_hide">
+<div class="column column_s-2 column_m-3 column_l-6 carousel-section__column">
+<div class="carousel-section__image-container"><img class="carousel-section__image" src="images/slide-1.png" alt="Мужская и женская одежда с символикой HeadHunter"></div>
+</div>
+</div>
+</div>
+<div class="carousel-section__slide carousel-section__slide_hide">
+<div class="columns-row">
+<div class="column column_s-2 column_m-3 column_l-6">
 <h1 class="carousel-section__heading heading heading_level-1">Офисные принадлежности с символикой HeadHunter</h1>
 <div class="carousel-section__button"><button class="carousel-section-button">Перейти в каталог</button></div>
 </div>
-<div class="column column_s-2 column_m-3 column_l-6 carousel-section__column carousel-section__slide-part-2">
-<div class="carousel-section__image-container"><img class="carousel-section__image" src="images/slide-1.png" alt="Мужская и женская одежда с символикой HeadHunter"></div>
-</div>
-<div class="carousel-section__slide-part-2_hide">
+<div class="column column_s-2 column_m-3 column_l-6 carousel-section__column">
 <div class="carousel-section__image-container"><img class="carousel-section__image" src="images/slide-2.png" alt="Офисные принадлежности с символикой HeadHunter"></div>
 </div>
-<div class="column column_s-2 column_m-6 column_l-12 carousel-section__column">
+</div>
+</div>
 <div class="carousel-section__pagination">
-<div class="pagination">
+<div class=" pagination">
 <div class="pagination__dot pagination__dot_active"></div>
 <div class="pagination__dot "></div>
-</div>
-</div>
 </div>
 </div>
 </div></section><section class="content-section"><div class="columns-wrapper">
@@ -65,44 +69,44 @@
 <div class="product-card">
 <div class="product-card__image-container"><img class="product-card__image" src="images/product-1.jpg" alt="Зонт"></div>
 <div class="product-card__name">Зонт</div>
-<div class="product-card__price">1 990 ₽</div>
+<div class="product-card__price">1 990 ₽</div>
 </div>
 </div>
 <div class="column column_s-1 column_m-2 column_l-4">
 <div class="product-card">
 <div class="product-card__image-container"><img class="product-card__image" src="images/product-2.jpg" alt="Сумка"></div>
 <div class="product-card__name">Сумка</div>
-<div class="product-card__price">290 ₽</div>
+<div class="product-card__price">290 ₽</div>
 </div>
 </div>
 <div class="column column_s-1 column_m-2 column_l-4">
 <div class="product-card">
 <div class="product-card__image-container"><img class="product-card__image" src="images/product-3.jpg" alt="Шлепанцы"></div>
 <div class="product-card__name">Шлепанцы</div>
-<div class="product-card__price">790 ₽</div>
+<div class="product-card__price">790 ₽</div>
 </div>
 </div>
 <div class="column column_s-1 column_m-2 column_l-4">
 <div class="product-card">
-<div class="product-card__image-container"><img class="product-card__image" src="images/product-4.jpg" alt="Футболка"><div class="product-card__sale">sale</div>
-</div>
+<div class="product-card__image-container"><img class="product-card__image" src="images/product-4.jpg" alt="Футболка"></div>
+<div class="product-card__sale">sale</div>
 <div class="product-card__name">Футболка</div>
 <div class="product-card__price">
-<div class="product-card__old-price">690</div>390 ₽</div>
+<div class="product-card__old-price">690</div>390 ₽</div>
 </div>
 </div>
 <div class="column column_s-1 column_m-2 column_l-4">
 <div class="product-card">
 <div class="product-card__image-container"><img class="product-card__image" src="images/product-5.jpg" alt="Толстовка"></div>
 <div class="product-card__name">Толстовка</div>
-<div class="product-card__price">3 990 ₽</div>
+<div class="product-card__price">3 990 ₽</div>
 </div>
 </div>
 <div class="column column_s-1 column_m-2 column_l-4">
 <div class="product-card">
 <div class="product-card__image-container"><img class="product-card__image" src="images/product-6.jpg" alt="Подушка"></div>
 <div class="product-card__name">Подушка</div>
-<div class="product-card__price">990 ₽</div>
+<div class="product-card__price">990 ₽</div>
 </div>
 </div>
 </div>
@@ -151,9 +155,77 @@
 <hr class="footer__line">
 <div class="columns-row">
 <div class="column column_s-2 column_m-5 column_l-12">
-<div class="footer__copyright-info copyright-info">© <span class="copyright-info__year">2019</span> Группа компаний HeadHunter</div>
-<div class="statistics-info">Сегодня на сайте 684 978 вакансий, 34 789 747 резюме, 858 923 компании и за неделю 1 211 363 приглашения</div>
+<div class="copyright-info">© <span class="copyright-info__year">2019</span> Группа компаний HeadHunter</div>
+<div class="statistics-info">Сегодня на сайте 684 978 вакансий, 34 789 747 резюме, 858 923 компании и за неделю 1 211 363 приглашения</div>
 </div>
 </div>
-</div></footer></body>
+</div></footer><section><form class="form" action="/" method="post">
+<div class="columns-wrapper">
+<div class="form__button-close"><button class="button-close-icon button-close">
+                            Закрыть
+                        </button></div>
+<div class="columns-row">
+<div class="column column_s-2 column_m-3 column_l-7">
+<div class="form__section">
+<div class="form__input-main-contacts">
+<h1 class="heading heading_level-1">Оформление заказа</h1>
+<h4 class="heading heading_level-4">Контактное лицо</h4><input class="form__input-text input-text" type="text" name="fullName" placeholder="ФИО" value=""><input class="form__input-text input-text" type="text" name="email" placeholder="Электронная почта" value=""><div class="form__input-tel"><input class="input-tel input-tel__country-code" type="text" name="countryCode" readonly="" value="+7"><input class="input-tel input-tel__operator-code" type="text" name="operatorCode" placeholder="Код" value=""><input class="input-tel input-tel__number" type="text" name="telNumber" placeholder="Номер" value=""></div>
+</div>
+</div>
+<div class="form__section">
+<h4 class="heading heading_level-4">Способ получения заказа</h4>
+<div class="form__delivery-method">
+<div class="form__radio-button"><input class="radio-button-sqared radio-button-sqared__button" type="radio" name="deliveryMethod" value="selfPickup" id="selfPickup"><label class="radio-button-sqared__label" for="selfPickup">Самовывоз</label></div>
+<div class="form__radio-button"><input class="radio-button-sqared radio-button-sqared__button" type="radio" name="deliveryMethod" value="deliveryPickup" id="deliveryPickup"><label class="radio-button-sqared__label" for="deliveryPickup">Доставка</label></div>
+</div>
+</div>
+<div class="form__section">
+<div class="form__delivery-address">
+<h4 class="heading heading_level-4">Адрес</h4>
+<div class="select"><select class="select__select-field" name="cityLocataion" value="" size="1"><option class="select__item" value="">Город</option></select></div>
+<div class="form__textarea"><textarea type="textarea" class="textarea" placeholder="Адрес" name="addressExpaned"></textarea></div>
+</div>
+</div>
+<div class="form__section">
+<div class="form__payment-methods">
+<h4 class="heading heading_level-4">Оплата</h4>
+<div class="form__payment-method"><input class="radio-button-circle" type="radio" name="paymentMethod" value="paymentOnline" id="paymentOnline"><label class="radio-button-сircle__label" for="paymentOnline"> Онлайн-оплата</label></div>
+<div class="form__payment-method"><input class="radio-button-circle" type="radio" name="paymentMethod" value="paymentCash" id="paymentCash"><label class="radio-button-сircle__label" for="paymentCash"> Наличными</label></div>
+<div class="form__payment-method"><input class="radio-button-circle" type="radio" name="paymentMethod" value="paymentCard" id="paymentCard"><label class="radio-button-сircle__label" for="paymentCard"> Картой при получении</label></div>
+</div>
+</div>
+<div class="form__section">
+<div class="form__notification">
+<h4 class="heading heading_level-4">Уведомления</h4>
+<div class="checkbox"><input class="checkbox__box" type="checkbox" value="" name="smsNotification" id="smsNotification"><label class="label" for="smsNotification">Хочу получать SMS уведомления</label></div>
+</div>
+</div><input class="button-submit form__button-submit" type="submit" value="Оформить заказ"></div>
+<div class="column column_s-2 column_m-3 column_l-5">
+<div class="form__product-card">
+<div class="product-card">
+<div class="product-card__image-container product-card__image-container_form"><img class="product-card__image" src="images/product-4.jpg" alt="Футболка"></div>
+<div class="product-card__sale">sale</div>
+<div class="product-card__name">Футболка</div>
+<div class="product-card__price">
+<div class="product-card__old-price">690</div>390 ₽</div>
+<h4 class="product-card__description">Красная футболка с логотипом HH</h4>
+<div class="product-card__sizes"><input class="radio-button-size-item" type="radio" name="size" value="xs" id="xs"><label class="radio-button-size-item__label" for="xs">xs</label><input class="radio-button-size-item" type="radio" name="size" value="x" id="x"><label class="radio-button-size-item__label" for="x">x</label><input class="radio-button-size-item" type="radio" name="size" disabled="" value="m" id="m"><label class="radio-button-size-item__label" for="m">m</label><input class="radio-button-size-item" type="radio" name="size" value="l" id="l"><label class="radio-button-size-item__label" for="l">l</label><input class="radio-button-size-item" type="radio" name="size" value="xl" id="xl"><label class="radio-button-size-item__label" for="xl">xl</label><input class="radio-button-size-item" type="radio" name="size" value="xxl" id="xxl"><label class="radio-button-size-item__label" for="xxl">xxl</label></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form></section><section class="popup"><div class="popup-container">
+<div class="popup-container__button-close"><button class="button-close-icon button-close">
+                Закрыть
+                    </button></div>
+<div class="product-card">
+<div class="product-card__image-container product-card__image-container_popup"><img class="product-card__image" src="images/product-4.jpg" alt="Футболка"></div>
+<div class="product-card__sale">sale</div>
+<div class="product-card__name">Футболка</div>
+<div class="product-card__price">
+<div class="product-card__old-price">690</div>390 ₽</div>
+<h4 class="product-card__description">Красная футболка с логотипом HH</h4>
+<div class="product-card__sizes"><input class="radio-button-size-item" type="radio" name="size" value="xs" id="xs"><label class="radio-button-size-item__label" for="xs">xs</label><input class="radio-button-size-item" type="radio" name="size" value="x" id="x"><label class="radio-button-size-item__label" for="x">x</label><input class="radio-button-size-item" type="radio" name="size" disabled="" value="m" id="m"><label class="radio-button-size-item__label" for="m">m</label><input class="radio-button-size-item" type="radio" name="size" value="l" id="l"><label class="radio-button-size-item__label" for="l">l</label><input class="radio-button-size-item" type="radio" name="size" value="xl" id="xl"><label class="radio-button-size-item__label" for="xl">xl</label><input class="radio-button-size-item" type="radio" name="size" value="xxl" id="xxl"><label class="radio-button-size-item__label" for="xxl">xxl</label></div>
+</div><input class="button-submit product-card__button-submit" type="submit" value="Заказать"></div></section></body>
 </html>

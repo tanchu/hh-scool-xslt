@@ -9,6 +9,8 @@
             <xsl:apply-templates select="popularGoods" mode="popular-goods-section"/>
             <xsl:apply-templates select="features" mode="features-section"/>
             <xsl:call-template name="footer"/>
+            <xsl:call-template name="form"/>
+            <xsl:call-template name="popup"/>
         </body>
     </xsl:template>
 </xsl:stylesheet>

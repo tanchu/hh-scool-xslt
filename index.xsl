@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" 
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
     <xsl:import href="templates/head.xsl"/>
     <xsl:import href="templates/body.xsl"/>
     <xsl:import href="templates/navbar.xsl"/>
@@ -18,6 +19,10 @@
     <xsl:import href="templates/socialNetworks.xsl"/>
     <xsl:import href="templates/mobileApps.xsl"/>
     <xsl:import href="templates/statisticsInfo.xsl"/>
+    <xsl:import href="templates/form.xsl"/>
+    <xsl:import href="templates/productCard.xsl"/>
+    <xsl:import href="templates/popup.xsl"/>
+    <xsl:import href="templates/declination.xsl"/>
 
     <xsl:output method="html" encoding = "utf-8"/>
 
