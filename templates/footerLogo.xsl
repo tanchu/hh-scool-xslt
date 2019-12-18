@@ -1,6 +1,6 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-    <xsl:template name="footer-logo">
+    <xsl:template name="footer-logo" mode="footer-logo">
         <div class="column column_s-0 column_m-0 column_l-4">
             <div class="footer__logo">
                 <a href="#" class="logo__link">

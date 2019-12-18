@@ -20,7 +20,7 @@
     <xsl:import href="templates/popupOrder.xsl"/>
     <xsl:output method="html"/>
 
-    <xsl:template match="/doc">
+    <xsl:template match="/doc" mode="doc">
         <html>
             <head>
                 <xsl:call-template name="head"/>

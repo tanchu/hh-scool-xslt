@@ -47,7 +47,7 @@
         </div>
     </xsl:template>
 
-    <xsl:template name="ending-of-word">
+    <xsl:template name="ending-of-word" mode="ending-of-word">
         <xsl:param name="value"/>
         <xsl:param name="one"/>
         <xsl:param name="two"/>
