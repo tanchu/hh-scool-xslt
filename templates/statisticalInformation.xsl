@@ -12,7 +12,7 @@
                     </div>
                     <div class="footer-info__today">
                         <xsl:text>Сегодня на сайте </xsl:text>
-                        <xsl:call-template name="endingOfWord" >
+                        <xsl:call-template name="ending-of-word" >
                             <xsl:with-param name="value" select="countOfVacancies/@value"/>
                             <xsl:with-param name="one" select="countOfVacancies/@one"/>
                             <xsl:with-param name="two" select="countOfVacancies/@two"/>
@@ -24,7 +24,7 @@
 
                         <xsl:text> резюме, </xsl:text>
 
-                        <xsl:call-template name="endingOfWord" >
+                        <xsl:call-template name="ending-of-word" >
                             <xsl:with-param name="value" select="countOfCompanies/@value"/>
                             <xsl:with-param name="one" select="countOfCompanies/@one"/>
                             <xsl:with-param name="two" select="countOfCompanies/@two"/>
@@ -34,7 +34,7 @@
 
                         <xsl:text> и за неделю </xsl:text>
 
-                        <xsl:call-template name="endingOfWord" >
+                        <xsl:call-template name="ending-of-word" >
                             <xsl:with-param name="value" select="countOfInvitations/@value"/>
                             <xsl:with-param name="one" select="countOfInvitations/@one"/>
                             <xsl:with-param name="two" select="countOfInvitations/@two"/>
@@ -47,7 +47,7 @@
         </div>
     </xsl:template>
 
-    <xsl:template name="endingOfWord">
+    <xsl:template name="ending-of-word">
         <xsl:param name="value"/>
         <xsl:param name="one"/>
         <xsl:param name="two"/>
