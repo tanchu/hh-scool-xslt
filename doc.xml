@@ -112,10 +112,10 @@
         <copyRightYear>2019</copyRightYear>
         <copyRightHeading>Группа компаний HeadHunter</copyRightHeading>
         <statisticalInformation>
-            <countOfVacancies>684&#160;978</countOfVacancies>
-            <countOfResumes>34&#160;789&#160;747</countOfResumes>
-            <countOfCompanies>858&#160;923</countOfCompanies>
-            <countOfInvitations>1&#160;211&#160;363</countOfInvitations>
+            <countOfVacancies value="684978" one="вакансия" two="вакансии" five="вакансий">684&#160;978</countOfVacancies>
+            <countOfResumes>34&#160;789&#160;740</countOfResumes>
+            <countOfCompanies value="858923" one="компания" two="компании" five="компаний">858&#160;923</countOfCompanies>
+            <countOfInvitations value="1211363" one="приглашение" two="приглашения" five="приглашений">1&#160;211&#160;363</countOfInvitations>
         </statisticalInformation>
     </footer>
 </doc>
