@@ -93,7 +93,10 @@
     <item name="return">100% гарантия возврата и подлинность товара</item>
     <item name="support">Круглосуточная служба поддержки</item>
   </serviceTriggers>
-
-  <buttons>КНОПКА</buttons>
-
+  <statistics>
+    <vacancies>684 978</vacancies>
+    <resume>34 789 747</resume>
+    <empoyers>858 923</empoyers>
+    <offers>1 211 363</offers>
+  </statistics>
 </doc>

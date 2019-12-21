@@ -8,6 +8,7 @@
   <xsl:import href="templates/sections/carousel-section.xsl"/>
   <xsl:import href="templates/sections/goods-section.xsl"/>
   <xsl:import href="templates/sections/triggers-section.xsl"/>
+  <xsl:import href="templates/sections/footer.xsl"/>
 
   <xsl:output method="html" encoding="UTF-8" indent="no" media-type="text/html;" />
 
@@ -34,6 +35,8 @@
     <xsl:apply-templates select="/doc" mode="goods-section"/>
 
     <xsl:apply-templates select="/doc" mode="triggers-section"/>
+
+    <xsl:apply-templates select="/doc" mode="footer"/>
 
   </xsl:template>
 

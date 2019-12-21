@@ -7,4 +7,10 @@
     </a>
   </xsl:template>
 
+  <xsl:template name="logo-footer">
+    <a href="#" class="logo-link">
+      <img class="logo logo_footer" src="css/blocks/logo/logo-grey.svg" alt="hh.ru" />
+    </a>
+  </xsl:template>
+
 </xsl:stylesheet>
