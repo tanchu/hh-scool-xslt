@@ -12,12 +12,13 @@
           <div class="header__logo">
             <xsl:call-template name="logo"/>
           </div>
-          <xsl:apply-templates select="/doc/shopNav[navItem[text()]]" mode="header-shop-nav"/>
+          <xsl:apply-templates select="/doc/shopNav[navItem]" mode="header-shop-nav"/>
           <div class="header__fill"></div>
           <div class="header__button">
             <button class="header-button-icon header-button-icon_search">Поиск</button>
           </div>
           <div class="header__button">
+            <button class="header-button-icon header-button-icon_login"></button>
             <xsl:apply-templates select="/doc/userInfo/login" mode="header-login-button"/>
           </div>
           <div class="header__button header__button_menu">

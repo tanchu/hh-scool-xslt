@@ -2,15 +2,8 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <xsl:template match="login" mode="header-login-button">
-    <button class="header-button-icon header-button-icon_login">Войти</button>
-    <button>
-      <xsl:attribute name="class">
-        <xsl:text>header-button </xsl:text>
-        <xsl:text>header-button_login</xsl:text>
-      </xsl:attribute>
-
+    <button class="header-button header-button_login">
       <xsl:apply-templates select="." mode="header-login-button-text" />
-
     </button>
   </xsl:template>
 

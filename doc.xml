@@ -1,5 +1,10 @@
 <doc>
-  <location>Москва</location>
+  <location country="Россия" currency="rub">Москва</location>
+  <currency>
+    <item name="rub">₽</item>
+    <item name="usd">$</item>
+    <item name="eur">€</item>
+  </currency>
   <siteNav>
     <navItem url="/">Шоурум</navItem>
     <navItem url="/">Оплата</navItem>
@@ -18,16 +23,72 @@
     <name>Matania</name>
   </userInfo>
   <mainSlider>
-    <slide id="1">
+    <slide id="1" active="true">
       <description>Мужская и женская одежда с символикой HeadHunter</description>
-      <image src="images/carousel-product-1.png">Мужская и женская одежда</image>
+      <image src="images/carousel-product-1@1.png" srcset="images/carousel-product-1@1.png 1x, images/carousel-product-1@2x.png 2x, images/carousel-product-1@3x.png 3x">Мужская и женская одежда</image>
     </slide>
     <slide id="2">
       <description>Офисные принадлежности с символикой HeadHunter</description>
-      <image src="images/carousel-product-2.png">Офисные принадлежности</image>
+      <image src="images/carousel-product-2@1.png" srcset="images/carousel-product-2@1.png 1x, images/carousel-product-2@2x.png 2x, images/carousel-product-2@3x.png 3x">Офисные принадлежности</image>
     </slide>
   </mainSlider>
-
+  <goods>
+    <item popular="true">
+      <image src="images/product-1.jpg"></image>
+      <name>Зонт</name>
+      <description>Красный элегантный зонт</description>
+      <price>
+        <currentPrice>1 990</currentPrice>
+        <oldPrice></oldPrice>
+      </price>
+    </item>
+    <item popular="true">
+      <image src="images/product-2.jpg"></image>
+      <name>Сумка</name>
+      <description>Красная стильная сумка из переработанного хлопка</description>
+      <price>
+        <currentPrice>290</currentPrice>
+        <oldPrice></oldPrice>
+      </price>
+    </item>
+    <item popular="true">
+      <image src="images/product-3.jpg"></image>
+      <name>Шлепанцы</name>
+      <description>Красные резиновые шлепанцы</description>
+      <price>
+        <currentPrice>790</currentPrice>
+        <oldPrice></oldPrice>
+      </price>
+    </item>
+    <item popular="true">
+      <image src="images/product-4.jpg"></image>
+      <name>Футболка</name>
+      <description>Красная хлопоковая футболка с коротким руковом</description>
+      <price>
+        <currentPrice>390</currentPrice>
+        <oldPrice>690</oldPrice>
+      </price>
+    </item>
+    <item popular="true">
+      <image src="images/product-5.jpg"></image>
+      <name>Толстовка</name>
+      <description>Красная хлопоковая толстовка с карманами</description>
+      <price>
+        <currentPrice>3 990</currentPrice>
+        <oldPrice></oldPrice>
+      </price>
+    </item>
+    <item popular="true">
+      <image src="images/product-6.jpg"></image>
+      <name>Подушка</name>
+      <description>Красная декоративная подушка</description>
+      <price>
+        <currentPrice>990</currentPrice>
+        <oldPrice></oldPrice>
+      </price>
+    </item>
+  </goods>
+  
   <buttons>КНОПКА</buttons>
 
 </doc>

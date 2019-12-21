@@ -4,25 +4,18 @@
   <xsl:import href="../main-slider.xsl"/>
 
   <xsl:template match="doc" mode="carousel-section">
-    <xsl:apply-templates select="/doc/mainSlider[slide[text()]]" mode="carousel-section-content"/>
+    <xsl:apply-templates select="/doc/mainSlider[slide]" mode="carousel-section-content"/>
   </xsl:template>
 
   <xsl:template match="mainSlider" mode="carousel-section-content">
     <section class="carousel-section">
       <div class="columns-wrapper">
-
-        <xsl:apply-templates select="." mode="carousel-section-slide"/>
-
-        <div class="carousel-dots">
-          <ul class="carousel-dots__list">
-            <li class="carousel-dots__item carousel-dots__item_active"></li>
-            <li class="carousel-dots__item"></li>
-          </ul>
+        <div class="carousel-section__cards-wrapper">
+          <xsl:apply-templates select="." mode="carousel-section-slide"/>
         </div>
+        <xsl:apply-templates select="." mode="carousel-section-dots"></xsl:apply-templates>
       </div>
     </section>
   </xsl:template>
-
-
 
 </xsl:stylesheet>

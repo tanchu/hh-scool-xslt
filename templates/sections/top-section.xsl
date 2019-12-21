@@ -5,15 +5,15 @@
   <xsl:import href="../nav.xsl"/>
 
   <xsl:template match="doc" mode="top-section">
-    <xsl:apply-templates select="/doc[location[text()] or siteNav[navItem[text()]]]" mode="top-section-content"/>
+    <xsl:apply-templates select="/doc[location or siteNav[navItem]]" mode="top-section-content"/>
   </xsl:template>
 
   <xsl:template match="doc" mode="top-section-content">
     <section class="top-section">
       <div class="columns-wrapper">
         <div class="top-section__content">
-          <xsl:apply-templates select="/doc/location[text()]" mode="top-section-button"/>
-          <xsl:apply-templates select="/doc/siteNav[navItem[text()]]" mode="top-section-nav"/>
+          <xsl:apply-templates select="/doc/location" mode="top-section-button"/>
+          <xsl:apply-templates select="/doc/siteNav[navItem]" mode="top-section-nav"/>
         </div>
       </div>
     </section>
