@@ -88,7 +88,12 @@
       </price>
     </item>
   </goods>
-  
+  <serviceTriggers>
+    <item name="delivery">Быстрая доставка по всей России</item>
+    <item name="return">100% гарантия возврата и подлинность товара</item>
+    <item name="support">Круглосуточная служба поддержки</item>
+  </serviceTriggers>
+
   <buttons>КНОПКА</buttons>
 
 </doc>
