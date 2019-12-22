@@ -5,9 +5,6 @@
     <div class="product-card__sizing-container">
       <xsl:apply-templates select="." mode="sizing-box"/>
     </div>
-    <div class="product-card__order-button-container">
-      <button class="button product-card__order-button">Заказать</button>
-    </div>
   </xsl:template>
 
   <xsl:template match="size/code" mode="sizing-box">

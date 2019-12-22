@@ -23,6 +23,9 @@
           <xsl:value-of select="description"/>
         </div>
         <xsl:apply-templates select="size" mode="sizing"/>
+        <div class="product-card__order-button-container">
+          <button class="button product-card__order-button">Заказать</button>
+        </div>
       </div>
     </div>
   </xsl:template>
@@ -48,6 +51,9 @@
           <xsl:value-of select="description"/>
         </div>
         <xsl:apply-templates select="size" mode="sizing"/>
+        <div class="product-card__order-button-container">
+          <button class="button product-card__order-button">Заказать</button>
+        </div>
       </div>
     </div>
   </xsl:template>
