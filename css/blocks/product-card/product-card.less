@@ -3,6 +3,14 @@
   margin-bottom: 20px;
   text-align: center;
   cursor: pointer;
+  max-width: 100%;
+  background: #ffffff;
+  top: 0;
+  left: auto;
+  right: auto;
+  box-shadow: none;
+  padding: 0 0 20px;
+  transition: all 0.5s ease;
 
   &__image-container {
     margin-bottom: 10px;
@@ -16,7 +24,12 @@
 
   &__name {
     font: bold 16px/1.2 @font-family-heading;
+    padding: 0 20px;
     margin-bottom: 10px;
+  }
+
+  &__price {
+    padding: 0 20px;
   }
 
   &__old-price {
@@ -39,17 +52,21 @@
   }
 
   &__description {
+    padding: 0 20px;
+    text-align: center;
     margin: 10px 0 15px;
     color: @color-hell;
+    display: none;
   }
 
   &__sizing {
     &-container {
-      display: flex;
+      display: none;
+      padding: 0 20px;
     }
 
     &-box {
-      flex: 1 0 49px;
+      flex: 1;
     }
 
     &-button {
@@ -58,6 +75,41 @@
       &_last {
         border-right-width: 1px;
       }
+    }
+  }
+
+  &__order-button {
+    width: 100%;
+    &-container {
+      display: none;
+      margin-top: 15px;
+      padding: 0 20px;
+    }
+  }
+
+  &:hover {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    right: 15px;
+    box-shadow: 0px 25px 35px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    transition: all 0.5s ease;
+  }
+
+  &:hover & {
+    &__description {
+      display: block;
+    }
+
+    &__sizing {
+      &-container {
+        display: flex;
+      }
+    }
+
+    &__order-button-container {
+      display: block;
     }
   }
 }

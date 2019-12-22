@@ -1,10 +1,15 @@
 <doc>
-  <location country="Россия" currency="rub">Москва</location>
+  <location country="россия" currency="rub">Москва</location>
   <currency>
     <item name="rub">₽</item>
     <item name="usd">$</item>
     <item name="eur">€</item>
   </currency>
+  <phoneCodes>
+    <code country="россия">+7</code>
+    <code country="казахстан">+7</code>
+    <code country="usa">+1</code>
+  </phoneCodes>
   <siteNav>
     <navItem url="/">Шоурум</navItem>
     <navItem url="/">Оплата</navItem>
@@ -35,7 +40,7 @@
   <goods>
     <item popular="true">
       <image src="images/product-1.jpg"></image>
-      <name>Зонт</name>
+      <name id="umbrella">Зонт</name>
       <description>Красный элегантный зонт</description>
       <price>
         <currentPrice>1 990</currentPrice>
@@ -44,7 +49,7 @@
     </item>
     <item popular="true">
       <image src="images/product-2.jpg"></image>
-      <name>Сумка</name>
+      <name id="bag">Сумка</name>
       <description>Красная стильная сумка из переработанного хлопка</description>
       <price>
         <currentPrice>290</currentPrice>
@@ -53,34 +58,55 @@
     </item>
     <item popular="true">
       <image src="images/product-3.jpg"></image>
-      <name>Шлепанцы</name>
+      <name id="slippers">Шлепанцы</name>
       <description>Красные резиновые шлепанцы</description>
       <price>
         <currentPrice>790</currentPrice>
         <oldPrice></oldPrice>
       </price>
+      <size>
+        <code>35</code>
+        <code>36</code>
+        <code>37</code>
+        <code>38</code>
+      </size>
     </item>
     <item popular="true">
       <image src="images/product-4.jpg"></image>
-      <name>Футболка</name>
+      <name id="t-shirt">Футболка</name>
       <description>Красная хлопоковая футболка с коротким руковом</description>
       <price>
         <currentPrice>390</currentPrice>
         <oldPrice>690</oldPrice>
       </price>
+      <size>
+        <code>XS</code>
+        <code>S</code>
+        <code>M</code>
+        <code>L</code>
+        <code>XL</code>
+        <code>XXL</code>
+      </size>
     </item>
     <item popular="true">
       <image src="images/product-5.jpg"></image>
-      <name>Толстовка</name>
+      <name id="hoodie">Толстовка</name>
       <description>Красная хлопоковая толстовка с карманами</description>
       <price>
         <currentPrice>3 990</currentPrice>
         <oldPrice></oldPrice>
       </price>
+      <size>
+        <code>XS</code>
+        <code>S</code>
+        <code>M</code>
+        <code>L</code>
+        <code>XL</code>
+      </size>
     </item>
     <item popular="true">
       <image src="images/product-6.jpg"></image>
-      <name>Подушка</name>
+      <name id="pillow">Подушка</name>
       <description>Красная декоративная подушка</description>
       <price>
         <currentPrice>990</currentPrice>

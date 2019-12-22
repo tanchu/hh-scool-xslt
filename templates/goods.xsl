@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+  <xsl:import href="sizing.xsl"/>
+
   <xsl:key name="currency" match="/doc/currency/item" use="@name"/>
 
   <xsl:template match="goods/item" mode="goods-section-item">
@@ -14,9 +16,13 @@
         </div>
         <div class="product-card__price">
           <xsl:value-of select="price/currentPrice"/>
-          <xsl:text> </xsl:text>
+          <xsl:text></xsl:text>
           <xsl:value-of select="key('currency', /doc/location/@currency)"/>
         </div>
+        <div class="product-card__description">
+          <xsl:value-of select="description"/>
+        </div>
+        <xsl:apply-templates select="size" mode="sizing"/>
       </div>
     </div>
   </xsl:template>
@@ -35,9 +41,13 @@
             <xsl:value-of select="price/oldPrice"/>
           </span>
           <xsl:value-of select="price/currentPrice"/>
-          <xsl:text> </xsl:text>
+          <xsl:text></xsl:text>
           <xsl:value-of select="key('currency', /doc/location/@currency)"/>
         </div>
+        <div class="product-card__description">
+          <xsl:value-of select="description"/>
+        </div>
+        <xsl:apply-templates select="size" mode="sizing"/>
       </div>
     </div>
   </xsl:template>

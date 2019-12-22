@@ -43,5 +43,27 @@
     padding-top: 105px;
     max-width: 290px;
     margin-left: auto;
+
+    .product-card {
+      &:hover {
+        position: relative;
+        top: 0;
+        left: auto;
+        right: auto;
+        box-shadow: none;
+
+        .product-card__order-button-container {
+          display: none;
+        }
+      }
+    }
+
+    .product-card__description {
+      display: block;
+    }
+
+    .product-card__sizing-container {
+      display: flex;
+    }
   }
 }

@@ -9,6 +9,7 @@
   <xsl:import href="templates/sections/goods-section.xsl"/>
   <xsl:import href="templates/sections/triggers-section.xsl"/>
   <xsl:import href="templates/sections/footer.xsl"/>
+  <xsl:import href="templates/popups/popup-order.xsl"/>
 
   <xsl:output method="html" encoding="UTF-8" indent="no" media-type="text/html;" />
 
@@ -37,6 +38,8 @@
     <xsl:apply-templates select="/doc" mode="triggers-section"/>
 
     <xsl:apply-templates select="/doc" mode="footer"/>
+
+    <xsl:call-template name="popup-order"/>
 
   </xsl:template>
 
