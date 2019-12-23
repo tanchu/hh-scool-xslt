@@ -12,20 +12,18 @@
                     </div>
                     <nav class="navbar__nav">
                         <ul class="nav navbar__nav-list">
-                            <xsl:apply-templates select="item" mode="site-navigation-item" />
+                            <xsl:apply-templates select="siteItem" mode="site-navigation-item"/>
                         </ul>
                     </nav>
                 </div>
             </div>
         </section>
     </xsl:template>
-
-    <xsl:template match="item" mode="site-navigation-item">
+    <xsl:template match="siteItem" mode="site-navigation-item">
         <li class="nav__item navbar__nav-item">
             <a href="{@src}" class="nav__link navbar__nav-link">
                 <xsl:value-of select="."/>
             </a>
         </li>
     </xsl:template>
-
 </xsl:stylesheet>

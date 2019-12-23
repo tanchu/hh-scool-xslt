@@ -1,84 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <doc>
+    <allCurrensy>
+        <currensyItem type="rub">₽</currensyItem>
+        <currensyItem type="usd">$</currensyItem>
+    </allCurrensy>
     <userInfo>
         <id type="integer">123</id>
-        <!-- <login>user123</login> -->
+        <login>user123</login>
         <email>a@gmail.com</email>
         <purchasingUser type="boolean">true</purchasingUser>
         <firstname>Name</firstname>
         <lastname>Lastname</lastname>
         <active type="boolean">true</active>
         <defaultLocale>ru</defaultLocale>
-        <userCurrency type="currency">₽</userCurrency>
+        <userCurrency type="rub"/>
         <userCountry>Россия</userCountry>
         <userCity>Москва</userCity>
         <role>
-            <id type="integer">3</id>
+            <id type="integer">0</id>
             <createdAt type="dateTime">2019-08-05T19:46:31+03:00</createdAt>
             <updatedAt type="dateTime">2019-08-05T19:46:31+03:00</updatedAt>
-            <name>User</name>
-            <description>Standard role for all users who need to create and/or approve requisitions</description>
+            <name type="guest"/>
+            <description>Standard role for all guests</description>
             <omnipotent type="boolean">false</omnipotent>
             <systemRole type="boolean">true</systemRole>
         </role>
+        <!--<role>
+            <id type="integer">3</id>
+            <createdAt type="dateTime">2019-08-05T19:46:31+03:00</createdAt>
+            <updatedAt type="dateTime">2019-08-05T19:46:31+03:00</updatedAt>
+            <name type="user"/>
+            <description>Standard role for all users who need to create and/or approve requisitions</description>
+            <omnipotent type="boolean">false</omnipotent>
+            <systemRole type="boolean">true</systemRole>
+        </role>-->
         <defaultCurrency>
             <id type="integer">1</id>
             <code>RUB</code>
             <decimals type="integer">2</decimals>
         </defaultCurrency>
     </userInfo>
-
     <siteNavigation>
-        <item src="#">Шоурум</item>
-        <item src="#">Оплата</item>
-        <item src="#">Доставка</item>
-        <item src="#">Самовывоз</item>
-        <item src="#">Контактная информация</item>
+        <siteItem src="#">Шоурум</siteItem>
+        <siteItem src="#">Оплата</siteItem>
+        <siteItem src="#">Доставка</siteItem>
+        <siteItem src="#">Самовывоз</siteItem>
+        <siteItem src="#">Контактная информация</siteItem>
     </siteNavigation>
-
     <headerNavigation>
-            <item src="#">Одежда</item>
-            <item src="#">Сумки</item>
-            <item src="#">Аксессуары</item>
-            <item src="#">Офисные принадлежности</item>
+        <headerItem src="#">Одежда</headerItem>
+        <headerItem src="#">Сумки</headerItem>
+        <headerItem src="#">Аксессуары</headerItem>
+        <headerItem src="#">Офисные принадлежности</headerItem>
     </headerNavigation>
-
-    <sliders>
-        <slider>
-            <slide isActive="true">
-                <description>Мужская и женская одежда
-                    с символикой HeadHunter</description>
-                <productImage src="css/slider-1.3b5e737a.png" alt="Мужская и женская одежда" />
-            </slide>
-            <slide isActive="false">
-                <description>Офисные принадлежности
-                    с символикой HeadHunter</description>
-                <productImage src="css/slider-2.769fcb14.png" alt="Офисные принадлежности" />
-            </slide>
-        </slider>
-    </sliders>
-
+    <slider>
+        <slide isActive="true">
+            <description>
+                Мужская и женская одежда с символикой HeadHunter
+            </description>
+            <productImage src="css/slider-1.3b5e737a.png" alt="Мужская и женская одежда"/>
+        </slide>
+        <slide isActive="false">
+            <description>
+                Офисные принадлежности с символикой HeadHunter
+            </description>
+            <productImage src="css/slider-2.769fcb14.png" alt="Офисные принадлежности"/>
+        </slide>
+    </slider>
     <products>
-        <item id="1" sale="false">
+        <product id="1" sale="false">
             <image>css/product-1.ec73aee6.jpg</image>
             <name>Зонт</name>
             <description>Красный зонт с логотипом HH</description>
             <price type="rub">1&#160;990</price>
-        </item>
-        <item id="2" sale="false">
+        </product>
+        <product id="2" sale="false">
             <image>css/product-2.521640d8.jpg</image>
             <name>Сумка</name>
             <description>Красная сумка с логотипом HH</description>
             <price type="rub">290</price>
-        </item>
-        <item id="3" sale="false">
+        </product>
+        <product id="3" sale="false">
             <image>css/product-3.7dd26f69.jpg</image>
             <name>Шлепанцы</name>
             <description>Красные шлепанцы с логотипом HH</description>
             <price type="rub">790</price>
-        </item>
-        <item id="4" sale="true">
+        </product>
+        <product id="4" sale="true">
             <image>css/product-4.0431c0da.jpg</image>
             <name>Футболка</name>
             <description>Красная хлопоковая футболка с&#160;коротким руковом</description>
@@ -92,60 +100,67 @@
                 <size type="XL" available="true"/>
                 <size type="XXL" available="true"/>
             </sizes>
-        </item>
-        <item id="5" sale="false">
+        </product>
+        <product id="5" sale="false">
             <image>css/product-5.50c4247e.jpg</image>
             <name>Толстовка</name>
             <description>Красная толстовка с логотипом HH</description>
             <price type="rub">3&#160;990</price>
-        </item>
-        <item id="6" sale="false">
+        </product>
+        <product id="6" sale="false">
             <image>css/product-6.00098820.jpg</image>
             <name>Подушка</name>
             <description>Красная подушка с логотипом HH</description>
             <price type="rub">990</price>
-        </item>
+        </product>
     </products>
-
     <advantages>
-            <item type="delivery">Быстрая доставка по всей России</item>
-            <item type="warranty">100% гарантия возврата и&#160;подлинность товара</item>
-            <item type="support">Круглосуточная служба&#160;поддержки</item>
+            <advantage type="delivery">Быстрая доставка по всей России</advantage>
+            <advantage type="return">100% гарантия возврата и&#160;подлинность товара</advantage>
+            <advantage type="support">Круглосуточная служба&#160;поддержки</advantage>
     </advantages>
-
-    <footer>
-        <socials>
-            <social name="facebook" url="#">
-                <image src="css/icon-fb.f77ca6af.svg"/>
-            </social>
-            <social name="twitter" url="#">
-                <image src="css/icon-tw.8d83b7ee.svg"/>
-            </social>
-            <social name="vk" url="#">
-                <image src="css/icon-vk.06e22521.svg"/>
-            </social>
-            <social name="instagram" url="#">
-                <image src="css/icon-inst.3abf3dd8.svg"/>
-            </social>
-        </socials>
-        <mobileApps>
-            <mobileApp name="app store" url="#">
-                <image src="css/icon-appstore.1aa85ad4.svg"/>
-            </mobileApp>
-            <mobileApp name="google play" url="#">
-                <image src="css/icon-googleplay.af51fdea.svg"/>
-            </mobileApp>
-        </mobileApps>
-
-        <copyRightYear>2019</copyRightYear>
-        <copyRightHeading>Группа компаний HeadHunter</copyRightHeading>
-        <statisticalInformation>
-            <countOfVacancies value="684978" one="вакансия" two="вакансии" five="вакансий">684&#160;978</countOfVacancies>
-            <countOfResumes>34&#160;789&#160;740</countOfResumes>
-            <countOfCompanies value="858923" one="компания" two="компании" five="компаний">858&#160;923</countOfCompanies>
-            <countOfInvitations value="1211363" one="приглашение" two="приглашения" five="приглашений">1&#160;211&#160;363</countOfInvitations>
-        </statisticalInformation>
-    </footer>
-
-    <popupOrder></popupOrder>
+    <socials>
+        <social name="facebook" url="#">
+            <image src="css/icon-fb.f77ca6af.svg"/>
+        </social>
+        <social name="twitter" url="#">
+            <image src="css/icon-tw.8d83b7ee.svg"/>
+        </social>
+        <social name="vk" url="#">
+            <image src="css/icon-vk.06e22521.svg"/>
+        </social>
+        <social name="instagram" url="#">
+            <image src="css/icon-inst.3abf3dd8.svg"/>
+        </social>
+    </socials>
+    <mobileApps>
+        <mobileApp name="app store" url="#">
+            <image src="css/icon-appstore.1aa85ad4.svg"/>
+        </mobileApp>
+        <mobileApp name="google play" url="#">
+            <image src="css/icon-googleplay.af51fdea.svg"/>
+        </mobileApp>
+    </mobileApps>
+    <copyRightYear>2019</copyRightYear>
+    <copyRightHeading>Группа компаний HeadHunter</copyRightHeading>
+    <statisticalInformation>
+        <countOfVacancies value="684978">684&#160;978</countOfVacancies>
+        <countOfResumes>34&#160;789&#160;740</countOfResumes>
+        <countOfCompanies value="858923">858&#160;923</countOfCompanies>
+        <countOfInvitations value="1211363">1&#160;211&#160;363</countOfInvitations>
+    </statisticalInformation>
+    <deliveryVariants>
+        <deliveryVariant id="delivery-1">Самовывоз</deliveryVariant>
+        <deliveryVariant id="delivery-2">Доставка</deliveryVariant>
+    </deliveryVariants>
+    <cities>
+        <city value="1">Москва</city>
+        <city value="2">Санкт-Петербург</city>
+        <city value="3">Владимир</city>
+    </cities>
+    <paymentVariants>
+        <paymentVariant id="online">Online-оплата</paymentVariant>
+        <paymentVariant id="cash">Наличными</paymentVariant>
+        <paymentVariant id="card">Картой при получении</paymentVariant>
+    </paymentVariants>
 </doc>

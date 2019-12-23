@@ -8,7 +8,7 @@
 <title>HTML и CSS</title>
 <link rel="icon" type="image/png" sizes="32x32" href="css/favicon-32x32.6144d4ff.png">
 <link rel="icon" type="image/png" sizes="16x16" href="css/favicon-16x16.29f0286c.png">
-<link rel="stylesheet" href="css/styles.348d50ad.css">
+<link rel="stylesheet" href="css/styles.3de8a5c2.css">
 </head>
 </head>
 <body>
@@ -47,6 +47,7 @@
 <div class="header__logo">
 <a href="#" class="logo-link"><img class="logo" src="css/logo-red.6442b6d6.svg" alt="hh.ru"></a>
 </div>
+<div class="header__nav">
 <ul class="nav">
 <li class="nav__item">
 <a href="#" class="nav__link">Одежда</a>
@@ -61,6 +62,7 @@
 <a href="#" class="nav__link">Офисные принадлежности</a>
 </li>
 </ul>
+</div>
 <div class="header__fill"></div>
 <div class="header__button">
 <button class="header-button-icon header-button-icon_search">Поиск</button>
@@ -78,8 +80,9 @@
 <div class="columns-wrapper">
 <div class="slider-card slider-card_active">
 <div class="slider-card__description">
-<h1 class="heading slider-card__description-title">Мужская и женская одежда
-                    с символикой HeadHunter</h1>
+<h1 class="heading slider-card__description-title">
+                Мужская и женская одежда с символикой HeadHunter
+            </h1>
 <button class="button slider-card__description-button">Перейти в&nbsp;каталог</button>
 </div>
 <div class="slider-card__image-container">
@@ -87,8 +90,9 @@
 </div>
 <div class="slider-card">
 <div class="slider-card__description">
-<h1 class="heading slider-card__description-title">Офисные принадлежности
-                    с символикой HeadHunter</h1>
+<h1 class="heading slider-card__description-title">
+                Офисные принадлежности с символикой HeadHunter
+            </h1>
 <button class="button slider-card__description-button">Перейти в&nbsp;каталог</button>
 </div>
 <div class="slider-card__image-container">
@@ -208,7 +212,7 @@
 <div class="columns-row">
 <div class="column column_s-2 column_m-6 column_l-12">
 <div class="footer-info__copyright">&copy;2019 Группа компаний HeadHunter</div>
-<div class="footer-info__today">Сегодня на сайте 684&nbsp;978 вакансий , 34&nbsp;789&nbsp;740 резюме, 858&nbsp;923 компании и за неделю 1&nbsp;211&nbsp;363 приглашения</div>
+<div class="footer-info__today">Сегодня на сайте 684&nbsp;978 вакансий, 34&nbsp;789&nbsp;740 резюме, 858&nbsp;923 компании и за неделю 1&nbsp;211&nbsp;363 приглашения</div>
 </div>
 </div>
 </div>
@@ -237,13 +241,13 @@
 <div class="form__block">
 <h3 class="heading heading_level-3">Способ получения заказа</h3>
 <div class="form__item">
-<label class="form__label popup-order__form-label" for="delivery-1"><input type="radio" id="delivery-1" name="delivery" class="radio" value="devivery-1"><span class="radio-button popup-order__form-button">Самовывоз</span></label><label class="form__label popup-order__form-label" for="delivery-2"><input type="radio" id="delivery-2" name="delivery" class="radio" value="devivery-2" checked=""><span class="radio-button popup-order__form-button">Доставка</span></label>
+<label class="form__label popup-order__form-label" for="delivery-1"><input type="radio" id="delivery-1" name="delivery" class="radio" value="delivery-1"><span class="radio-button popup-order__form-button">Самовывоз</span></label><label class="form__label popup-order__form-label" for="delivery-2"><input type="radio" id="delivery-2" name="delivery" class="radio" value="delivery-2"><span class="radio-button popup-order__form-button">Самовывоз</span></label>
 </div>
 </div>
 <div class="form__block">
 <h3 class="heading heading_level-3">Адрес</h3>
 <div class="form__item">
-<select name="city" class="select select_arrows"><option disabled="" value="null" class="option" selected="">Город</option><option value="0" class="option">Москва</option><option value="1" class="option">Санкт-Петербург</option><option value="2" class="option">Владимир</option></select>
+<select name="city" class="select select_arrows"><option disabled="" value="null" class="option" selected="">Город</option><option value="1" class="option">Москва</option><option value="2" class="option">Санкт-Петербург</option><option value="3" class="option">Владимир</option></select>
 </div>
 <div class="form__item">
 <textarea name="address" class="textarea" placeholder="Адрес" required=""></textarea>
@@ -252,7 +256,7 @@
 <div class="form__block">
 <h3 class="heading heading_level-3">Оплата</h3>
 <div class="form__item">
-<label for="online" class="form__label"><input type="radio" name="pay" id="online" class="radio" value="online" checked=""><span class="radio-box"></span><span class="radio-text">Online-оплата</span></label>
+<label for="online" class="form__label"><input type="radio" name="pay" id="online" class="radio" value="online"><span class="radio-box"></span><span class="radio-text">Online-оплата</span></label>
 </div>
 <div class="form__item">
 <label for="cash" class="form__label"><input type="radio" name="pay" id="cash" class="radio" value="cash"><span class="radio-box"></span><span class="radio-text">Наличными</span></label>
@@ -302,7 +306,7 @@
 <label><input type="radio" name="size" class="radio" value="XL"><span class="radio-button product-card__sizing-button">XL</span></label>
 </div>
 <div class="product-card__sizing-box">
-<label><input type="radio" name="size" class="radio" value="XXL"><span class="radio-button product-card__sizing-button product-card__sizing-button_last">XXL</span></label>
+<label><input type="radio" name="size" class="radio" value="XXL"><span class="radio-button product-card__sizing-button">XXL</span></label>
 </div>
 </div>
 </div>
