@@ -2,14 +2,14 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <xsl:template match="doc" mode="triggers-section">
-    <xsl:apply-templates select="/doc/serviceTriggers[item]" mode="triggers-section-content"/>
+    <xsl:apply-templates select="serviceTriggers[item]" mode="triggers-section-content"/>
   </xsl:template>
 
   <xsl:template match="serviceTriggers" mode="triggers-section-content">
     <section class="triggers-section">
       <div class="columns-wrapper">
         <div class="columns-row">
-          <xsl:apply-templates select="." mode="triggers-section-item"/>
+          <xsl:apply-templates select="item" mode="triggers-section-item"/>
         </div>
       </div>
     </section>

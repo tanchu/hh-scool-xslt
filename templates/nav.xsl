@@ -3,7 +3,7 @@
 
   <xsl:template match="siteNav" mode="top-nav">
     <ul class="nav top-section__nav-list">
-      <xsl:apply-templates select="." mode="top-nav-item"/>
+      <xsl:apply-templates select="navItem" mode="top-nav-item"/>
     </ul>
   </xsl:template>
 
@@ -17,7 +17,7 @@
 
   <xsl:template match="shopNav" mode="header-nav">
     <ul class="nav">
-      <xsl:apply-templates select="." mode="header-nav-item"/>
+      <xsl:apply-templates select="navItem" mode="header-nav-item"/>
     </ul>
   </xsl:template>
 

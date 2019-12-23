@@ -18,10 +18,10 @@
     <div class="form__item">
       <input type="text" class="input input_phone-pre">
         <xsl:attribute name="placeholder">
-          <xsl:value-of select="key('phoneCodes', /doc/location/@country)"/>
+          <xsl:value-of select="key('phoneCodes', location/@country)"/>
         </xsl:attribute>
         <xsl:attribute name="value">
-          <xsl:value-of select="key('phoneCodes', /doc/location/@country)"/>
+          <xsl:value-of select="key('phoneCodes', location/@country)"/>
         </xsl:attribute>
       </input>
       <input type="text" class="input input_phone-code" placeholder="Код" />

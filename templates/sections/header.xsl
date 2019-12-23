@@ -12,7 +12,7 @@
           <div class="header__logo">
             <xsl:call-template name="logo"/>
           </div>
-          <xsl:apply-templates select="/doc/shopNav[navItem]" mode="header-shop-nav"/>
+          <xsl:apply-templates select="shopNav" mode="header-shop-nav"/>
           <div class="header__fill"></div>
           <div class="header__button">
             <button class="header-button-icon header-button-icon_search">Поиск</button>
@@ -31,7 +31,7 @@
 
   <xsl:template match="shopNav" mode="header-shop-nav">
     <div class="header__nav">
-      <xsl:apply-templates select="/doc/shopNav" mode="header-nav"/>
+      <xsl:apply-templates select="." mode="header-nav"/>
     </div>
   </xsl:template>
 

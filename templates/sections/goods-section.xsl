@@ -4,7 +4,7 @@
   <xsl:import href="../goods.xsl"/>
 
   <xsl:template match="doc" mode="goods-section">
-    <xsl:apply-templates select="/doc/goods[item[@popular='true']]" mode="goods-section-content"/>
+    <xsl:apply-templates select="goods[item[@popular='true']]" mode="goods-section-content"/>
   </xsl:template>
 
   <xsl:template match="goods" mode="goods-section-content">
@@ -12,7 +12,7 @@
       <div class="columns-wrapper">
       <h2 class="heading heading_level-2">Популярные товары</h2>
         <div class="columns-row">
-          <xsl:apply-templates select="/doc/goods/item[@popular='true']" mode="goods-section-item"/>
+          <xsl:apply-templates select="item[@popular='true']" mode="goods-section-item"/>
         </div>
       </div>
     </section>

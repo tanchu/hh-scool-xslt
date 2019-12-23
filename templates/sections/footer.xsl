@@ -19,7 +19,7 @@
           <div class="columns-row">
             <div class="column column_s-2 column_m-6 column_l-12">
               <div class="footer-info__copyright">© 2019 Группа компаний HeadHunter</div>
-              <xsl:apply-templates select="/doc/statistics" mode="footer-statistics"></xsl:apply-templates>
+              <xsl:apply-templates select="statistics" mode="footer-statistics"></xsl:apply-templates>
             </div>
           </div>
         </div>
