@@ -33,7 +33,7 @@
     </xsl:template>
 
     <xsl:template match="statistics" mode="statistics">
-        <xsl:value-of select="." />
+        Сегодня на сайте <xsl:value-of select="vacanciesTotal" /> вакансий, <xsl:value-of select="resumeTotal" /> резюме, <xsl:value-of select="companiesTotal" /> компании и за неделю 1&#160;211&#160;363&#160;приглашения  
     </xsl:template>
 
     <xsl:template match="copyright" mode="copyright">

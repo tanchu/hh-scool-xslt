@@ -21,7 +21,7 @@
         <link url="/#">Офисные принадлежности</link>
     </contentNavigation>
     <searchAllowed />
-    <authAllowed url="/">Войти</authAllowed>
+    <authAllowed url="/" />
     <slider>
         <slide>
             <heading>Мужская и женская одежда с символикой HeadHunter</heading>
@@ -89,23 +89,41 @@
         </point>
     </howWeWork>
     <socialNetworks>
-        <link iconSrc="icons/facebook.svg" url="/" />
-        <link iconSrc="icons/twitter.svg" url="/" />
-        <link iconSrc="icons/vk.svg" url="/" />
-        <link iconSrc="icons/instagram.svg" url="/" />
+        <link name="facebook" iconSrc="icons/facebook.svg" url="/" />
+        <link name="twitter" iconSrc="icons/twitter.svg" url="/" />
+        <link name="vk" iconSrc="icons/vk.svg" url="/" />
+        <link name="instagram" iconSrc="icons/instagram.svg" url="/" />
     </socialNetworks>
     <mobileAppLinks>
         <link iconSrc="icons/playmarket.svg" url="/" />
         <link iconSrc="icons/apple.svg" url="/" />
     </mobileAppLinks>
     <statistics>
-        Сегодня на сайте 684&#160;978&#160;вакансий, 34&#160;789&#160;747&#160;резюме, 858&#160;923&#160;компании и за неделю 1&#160;211&#160;363&#160;приглашения
+        <vacanciesTotal>684 978</vacanciesTotal>
+        <resumeTotal>34 789 747</resumeTotal>
+        <companiesTotal>858 923</companiesTotal>
+        <invitesWeek>1 211 363</invitesWeek>
     </statistics>
     <copyright>
-        ©&#160;2019 Группа компаний HeadHunter
+        © 2019 Группа компаний HeadHunter
     </copyright>
-    <popup-data>
-        <product>
+    <deliveryMethods>
+        <point>Самовывоз</point>
+        <point>Доставка</point>
+    </deliveryMethods>
+    <sities>
+        <sity>Москва</sity>
+        <sity>Тверь</sity>
+        <sity>Тула</sity>
+        <sity>Калуга</sity>
+        <sity>Рязань</sity>
+    </sities>
+    <paymentMethods>
+        <point type="online-payment">Онлайн</point>
+        <point type="cash-payment">Наличными</point>
+        <point type="card-payment">Картой при получении</point>
+    </paymentMethods>
+    <orderedProduct>
             <id>5</id>
             <name>Футболка</name>
             <img>images/product-4.jpg</img>
@@ -120,42 +138,5 @@
                 <size avalible="true">XL</size>
                 <size avalible="true">XXL</size>
             </sizes>
-            <closeButton src="icons/close-button-oval.svg" />
-        </product>
-    </popup-data>
-    <form-data>
-        <closeButton src="icons/close-button.svg" />
-        <deliveryMethods>
-            <point>Самовывоз</point>
-            <point>Доставка</point>
-        </deliveryMethods>
-        <sities> 
-            <sity>Москва</sity>
-            <sity>Тверь</sity>
-            <sity>Тула</sity>
-            <sity>Калуга</sity>
-            <sity>Рязань</sity>
-        </sities>
-        <paymentMethods>
-            <point type="online-payment">Онлайн</point>
-            <point type="cash-payment">Наличными</point>
-            <point type="card-payment">Картой при получении</point>
-        </paymentMethods>
-        <product>
-            <id>5</id>
-            <name>Футболка</name>
-            <img>images/product-4.jpg</img>
-            <description>Красная хлопоковая футболка с коротким рукавом</description>
-            <price>390&#160;</price>
-            <oldPrice>690</oldPrice>
-            <sizes>
-                <size avalible="true">XS</size>
-                <size avalible="true">S</size>
-                <size avalible="true">M</size>
-                <size avalible="true">L</size>
-                <size avalible="true">XL</size>
-                <size avalible="true">XXL</size>
-            </sizes>
-        </product>
-    </form-data>
+    </orderedProduct>
 </doc>

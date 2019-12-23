@@ -2,15 +2,19 @@
 <xsl:stylesheet version="1.0" 
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-    <xsl:template match="closeButton" mode="close-button-form">
+    <xsl:template name="close-button-form">
         <div class="close-button-form">
-            <xsl:apply-templates select="." mode="close-button" />
+            <a href="#">
+                <img class="close-button" src="icons/close-button.svg" />
+            </a>
         </div>
     </xsl:template>
 
-    <xsl:template match="closeButton" mode="close-button-product">
+    <xsl:template name="close-button-product">
         <div class="product-card__close-button">
-            <xsl:apply-templates select="." mode="close-button" />
+            <a href="#">
+                <img class="close-button" src="icons/close-button-oval.svg" />
+            </a>
         </div>
     </xsl:template>
 

@@ -4,8 +4,6 @@
 
     <xsl:import href="common/close-button/close-button.xsl" />
     <xsl:import href="keys.xsl" />
-    
-
 
     <xsl:template match="popularProducts" mode="popular-products">
         <section class="content-section">
@@ -24,9 +22,11 @@
         </div>
     </xsl:template>
 
-    <xsl:template match="product" mode="product-form">
-        <div class="product-card-form-wrapper">
-            <xsl:apply-templates select="." mode="product" />
+    <xsl:template match="orderedProduct" mode="ordered-product-form">
+        <div class="column column_s-2 column_m-3 column_l-5">
+            <div class="product-card-form-wrapper">
+                <xsl:apply-templates select="." mode="product" />
+            </div>
         </div>
     </xsl:template>
 
@@ -35,7 +35,6 @@
             <div class="product-card__image-container">
                 <img class="product-card__image" src="{img}" />
                 <xsl:apply-templates select="oldPrice" mode="sale" />
-                <xsl:apply-templates select="closeButton" mode="close-button-product" />
             </div>
             <div class="product-card__name">
                 <xsl:value-of select="name" />
@@ -44,7 +43,28 @@
                 <xsl:apply-templates select="oldPrice" mode="old-price" />
                 <xsl:value-of select="price" />
                 <xsl:value-of select="key('keyCurrency','currency')"/>
-                
+
+            </div>
+            <xsl:apply-templates select="description" mode="description" />
+            <xsl:apply-templates select="sizes" mode="product-sizes" />
+        </div>
+    </xsl:template>
+
+    <xsl:template match="orderedProduct" mode="ordered-product">
+        <div class="product-card">
+            <div class="product-card__image-container">
+                <img class="product-card__image" src="{img}" />
+                <xsl:apply-templates select="oldPrice" mode="sale" />
+                <xsl:call-template name="close-button-product" />
+            </div>
+            <div class="product-card__name">
+                <xsl:value-of select="name" />
+            </div>
+            <div class="product-card__price">
+                <xsl:apply-templates select="oldPrice" mode="old-price" />
+                <xsl:value-of select="price" />
+                <xsl:value-of select="key('keyCurrency','currency')"/>
+
             </div>
             <xsl:apply-templates select="description" mode="description" />
             <xsl:apply-templates select="sizes" mode="product-sizes" />
@@ -53,8 +73,8 @@
 
     <xsl:template match="description" mode="description">
         <div class="product-card__description">
-                <xsl:value-of select="." />
-            </div>
+            <xsl:value-of select="." />
+        </div>
     </xsl:template>
 
     <xsl:template match="oldPrice" mode="sale">

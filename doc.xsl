@@ -17,10 +17,9 @@
     <xsl:import href="templates/product.xsl" />
     
     <xsl:output method="html" 
-                encoding = "utf-8"/>
+                encoding = "utf-8" />
 
-    <xsl:template match="doc">
-        
+    <xsl:template match="doc">       
         <html>
             <xsl:attribute name="lang">
                 <xsl:value-of select="language" />
@@ -30,8 +29,8 @@
             </head>
             <body>
                 <div class="main-container">
-                    <xsl:apply-templates select="form-data" mode="order-form" />
-                    <xsl:apply-templates select="popup-data" mode="order-popup" />
+                    <xsl:apply-templates select="." mode="order-form" />
+                    <xsl:apply-templates select="." mode="order-popup" />
                     <xsl:apply-templates select="." mode="navbar-section" />
                     <xsl:apply-templates select="." mode="header" />
                     <xsl:apply-templates select="slider" mode="slider" />
@@ -44,19 +43,19 @@
         </html>
     </xsl:template>
 
-    <xsl:template match="popup-data" mode="order-popup">
+    <xsl:template match="doc" mode="order-popup">
         <div class="popup-wrapper">
             <div class="product-card-wrapper">
-                <xsl:apply-templates select="product" mode="product" />
+                <xsl:apply-templates select="orderedProduct" mode="ordered-product" />
                 <button class="button button__long default-button">Заказать</button>
             </div>
         </div>
     </xsl:template>
 
-    <xsl:template match="form-data" mode="order-form">
+    <xsl:template match="doc" mode="order-form">
         <form class="order-form">
             <div class="columns-wrapper">
-                <xsl:apply-templates select="closeButton" mode="close-button-form" />
+                <xsl:call-template name="close-button-form" />
                 <div class="columns-row">
                     <div class="column column_s-2 column_m-3 column_l-7">
                         <h1 class="heading">Оформление заказа</h1>
@@ -67,9 +66,7 @@
                         <xsl:call-template name="order-form-notifications" />
                         <button class="button button__long default-button">Оформить заказ</button>
                     </div>
-                    <div class="column column_s-2 column_m-3 column_l-5">
-                        <xsl:apply-templates select="product" mode="product-form" />
-                    </div>
+                    <xsl:apply-templates select="orderedProduct" mode="ordered-product-form" />
                 </div>
             </div>
         </form>
@@ -83,5 +80,4 @@
             <xsl:call-template name="telephone-field" />
         </fieldset>
     </xsl:template>
-
 </xsl:stylesheet>

@@ -33,14 +33,14 @@
 
     <xsl:template match="authAllowed" mode="header-button-login">
         <div class="header__button">
-            <button class="header-button-icon header-button-icon_login">Войти</button>
+            <button class="header-button-icon header-button-icon_login"></button>
             <button class="header-button header-button_login">Войти</button>
         </div>
     </xsl:template>
 
     <xsl:template match="searchAllowed" mode="header-button-search">
         <div class="header__button">
-            <button class="header-button-icon header-button-icon_search">Поиск</button>
+            <button class="header-button-icon header-button-icon_search"></button>
         </div>
     </xsl:template>
 
@@ -59,7 +59,7 @@
     </xsl:template>
 
     <xsl:template match="contentNavigation" mode="content-navigation-icon-menu">
-        <button class="header-button-icon header-button-icon_menu">Меню</button>
+        <button class="header-button-icon header-button-icon_menu"></button>
     </xsl:template>
 
 </xsl:stylesheet>
