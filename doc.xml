@@ -15,7 +15,7 @@
     </location>
     <language>ru</language>
     <logo srcRed="icons/logo-red.svg" srcGrey="icons/logo-grey.svg" url="" />
-    <currency name="currency">₽</currency>
+    <currency name="RUR">₽</currency>
     <pageNavigation>
         <link url="/#">Шоурум</link>
         <link url="/#">Оплата</link>

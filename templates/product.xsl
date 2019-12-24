@@ -42,8 +42,7 @@
             <div class="product-card__price">
                 <xsl:apply-templates select="oldPrice" mode="old-price" />
                 <xsl:value-of select="price" />
-                <xsl:value-of select="key('keyCurrency','currency')"/>
-
+                <xsl:value-of select="key('keyCurrency','RUR')"/>
             </div>
             <xsl:apply-templates select="description" mode="description" />
             <xsl:apply-templates select="sizes" mode="product-sizes" />
@@ -63,7 +62,7 @@
             <div class="product-card__price">
                 <xsl:apply-templates select="oldPrice" mode="old-price" />
                 <xsl:value-of select="price" />
-                <xsl:value-of select="key('keyCurrency','currency')"/>
+                <xsl:value-of select="key('keyCurrency','RUR')"/>
 
             </div>
             <xsl:apply-templates select="description" mode="description" />
