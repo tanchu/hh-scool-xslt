@@ -13,7 +13,6 @@
     <xsl:import href="templates/buttonLogin.xsl"/>
     <xsl:import href="templates/carousel.xsl"/>
     <xsl:import href="templates/popularGoods.xsl"/>
-    <xsl:import href="templates/currencyCash.xsl"/>
     <xsl:import href="templates/features.xsl"/>
     <xsl:import href="templates/footer.xsl"/>
     <xsl:import href="templates/socialNetworks.xsl"/>
@@ -23,6 +22,10 @@
     <xsl:import href="templates/productCard.xsl"/>
     <xsl:import href="templates/popup.xsl"/>
     <xsl:import href="templates/declination.xsl"/>
+    <xsl:import href="templates/input.xsl"/>
+    <xsl:import href="templates/label.xsl"/>
+
+    <xsl:key name="currency-cache" match="/doc/currencies/currency" use="@type"/>
 
     <xsl:output method="html" encoding = "utf-8"/>
 

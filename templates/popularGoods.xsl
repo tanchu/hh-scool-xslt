@@ -7,12 +7,11 @@
             <div class="columns-wrapper">
                 <h2 class="heading heading_level-2">Популярные товары</h2>
                 <div class="columns-row">
-                    <xsl:apply-templates select="item" mode="product-card-item-popular-goods-section"/>
+                    <xsl:apply-templates select="item" mode="product-card-item"/>
                 </div>
             </div>
         </section>
     </xsl:template>
-
 
 </xsl:stylesheet>
 

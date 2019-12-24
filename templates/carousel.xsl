@@ -15,19 +15,14 @@
         </section>
     </xsl:template>
 
-
-
     <xsl:template match="slide" mode="carousel-section-slide">
         <div>
             <xsl:attribute name="class">
-                <xsl:text>carousel-section__slide </xsl:text>
+                <xsl:text>carousel-section__slide</xsl:text>
+                <xsl:if test="@active = 'false'">
+                    <xsl:text> carousel-section__slide_hide</xsl:text>
+                </xsl:if>
             </xsl:attribute>
-            <xsl:if test="@active = 'false'">
-                <xsl:attribute name="class">
-                    <xsl:text>carousel-section__slide carousel-section__slide_hide</xsl:text>
-                </xsl:attribute>
-            </xsl:if>
-
             <div class="columns-row">
                 <div class="column column_s-2 column_m-3 column_l-6">
                     <h1 class="carousel-section__heading heading heading_level-1">
@@ -55,18 +50,14 @@
         </div>
     </xsl:template>
 
-
-
     <xsl:template match="slide" mode="carousel-section-pagination">
         <div>
             <xsl:attribute name="class">
                 <xsl:text>pagination__dot </xsl:text>
+                <xsl:if test="@active = 'true'">
+                    <xsl:text> pagination__dot_active</xsl:text>
+                </xsl:if>
             </xsl:attribute>
-            <xsl:if test="@active = 'true'">
-                <xsl:attribute name="class">
-                    <xsl:text>pagination__dot pagination__dot_active</xsl:text>
-                </xsl:attribute>
-            </xsl:if>
         </div>
     </xsl:template>
 

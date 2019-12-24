@@ -29,11 +29,7 @@
                                 <div class="form__delivery-address">
                                     <h4 class="heading heading_level-4">Адрес</h4>
                                     <div class="select">
-
-                                        <select class="select__select-field" name="cityLocataion" value="">
-                                            <xsl:attribute name="size">
-                                                <xsl:value-of select="/doc/delivery/cityLocation/@size"/>
-                                            </xsl:attribute>
+                                        <select class="select__select-field" name="cityLocataion" value="" size="{/doc/delivery/cityLocation/@size}">
                                             <xsl:apply-templates select="/doc/delivery/cityLocation/city" mode="form-delivery-availible-cities"/>
                                         </select>
                                     </div>
@@ -57,13 +53,16 @@
                                 </div>
                             </div>
 
-                            <input class="button-submit form__button-submit" type="submit" value="Оформить заказ"></input>
-
+                            <xsl:call-template name="input">
+                                <xsl:with-param name="class" select="'button-submit form__button-submit'"/>
+                                <xsl:with-param name="type" select="'submit'"/>
+                                <xsl:with-param name="value" select="'Оформить заказ'"/>
+                            </xsl:call-template>
                         </div>
 
                         <div class="column column_s-2 column_m-3 column_l-5">
                             <div class="form__product-card">
-                                <xsl:apply-templates select="/doc/popularGoods/item[4]" mode="product-card-item-form-section"/>
+                                <xsl:apply-templates select="/doc/popularGoods/item[4]" mode="product-card-item-order"/>
                             </div>
                         </div>
                     </div>
@@ -76,43 +75,67 @@
         <div class="form__input-main-contacts">
             <h1 class="heading heading_level-1">Оформление заказа</h1>
             <h4 class="heading heading_level-4">Контактное лицо</h4>
-            <input class="form__input-text input-text" type="text" name="fullName" placeholder="ФИО" value="">
-            </input>
-            <input class="form__input-text input-text" type="text" name="email" placeholder="Электронная почта" value="">
-            </input>
+
+            <xsl:call-template name="input">
+                <xsl:with-param name="class" select="'form__input-text input-text'"/>
+                <xsl:with-param name="type" select="'text'"/>
+                <xsl:with-param name="name" select="'fullName'"/>
+                <xsl:with-param name="placeholder" select="'ФИО'"/>
+                <xsl:with-param name="value" select="''"/>
+            </xsl:call-template>
+
+            <xsl:call-template name="input">
+                <xsl:with-param name="class" select="'form__input-text input-text'"/>
+                <xsl:with-param name="type" select="'text'"/>
+                <xsl:with-param name="name" select="'email'"/>
+                <xsl:with-param name="placeholder" select="'Электронная почта'"/>
+                <xsl:with-param name="value" select="''"/>
+            </xsl:call-template>
 
             <div class="form__input-tel">
-                <input class="input-tel input-tel__country-code" type="text" name="countryCode" readonly="">
-                    <xsl:attribute name="value">
-                        <xsl:value-of select="/doc/location/telCode"/>
-                    </xsl:attribute>
-                </input>
-                <input class="input-tel input-tel__operator-code" type="text" name="operatorCode" placeholder="Код" value="">
-                </input>
-                <input class="input-tel input-tel__number" type="text" name="telNumber" placeholder="Номер" value="">
-                </input>
+                <xsl:call-template name="input">
+                    <xsl:with-param name="class" select="'input-tel input-tel__country-code'"/>
+                    <xsl:with-param name="type" select="'text'"/>
+                    <xsl:with-param name="name" select="'countryCode'"/>
+                    <xsl:with-param name="placeholder" select="'Электронная почта'"/>
+                    <xsl:with-param name="value" select="/doc/location/telCode"/>
+                    <xsl:with-param name="readonly" select="''"/>
+                </xsl:call-template>
+
+                <xsl:call-template name="input">
+                    <xsl:with-param name="class" select="'input-tel input-tel__operator-code'"/>
+                    <xsl:with-param name="type" select="'text'"/>
+                    <xsl:with-param name="name" select="'operatorCode'"/>
+                    <xsl:with-param name="placeholder" select="'Код'"/>
+                    <xsl:with-param name="value" select="''"/>
+                </xsl:call-template>
+
+                <xsl:call-template name="input">
+                    <xsl:with-param name="class" select="'input-tel input-tel__number'"/>
+                    <xsl:with-param name="type" select="'text'"/>
+                    <xsl:with-param name="name" select="'telNumber'"/>
+                    <xsl:with-param name="placeholder" select="'Номер'"/>
+                    <xsl:with-param name="value" select="''"/>
+                </xsl:call-template>
             </div>
         </div>
-
-
     </xsl:template>
 
     <xsl:template match="deliveryMethod" mode="form-delivery-method-radio-button">
         <div class="form__radio-button">
-            <input class="radio-button-sqared radio-button-sqared__button" type="radio" name="deliveryMethod">
-                <xsl:attribute name="value">
-                    <xsl:value-of select="@type"/>
-                </xsl:attribute>
-                <xsl:attribute name="id">
-                    <xsl:value-of select="@type"/>
-                </xsl:attribute>
-            </input>
-            <label class="radio-button-sqared__label">
-                <xsl:attribute name="for">
-                    <xsl:value-of select="@type"/>
-                </xsl:attribute>
-                <xsl:value-of select="."/>
-            </label>
+            <xsl:call-template name="input">
+                <xsl:with-param name="class" select="'radio-button-sqared radio-button-sqared__button'"/>
+                <xsl:with-param name="type" select="'radio'"/>
+                <xsl:with-param name="name" select="'deliveryMethod'"/>
+                <xsl:with-param name="value" select="@type"/>
+                <xsl:with-param name="id" select="@type"/>
+            </xsl:call-template>
+
+            <xsl:call-template name="label">
+                <xsl:with-param name="class" select="'radio-button-sqared__label'"/>
+                <xsl:with-param name="for" select="@type"/>
+                <xsl:with-param name="content" select="."/>
+            </xsl:call-template>
         </div>
     </xsl:template>
 
@@ -124,40 +147,37 @@
 
     <xsl:template match="paymentMethod" mode="form-payment-method">
         <div class="form__payment-method">
-            <input class="radio-button-circle" type="radio" name="paymentMethod">
-                <xsl:attribute name="value">
-                    <xsl:value-of select="@type"/>
-                </xsl:attribute>
-                <xsl:attribute name="id">
-                    <xsl:value-of select="@type"/>
-                </xsl:attribute>
-            </input>
-            <label class="radio-button-сircle__label">
-                <xsl:attribute name="for">
-                    <xsl:value-of select="@type"/>
-                </xsl:attribute>
-                <xsl:text>&#160;</xsl:text>
-                <xsl:value-of select="."/>
-            </label>
+            <xsl:call-template name="input">
+                <xsl:with-param name="class" select="'radio-button-circle'"/>
+                <xsl:with-param name="type" select="'radio'"/>
+                <xsl:with-param name="name" select="'paymentMethod'"/>
+                <xsl:with-param name="value" select="@type"/>
+                <xsl:with-param name="id" select="@type"/>
+            </xsl:call-template>
+
+            <xsl:call-template name="label">
+                <xsl:with-param name="class" select="'radio-button-сircle__label'"/>
+                <xsl:with-param name="for" select="@type"/>
+                <xsl:with-param name="content" select="."/>
+            </xsl:call-template>
         </div>
     </xsl:template>
 
     <xsl:template match="notificationMethod" mode="form-notification-method">
         <div class="checkbox">
-            <input class="checkbox__box" type="checkbox" value="">
-                <xsl:attribute name="name">
-                    <xsl:value-of select="@type"/>
-                </xsl:attribute>
-                <xsl:attribute name="id">
-                    <xsl:value-of select="@type"/>
-                </xsl:attribute>
-            </input>
-            <label class="label">
-                <xsl:attribute name="for">
-                    <xsl:value-of select="@type"/>
-                </xsl:attribute>
-                <xsl:value-of select="."/>
-            </label>
+            <xsl:call-template name="input">
+                <xsl:with-param name="class" select="'checkbox__box'"/>
+                <xsl:with-param name="type" select="'checkbox'"/>
+                <xsl:with-param name="name" select="'@type'"/>
+                <xsl:with-param name="value" select="''"/>
+                <xsl:with-param name="id" select="@type"/>
+            </xsl:call-template>
+
+            <xsl:call-template name="label">
+                <xsl:with-param name="class" select="'label'"/>
+                <xsl:with-param name="for" select="@type"/>
+                <xsl:with-param name="content" select="."/>
+            </xsl:call-template>
         </div>
     </xsl:template>
 

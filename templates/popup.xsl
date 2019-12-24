@@ -7,11 +7,15 @@
             <div class="popup-container">
                 <div class="popup-container__button-close">
                     <button class="button-close-icon button-close">
-                Закрыть
+                        Закрыть
                     </button>
                 </div>
-                <xsl:apply-templates select="/doc/popularGoods/item[4]" mode="product-card-item-popup-section"/>
-                <input class="button-submit product-card__button-submit" type="submit" value="Заказать"></input>
+                <xsl:apply-templates select="/doc/popularGoods/item[4]" mode="product-card-item-order"/>
+                <xsl:call-template name="input">
+                    <xsl:with-param name="class" select="'button-submit product-card__button-submit'"/>
+                    <xsl:with-param name="type" select="'submit'"/>
+                    <xsl:with-param name="value" select="'Заказать'"/>
+                </xsl:call-template>
             </div>
         </section>
     </xsl:template>
