@@ -1,10 +1,19 @@
 <doc>
-    <isAuthenticated name="isAuthenticated">false</isAuthenticated>
-    <language>ru</language>
+    <userInfo>
+        <userId />
+        <isLoggedIn>false</isLoggedIn>
+        <email />
+    </userInfo>
+    <autorization>
+        <token>1VQyAXdjtavSUgW71soISPkqmqc</token>
+        <sessionId>jZ/Q6Y9LSjKUwKnz31KM+w</sessionId>
+        <tokenExpiration>"2019-12-24T16:57:50+00:00"</tokenExpiration>
+    </autorization>
     <location>
         <country>Россия</country>
         <sity>Москва</sity>
     </location>
+    <language>ru</language>
     <logo srcRed="icons/logo-red.svg" srcGrey="icons/logo-grey.svg" url="" />
     <currency name="currency">₽</currency>
     <pageNavigation>
@@ -23,55 +32,64 @@
     <searchAllowed />
     <authAllowed url="/" />
     <slider>
-        <slide>
+        <slide active="true">
             <heading>Мужская и женская одежда с символикой HeadHunter</heading>
             <button url="/#">Перейти в каталог</button>
-            <image>icons/slider-1-s.png 290w,
-                                                            icons/slider-1-m.png 333w,
-                                                            icons/slider-1-l.png 530w"</image>
+            <defaultImage>images/slider-1.png</defaultImage>
+            <imgset>
+                <img>images/slider-1.png 1x</img>
+                <img>images/slider-1@2x.png 2x</img>
+                <img>images/slider-1@3x.png 3x</img>
+            </imgset>
         </slide>
-        <sliderNavigation>
-            <dot active="true" />
-            <dot />
-        </sliderNavigation>
+        <slide>
+            <heading>Офисные принадлежности с символикой HeadHunter</heading>
+            <button url="/#">Перейти в каталог</button>
+            <defaultImage>images/slider-2.png</defaultImage>
+            <imgset>
+                <img>images/slider-2.png 1x</img>
+                <img>images/slider-2@2x.png 2x</img>
+                <img>images/slider-2@3x.png 3x</img>
+            </imgset>
+        </slide>
     </slider>
     <popularProducts>
         <product>
             <id>1</id>
             <name>Зонт</name>
             <img>images/product-1.jpg</img>
-            <price>1&#160;990&#160;</price>
+            <price>1 990</price>
         </product>
         <product>
             <id>2</id>
             <name>Сумка</name>
             <img>images/product-2.jpg</img>
-            <price>290&#160;</price>
+            <price>290</price>
         </product>
         <product>
             <id>3</id>
             <name>Шлепанцы</name>
             <img>images/product-3.jpg</img>
-            <price>790&#160;</price>
+            <price>790</price>
         </product>
         <product>
             <id>4</id>
             <name>Толстовка</name>
             <img>images/product-5.jpg</img>
-            <price>3&#160;990&#160;</price>
+            <price>3 990</price>
         </product>
         <product>
             <id>5</id>
             <name>Футболка</name>
             <img>images/product-4.jpg</img>
-            <price>390&#160;</price>
+            <price>390</price>
             <oldPrice>690</oldPrice>
         </product>
         <product>
             <id>6</id>
             <name>Подушка</name>
             <img>images/product-6.jpg</img>
-            <price>990&#160;</price>
+            <price>990</price>
         </product>
     </popularProducts>
     <howWeWork>
@@ -81,7 +99,7 @@
         </point>
         <point>
             <iconSrc>icons/return-icon.svg</iconSrc>
-            <description>100%&#160;гарантия возврат и подлинность товара</description>
+            <description>100% гарантия возврат и подлинность товара</description>
         </point>
         <point>
             <iconSrc>icons/delivery-icon.svg</iconSrc>
@@ -123,20 +141,20 @@
         <point type="cash-payment">Наличными</point>
         <point type="card-payment">Картой при получении</point>
     </paymentMethods>
-    <orderedProduct>
-            <id>5</id>
-            <name>Футболка</name>
-            <img>images/product-4.jpg</img>
-            <description>Красная хлопоковая футболка с коротким рукавом</description>
-            <price>390&#160;</price>
-            <oldPrice>690</oldPrice>
-            <sizes>
-                <size avalible="true">XS</size>
-                <size avalible="true">S</size>
-                <size avalible="true">M</size>
-                <size avalible="true">L</size>
-                <size avalible="true">XL</size>
-                <size avalible="true">XXL</size>
-            </sizes>
-    </orderedProduct>
+    <product>
+        <id>5</id>
+        <name>Футболка</name>
+        <img>images/product-4.jpg</img>
+        <description>Красная хлопоковая футболка с коротким рукавом</description>
+        <price>390</price>
+        <oldPrice>690</oldPrice>
+        <sizes>
+            <size avalible="true">XS</size>
+            <size avalible="true">S</size>
+            <size avalible="true">M</size>
+            <size avalible="true">L</size>
+            <size avalible="true">XL</size>
+            <size avalible="true">XXL</size>
+        </sizes>
+    </product>
 </doc>

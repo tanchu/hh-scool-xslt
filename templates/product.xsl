@@ -22,7 +22,7 @@
         </div>
     </xsl:template>
 
-    <xsl:template match="orderedProduct" mode="ordered-product-form">
+    <xsl:template match="product" mode="ordered-product-form">
         <div class="column column_s-2 column_m-3 column_l-5">
             <div class="product-card-form-wrapper">
                 <xsl:apply-templates select="." mode="product" />
@@ -50,7 +50,7 @@
         </div>
     </xsl:template>
 
-    <xsl:template match="orderedProduct" mode="ordered-product">
+    <xsl:template match="product" mode="ordered-product">
         <div class="product-card">
             <div class="product-card__image-container">
                 <img class="product-card__image" src="{img}" />
@@ -87,7 +87,7 @@
         </span>
     </xsl:template>
 
-    <xsl:template match="product/sizes" mode="product-sizes">
+    <xsl:template match="sizes" mode="product-sizes">
         <div class="product-card__sizes">
             <xsl:apply-templates select="size" mode="product-size" />
         </div>

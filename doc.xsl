@@ -27,8 +27,7 @@
             <head>
                 <xsl:call-template name="head" />
             </head>
-            <body>
-                <div class="main-container">
+            <body>       
                     <xsl:apply-templates select="." mode="order-form" />
                     <xsl:apply-templates select="." mode="order-popup" />
                     <xsl:apply-templates select="." mode="navbar-section" />
@@ -36,8 +35,7 @@
                     <xsl:apply-templates select="slider" mode="slider" />
                     <xsl:apply-templates select="popularProducts" mode="popular-products" />
                     <xsl:apply-templates select="howWeWork" mode="how-we-work" />
-                    <xsl:apply-templates select="." mode="footer" />
-                </div>
+                    <xsl:apply-templates select="." mode="footer" />     
                 <script src="js/index.js"></script>
             </body>
         </html>
@@ -46,7 +44,7 @@
     <xsl:template match="doc" mode="order-popup">
         <div class="popup-wrapper">
             <div class="product-card-wrapper">
-                <xsl:apply-templates select="orderedProduct" mode="ordered-product" />
+                <xsl:apply-templates select="product" mode="ordered-product" />
                 <button class="button button__long default-button">Заказать</button>
             </div>
         </div>
@@ -66,7 +64,7 @@
                         <xsl:call-template name="order-form-notifications" />
                         <button class="button button__long default-button">Оформить заказ</button>
                     </div>
-                    <xsl:apply-templates select="orderedProduct" mode="ordered-product-form" />
+                    <xsl:apply-templates select="product" mode="ordered-product-form" />
                 </div>
             </div>
         </form>
