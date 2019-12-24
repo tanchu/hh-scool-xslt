@@ -1,12 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <doc>
-    <header>
-        <menu>
-            <item active="true" url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-        </menu>
-        <login/>
-    </header>
+    <userInfo>
+        <fullName>Иванов Иван Иванович</fullName>
+        <email>ivan@mail.ru</email>
+        <photo>ivan.jpg</photo>
+        <role>anonymous</role>
+    </userInfo>
+    <location>
+        <country>Россия</country>
+        <city url="#">Москва</city>
+        <telCode>+7</telCode>
+    </location>
+    <currencies>
+        <currency type="ru" value="₽"/>
+        <currency type="en" value="$"/>
+    </currencies>
+    <navigation>
+        <siteNavigation>
+            <item url="#">Шоурум</item>
+            <item url="#">Оплата</item>
+            <item url="#">Доставка</item>
+            <item url="#">Самовывоз</item>
+            <item url="#">Контактная информация</item>
+        </siteNavigation>
+        <goodsNavigation>
+            <item url="#">Одежда</item>
+            <item url="#">Сумки</item>
+            <item url="#">Аксессуары</item>
+            <item url="#">Офисные принадлежности</item>
+        </goodsNavigation>
+    </navigation>
+    <pageSliders>
+        <slide active="true">
+            <description>Мужская и женская одежда с символикой HeadHunter</description>
+            <image url="images/slide-1.png"/>
+            <descriptionCallToAction>Перейти в каталог</descriptionCallToAction>
+        </slide>
+        <slide active="false">
+            <description>Офисные принадлежности с символикой HeadHunter</description>
+            <image url="images/slide-2.png"/>
+            <descriptionCallToAction>Перейти в каталог</descriptionCallToAction>
+        </slide>
+    </pageSliders>
+    <popularGoods>
+        <item id="1" sale="false">
+            <title>Зонт</title>
+            <description>Красный зонт с логотипом HH</description>
+            <image url="images/product-1.jpg"/>
+            <price currency="ru">1&#160;990</price>
+        </item>
+        <item id="2" sale="false">
+            <title>Сумка</title>
+            <description>Красная сумка с логотипом HH</description>
+            <image url="images/product-2.jpg"/>
+            <price currency="ru">290</price>
+        </item>
+        <item id="3" sale="false">
+            <title>Шлепанцы</title>
+            <description>Красные шлепанцы с логотипом HH</description>
+            <image url="images/product-3.jpg"/>
+            <price currency="ru">790</price>
+            <sizes>
+                <size available="true" type="xs"/>
+                <size available="true" type="x"/>
+                <size available="true" type="m"/>
+                <size available="true" type="l"/>
+                <size available="true" type="xl"/>
+                <size available="true" type="xxl"/>
+            </sizes>
+        </item>
+        <item id="4" sale="true">
+            <title>Футболка</title>
+            <description>Красная футболка с логотипом HH</description>
+            <image url="images/product-4.jpg"/>
+            <price currency="ru">690</price>
+            <salePrice>390</salePrice>
+            <sizes>
+                <size available="true" type="xs"/>
+                <size available="true" type="x"/>
+                <size available="false" type="m"/>
+                <size available="true" type="l"/>
+                <size available="true" type="xl"/>
+                <size available="true" type="xxl"/>
+            </sizes>
+        </item>
+        <item id="5" sale="false">
+            <title>Толстовка</title>
+            <description>Красная толстовка с логотипом HH</description>
+            <image url="images/product-5.jpg"/>
+            <price currency="ru">3 990</price>
+            <sizes>
+                <size available="true" type="xs"/>
+                <size available="true" type="x"/>
+                <size available="true" type="m"/>
+                <size available="true" type="l"/>
+                <size available="true" type="xl"/>
+                <size available="true" type="xxl"/>
+            </sizes>
+        </item>
+        <item id="6" sale="false">
+            <title>Подушка</title>
+            <description>Красная подушка с логотипом HH</description>
+            <image url="images/product-6.jpg"/>
+            <price currency="ru">990</price>
+        </item>
+    </popularGoods>
+    <features>
+        <feature>
+            <description>Быстрая доставка по всей России</description>
+            <image url="images/support@3x.png"/>
+        </feature>
+        <feature>
+            <description>100% гарантия возврата и&#160;подлинность товара</description>
+            <image url="images/return@3x.png"/>
+        </feature>
+        <feature>
+            <description>Круглосуточная служба&#160;поддержки</description>
+            <image url="images/delivery@3x.png"/>
+        </feature>
+    </features>
+    <socialNetworks>
+        <socialNetwork name="facebook">#</socialNetwork>
+        <socialNetwork name="twitter">#</socialNetwork>
+        <socialNetwork name="vk">#</socialNetwork>
+        <socialNetwork name="instagram">#</socialNetwork>
+    </socialNetworks>
+    <mobileApps>
+        <mobileApp name="app-store">#</mobileApp>
+        <mobileApp name="google-play">#</mobileApp>
+    </mobileApps>
+    <copyRightYear>2019</copyRightYear>
+    <copyRightHeading>Группа компаний HeadHunter</copyRightHeading>
+    <statisticsInfo>
+        <numOfVacancies wordBase="ваканс">684 978</numOfVacancies>
+        <numOfResumes>34 789 747</numOfResumes>
+        <numOfCompanies wordBase="компан">858 923</numOfCompanies>
+        <numOfInvitations wordBase="приглашен">1 211 363</numOfInvitations>
+    </statisticsInfo>
+    <delivery>
+        <deliveryMethods>
+            <deliveryMethod type="selfPickup">Самовывоз</deliveryMethod>
+            <deliveryMethod type="deliveryPickup">Доставка</deliveryMethod>
+        </deliveryMethods>
+        <cityLocation size="1">
+            <city>Город</city>
+        </cityLocation>
+    </delivery>
+    <payment>
+        <paymentMethods>
+            <paymentMethod type="paymentOnline">Онлайн-оплата</paymentMethod>
+            <paymentMethod type="paymentCash">Наличными</paymentMethod>
+            <paymentMethod type="paymentCard">Картой при получении</paymentMethod>
+        </paymentMethods>
+    </payment>
+    <notification>
+        <notificationMethods>
+            <notificationMethod type="smsNotification">Хочу получать SMS уведомления</notificationMethod>
+        </notificationMethods>
+    </notification>
 </doc>
