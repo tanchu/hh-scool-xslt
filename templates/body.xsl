@@ -11,7 +11,7 @@
     <xsl:import href="checkout.xsl"/>
     <xsl:template match="/doc" mode="body">
         <body>
-            <xsl:apply-templates select="/doc" mode="additional-information-items"/>
+            <xsl:apply-templates select="site__nav" mode="additional-information-items"/>
             <xsl:apply-templates select="header__nav" mode="header"/>
             <xsl:apply-templates select="sliders" mode="slider"/>
             <selection class="content-section">
@@ -19,7 +19,7 @@
                 <xsl:apply-templates select="customer-support" mode="customer-support"/>
                 <xsl:apply-templates select="/doc" mode="footer"/>
             </selection>
-            <xsl:apply-templates select="checkout" mode="checkout"/>
+            <xsl:call-template name="checkout"/>
         </body>
     </xsl:template>
 </xsl:stylesheet> 

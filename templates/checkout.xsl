@@ -1,7 +1,9 @@
 <xsl:stylesheet version="1.0" 
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:import href="checkout-product.xsl"/>
-    <xsl:template math="checkout" mode="chekout">
+    <xsl:import href="checkout-cities.xsl"/>
+    <xsl:import href="payment.xsl"/>
+    <xsl:template name="checkout">
         <div class="checkout">
             <div class="columns-wrapper">
                 <div class="checkout__header">
@@ -24,7 +26,7 @@
                             <input type="text" class="input__brim" placeholder="Электронная почта"/>
                         </div>
                         <div class="input__field">
-                            <input type="text" class="input__brim input__phone__region" disabled="disabled" value="+7"/>
+                            <input type="text" class="input__brim input__phone__region" disabled="disabled" placeholder="+7"/>
                             <input type="number" class="input__brim input__phone__cod" placeholder="Код"/>
                             <input type="number" class="input__brim input__phone__number" placeholder="Номер"/>
                         </div>
@@ -38,12 +40,14 @@
                         <div class="checkout__text">
                             Адрес
                         </div>
+                        <xsl:apply-templates select="/doc/cities" mode="checkout-cities"/>
                         <div class="input__field">
                             <input type="text" class="input__brim input__address" placeholder="Адрес"/>
                         </div>
                         <div class="checkout__text">
                             Оплата
                         </div>
+                        <xsl:apply-templates select="payment" mode="payment"/>
                         <div class="checkout__text">
                             Уведомления 
                         </div>
@@ -55,7 +59,7 @@
                             Оформить заказ    
                         </div>
                     </div>
-                    <xsl:apply-templates select="products" mode="checkout-product"/>
+                    <xsl:call-template name="checkout-product"/>
                 </div>
             </div>
         </div>

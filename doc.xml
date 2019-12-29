@@ -1,4 +1,23 @@
 <doc>
+    <accounts>
+        <account id="1">
+            <surname>
+                Мостовой
+            </surname>
+            <name>
+                Егор
+            </name>
+            <mail>
+                moctegor@mail.ru
+            </mail>
+            <password>
+                xxxxxxxxxxxx
+            </password>
+            <number>
+                8888888888
+            </number>
+        </account>
+    </accounts>
     <location>Москва</location>
     <site__nav>
         <item url="#">Шоурум</item>
@@ -80,32 +99,36 @@
         Сегодня на сайте 6844 9784 вакансий,
         34 789 7474 резюме,8584 9234 комании и за неделю  1 2114 3634 приглашения
     </footer-text>
-    <checkout>
-        <cities>
-            <city>Долгопрудный</city>
-            <city>Москва</city>
-            <city>Санкт-Петербург</city>
-            <city>Ижевск</city>
-            <city>Челябинск</city>
-            <city>Омск</city>
-            <city>Казань</city>
-            <city>Сочи</city>
-        </cities>
-        <products>
-            <product>
-                <image>images/product-5.jpg</image>
-                <name>Толстовка</name>
-                <price>3&#160;990 ₽</price>
-                <description>Красная хлопоковая футболка с коротким руковом</description>
-                <sizes>
-                    <size>XS</size>
-                    <size>S</size>
-                    <size>M</size>
-                    <size>L</size>
-                    <size>XL</size>
-                    <size>XXL</size>
-                </sizes>
-            </product>
-        </products>
-    </checkout>
+    <cities>
+        <city>Долгопрудный</city>
+        <city>Москва</city>
+        <city>Санкт-Петербург</city>
+        <city>Ижевск</city>
+        <city>Челябинск</city>
+        <city>Омск</city>
+        <city>Казань</city>
+        <city>Сочи</city>
+    </cities>
+    <payment>
+        <item>Online-оплатa</item>
+        <item>Наличными</item>
+        <item>Картой при получении</item>
+    </payment>
+    <checkout-products>
+        <product>
+            <image>images/product-4.jpg</image>
+            <name>Футболка</name>
+            <old-price>690&#160;</old-price>
+            <price>390 ₽</price>
+            <description>Красная хлопоковая футболка с коротким руковом</description>
+            <sizes>
+                <size>XS</size>
+                <size>S</size>
+                <size>M</size>
+                <size>L</size>
+                <size>XL</size>
+                <size>XXL</size>
+            </sizes>
+        </product>
+    </checkout-products>
 </doc>

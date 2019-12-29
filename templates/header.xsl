@@ -32,10 +32,7 @@
     </xsl:template>
     <xsl:template match="header__nav/item" mode="header-shop-nav">
         <li class="nav__item">
-            <a href="{@url}">
-                <xsl:attribute name="class">
-                    <xsl:text>nav__link</xsl:text>
-                </xsl:attribute>
+            <a href="{@url}" class="nav__link">
                 <xsl:value-of select="."/>
             </a>
         </li>

@@ -22,7 +22,7 @@
                         <xsl:value-of select="name" />
                     </div>
                     <div class="product-card__price">
-                        <xsl:apply-templates select="old-price" mode="old-price"/>
+                        <xsl:apply-templates select="old-price" mode="product-card__old-price"/>
                         <xsl:value-of select="price"/>
                     </div>
                 </div>

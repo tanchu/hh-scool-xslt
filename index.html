@@ -12,7 +12,23 @@
           <div class="additional-information__city">Москва</div>
           <div class="additional-information__items">
             <ul class="nav">
-              ШоурумОплатаДоставкаСамовывозКонтактная информация
+              <li class="nav__item">
+                <a href="#" class="additional-information__text">Шоурум</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="additional-information__text">Оплата</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="additional-information__text">Доставка</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="additional-information__text">Самовывоз</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="additional-information__text"
+                  >Контактная информация</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -142,10 +158,12 @@
               <div class="product-card">
                 <div class="product-card__image-container">
                   <img class="product-card__image" src="images/product-4.jpg" />
-                  <div class="product-card__sale">sale</div>
+                  <div class="product-card__sale checkout__sale">sale</div>
                 </div>
                 <div class="product-card__name">Футболка</div>
-                <div class="product-card__price">690 390 ₽</div>
+                <div class="product-card__price">
+                  <span class="product-card__old-price">690 </span>390 ₽
+                </div>
               </div>
             </div>
           </div>
@@ -273,9 +291,138 @@
         </div>
       </footer></selection
     >
-
-    Долгопрудный Москва Санкт-Петербург Ижевск Челябинск Омск Казань Сочи
-    images/product-5.jpg Толстовка 3 990 ₽ Красная хлопоковая футболка с
-    коротким руковом XS S M L XL XXL
+    <div class="checkout">
+      <div class="columns-wrapper">
+        <div class="checkout__header">
+          <div class="checkout__head">
+            Оформление заказа
+          </div>
+          <div class="checkout__icon">
+            <img
+              class="checkout__image"
+              src="css/blocks/checkout/Union.svg"
+              alt="закрыть"
+            />
+          </div>
+        </div>
+        <div class="columns-row">
+          <div class="column column_s-2 column_m-3 column_l-7">
+            <div class="checkout__text">
+              Контактное лицо
+            </div>
+            <div class="input__field">
+              <input type="text" class="input__brim" placeholder="ФИО" />
+            </div>
+            <div class="input__field">
+              <input
+                type="text"
+                class="input__brim"
+                placeholder="Электронная почта"
+              />
+            </div>
+            <div class="input__field">
+              <input
+                type="text"
+                class="input__brim input__phone__region"
+                disabled
+                placeholder="+7"
+              /><input
+                type="number"
+                class="input__brim input__phone__cod"
+                placeholder="Код"
+              /><input
+                type="number"
+                class="input__brim input__phone__number"
+                placeholder="Номер"
+              />
+            </div>
+            <div class="checkout__text">
+              Способ получения заказа
+            </div>
+            <div class="checkout__button-group-container">
+              <button class="button checkout__button-group">Самовывоз</button
+              ><button class="button checkout__button-group">Доставка</button>
+            </div>
+            <div class="checkout__text">
+              Адрес
+            </div>
+            <select class="checkout__select"
+              ><option>Долгопрудный</option
+              ><option>Москва</option
+              ><option>Санкт-Петербург</option
+              ><option>Ижевск</option
+              ><option>Челябинск</option
+              ><option>Омск</option
+              ><option>Казань</option
+              ><option>Сочи</option></select
+            >
+            <div class="input__field">
+              <input
+                type="text"
+                class="input__brim input__address"
+                placeholder="Адрес"
+              />
+            </div>
+            <div class="checkout__text">
+              Оплата
+            </div>
+            <from
+              ><p><input type="radio" id="radioButton" />Online-оплатa</p>
+              <p><input type="radio" id="radioButton" />Наличными</p>
+              <p>
+                <input type="radio" id="radioButton" />Картой при получении
+              </p></from
+            >
+            <div class="checkout__text">
+              Уведомления
+            </div>
+            <div class="checkout__checkbox">
+              <input type="checkbox" name="sms" /><span
+                >Хочу получать SMS уведомления</span
+              >
+            </div>
+            <div class="button checkout__button">
+              Оформить заказ
+            </div>
+          </div>
+          <div class="column column_s-2 column_m-3 column_l-5">
+            <div class="checkout__clothes">
+              <div class="checkout__goods">
+                <div class="product-card">
+                  <div class="product-card">
+                    <div class="product-card__image-container">
+                      <img
+                        class="product-card__image"
+                        src="images/product-4.jpg"
+                      />
+                      <div class="product-card__sale checkout__sale">sale</div>
+                    </div>
+                    <div class="product-card__name">Футболка</div>
+                    <div class="product-card__price">
+                      <span class="product-card__old-price">690 </span>390 ₽
+                    </div>
+                    <div class="checkout__description">
+                      Красная хлопоковая футболка с коротким руковом
+                    </div>
+                    <div
+                      class="checkout__button-group-container  checkout__size"
+                    >
+                      <button class="button checkout__button-group">XS</button
+                      ><button class="button checkout__button-group">S</button
+                      ><button class="button checkout__button-group">M</button
+                      ><button class="button checkout__button-group">L</button
+                      ><button class="button checkout__button-group">XL</button
+                      ><button class="button checkout__button-group">
+                        XXL
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
