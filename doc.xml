@@ -148,8 +148,8 @@
         </product>
     </products>
     <logo>
-        <first img="/logo/first-logo.svg" alt="hh.ru" url="http://hh.ru"/>
-        <second img="/logo/second-logo.svg" alt="hh.ru" url="http://hh.ru/"/>
+        <first img="logo/first-logo.svg" alt="hh.ru" url="http://hh.ru"/>
+        <second img="logo/second-logo.svg" alt="hh.ru" url="http://hh.ru/"/>
     </logo>
     <delivery>
         <type label="self-delivery">Самовывоз</type>

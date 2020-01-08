@@ -14,7 +14,7 @@
                     <xsl:apply-templates select="catalogNav" mode="catalog-nav"/>
                     <div class="header__fill"></div>
                     <xsl:call-template name="search-button"/>
-                    <xsl:apply-templates select="login" mode="login"/>
+                    <xsl:apply-templates select="account" mode="login"/>
                 </div>
             </div>
         </header>
