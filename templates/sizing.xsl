@@ -25,19 +25,13 @@
             <xsl:value-of select="."/>
           </xsl:attribute>
         </input>
-        <xsl:apply-templates select="." mode="sizing-box-radio-button"/>
+        <xsl:apply-templates select="." mode="sizing-box-button"/>
       </label>
     </div>
   </xsl:template>
 
-  <xsl:template match="size/code" mode="sizing-box-radio-button">
+  <xsl:template match="size/code" mode="sizing-box-button">
     <span class="radio-button product-card__sizing-button">
-      <xsl:value-of select="."/>
-    </span>
-  </xsl:template>
-
-  <xsl:template match="size/code[last()]" mode="sizing-box-radio-button">
-    <span class="radio-button product-card__sizing-button product-card__sizing-button_last">
       <xsl:value-of select="."/>
     </span>
   </xsl:template>

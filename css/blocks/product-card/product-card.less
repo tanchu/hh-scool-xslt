@@ -71,8 +71,10 @@
 
     &-button {
       border-right-width: 0;
+    }
 
-      &_last {
+    &-box:last-child & {
+      &-button {
         border-right-width: 1px;
       }
     }
@@ -80,6 +82,7 @@
 
   &__order-button {
     width: 100%;
+
     &-container {
       display: none;
       margin-top: 15px;

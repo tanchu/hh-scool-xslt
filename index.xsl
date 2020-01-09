@@ -31,7 +31,7 @@
 
     <xsl:apply-templates select="/doc" mode="header"/>
 
-    <xsl:apply-templates select="/doc" mode="carousel-section"/>
+    <xsl:apply-templates select="mainSlider" mode="carousel-section"/>
 
     <xsl:apply-templates select="/doc" mode="goods-section"/>
 

@@ -10,8 +10,8 @@
       <div class="columns-wrapper">
         <div class="footer-links">
           <div class="columns-row">
-            <xsl:call-template name="footer-social"/>
-            <xsl:call-template name="footer-apps"/>
+            <xsl:apply-templates select="social" mode="footer-social"/>
+            <xsl:apply-templates select="apps" mode="footer-apps"/>
             <xsl:call-template name="footer-logo"/>
           </div>
         </div>
@@ -27,15 +27,15 @@
     </footer>
   </xsl:template>
 
-  <xsl:template name="footer-social">
+  <xsl:template match="social" mode="footer-social">
     <div class="column column_s-2 column_m-3 column_l-4">
-      <xsl:call-template name="social"/>
+      <xsl:apply-templates select="." mode="social"/>
     </div>
   </xsl:template>
 
-  <xsl:template name="footer-apps">
+  <xsl:template match="apps" mode="footer-apps">
     <div class="column column_s-2 column_m-3 column_l-4">
-      <xsl:call-template name="apps"/>
+      <xsl:apply-templates select="." mode="apps"/>
     </div>
   </xsl:template>
 

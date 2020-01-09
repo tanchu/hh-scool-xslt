@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-  <xsl:template name="apps">
+  <xsl:template match="apps" mode="apps">
     <div class="apps">
-      <xsl:call-template name="app-appstore"/>
-      <xsl:call-template name="app-googleplay"/>
+      <xsl:apply-templates select="." mode="app-item"/>
     </div>
   </xsl:template>
 
-  <xsl:template name="app-appstore">
-    <a href="#" class="apps__link" target="_blank">
-      <img src="css/blocks/apps/icon-appstore.svg" alt="App Store" />
-    </a>
-  </xsl:template>
-
-  <xsl:template name="app-googleplay">
-    <a href="#" class="apps__link" target="_blank">
-      <img src="css/blocks/apps/icon-googleplay.svg" alt="Google Play" />
+  <xsl:template match="appsItem" mode="app-item">
+    <a class="apps__link" target="_blank">
+      <xsl:attribute name="href">
+        <xsl:value-of select="link/@href"/>
+      </xsl:attribute>
+      <img>
+        <xsl:attribute name="src">
+          <xsl:value-of select="image/@src"/>
+        </xsl:attribute>
+        <xsl:attribute name="alt">
+          <xsl:value-of select="image"/>
+        </xsl:attribute>
+      </img>
     </a>
   </xsl:template>
 

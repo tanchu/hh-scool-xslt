@@ -2,7 +2,11 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <xsl:template match="mainSlider/slide" mode="carousel-section-slide">
-    <div class="carousel-card js-slide">
+    <div>
+      <xsl:attribute name="class">
+        <xsl:text>js-slide carousel-card</xsl:text>
+        <xsl:apply-templates select="current()[@active='true']" mode="carousel-section-slide-class" />
+      </xsl:attribute>
       <xsl:attribute name="data-slide-id">
         <xsl:value-of select="@id" />
       </xsl:attribute>
@@ -10,13 +14,8 @@
     </div>
   </xsl:template>
 
-  <xsl:template match="mainSlider/slide[@active='true']" mode="carousel-section-slide">
-    <div class="carousel-card carousel-card_active js-slide">
-      <xsl:attribute name="data-slide-id">
-        <xsl:value-of select="@id" />
-      </xsl:attribute>
-      <xsl:apply-templates select="." mode="carousel-section-slide-content" />
-    </div>
+  <xsl:template match="slide" mode="carousel-section-slide-class">
+    <xsl:text> carousel-card_active</xsl:text>
   </xsl:template>
 
   <xsl:template match="slide" mode="carousel-section-slide-content">
@@ -34,25 +33,25 @@
   <xsl:template match="mainSlider" mode="carousel-section-dots">
     <div class="carousel-dots">
       <ul class="carousel-dots__list js-slide-buttons">
-        <xsl:apply-templates select="slide" mode="carousel-section-dots-item"></xsl:apply-templates>
+        <xsl:apply-templates select="slide" mode="carousel-section-dots-item" />
       </ul>
     </div>
   </xsl:template>
 
   <xsl:template match="mainSlider/slide" mode="carousel-section-dots-item">
-    <li class="js-slide-button carousel-dots__item">
+    <li>
+      <xsl:attribute name="class">
+        <xsl:text>js-slide-button carousel-dots__item</xsl:text>
+        <xsl:apply-templates select="current()[@active='true']" mode="carousel-section-dots-item-class" />
+      </xsl:attribute>
       <xsl:attribute name="data-slide-id">
         <xsl:value-of select="@id" />
       </xsl:attribute>
     </li>
   </xsl:template>
 
-  <xsl:template match="mainSlider/slide[@active='true']" mode="carousel-section-dots-item">
-    <li class="js-slide-button carousel-dots__item carousel-dots__item_active">
-      <xsl:attribute name="data-slide-id">
-        <xsl:value-of select="@id" />
-      </xsl:attribute>
-    </li>
+  <xsl:template match="slide" mode="carousel-section-dots-item-class">
+    <xsl:text> carousel-dots__item_active</xsl:text>
   </xsl:template>
 
 </xsl:stylesheet>

@@ -3,17 +3,13 @@
 
   <xsl:import href="../main-slider.xsl"/>
 
-  <xsl:template match="doc" mode="carousel-section">
-    <xsl:apply-templates select="mainSlider" mode="carousel-section-content"/>
-  </xsl:template>
-
-  <xsl:template match="mainSlider" mode="carousel-section-content">
+  <xsl:template match="mainSlider" mode="carousel-section">
     <section class="carousel-section">
       <div class="columns-wrapper">
         <div class="carousel-section__cards-wrapper">
           <xsl:apply-templates select="slide" mode="carousel-section-slide"/>
         </div>
-        <xsl:apply-templates select="." mode="carousel-section-dots"></xsl:apply-templates>
+        <xsl:apply-templates select="." mode="carousel-section-dots" />
       </div>
     </section>
   </xsl:template>

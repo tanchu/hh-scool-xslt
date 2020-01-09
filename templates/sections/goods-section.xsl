@@ -4,7 +4,7 @@
   <xsl:import href="../goods.xsl"/>
 
   <xsl:template match="doc" mode="goods-section">
-    <xsl:apply-templates select="goods[item[@popular='true']]" mode="goods-section-content"/>
+    <xsl:apply-templates select="goods[item/@popular='true']" mode="goods-section-content"/>
   </xsl:template>
 
   <xsl:template match="goods" mode="goods-section-content">

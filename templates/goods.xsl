@@ -31,7 +31,7 @@
     </div>
   </xsl:template>
 
-  <xsl:template match="goods/item/price/oldPrice" mode="goods-section-item-old-price">
+  <xsl:template match="price/oldPrice" mode="goods-section-item-old-price">
     <span class="product-card__old-price">
       <xsl:value-of select="."/>
     </span>

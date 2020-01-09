@@ -120,4 +120,33 @@
     <empoyers>858 923</empoyers>
     <offers>1 211 363</offers>
   </statistics>
+  <social>
+    <socialItem>
+      <link href="#"></link>
+      <image src="css/blocks/social/icon-fb.svg">Facebook</image>
+    </socialItem>
+    <socialItem>
+      <link href="#"></link>
+      <image src="css/blocks/social/icon-tw.svg">Twitter</image>
+    </socialItem>
+    <socialItem>
+      <link href="#"></link>
+      <image src="css/blocks/social/icon-vk.svg">Vkontakte</image>
+    </socialItem>
+    <socialItem>
+      <link href="#"></link>
+      <image src="css/blocks/social/icon-inst.svg">Instagram</image>
+    </socialItem>
+  </social>
+  <apps>
+    <appsItem>
+      <link href="#"></link>
+      <image src="css/blocks/apps/icon-appstore.svg">App Store</image>
+    </appsItem>
+    <appsItem>
+      <link href="#"></link>
+      <image src="css/blocks/apps/icon-googleplay.svg">Google Play</image>
+    </appsItem>
+  </apps>
 </doc>
+
