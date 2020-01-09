@@ -1,48 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <xsl:import href="templates/head.xsl"/>
-    <xsl:import href="templates/menu.xsl"/>
+  <xsl:import href="templates/head.xsl"/>
+  <xsl:import href="templates/scripts.xsl"/>
 
-    <xsl:output method="html"/>
+  <xsl:import href="templates/sections/top-section.xsl"/>
+  <xsl:import href="templates/sections/header.xsl"/>
+  <xsl:import href="templates/sections/carousel-section.xsl"/>
+  <xsl:import href="templates/sections/goods-section.xsl"/>
+  <xsl:import href="templates/sections/triggers-section.xsl"/>
+  <xsl:import href="templates/sections/footer.xsl"/>
+  <xsl:import href="templates/popups/popup-order.xsl"/>
 
-    <xsl:template match="/doc">
-        <html>
-            <head>
-                <xsl:call-template name="head"/>
-            </head>
-            <body>
-                <xsl:apply-templates select="/doc" mode="body"/>
-            </body>
-        </html>
-    </xsl:template>
+  <xsl:output method="html" encoding="UTF-8" indent="no" media-type="text/html;" />
 
-    <xsl:template match="doc" mode="body">
-        <header class="header">
-            <div class="columns-wrapper">
-                <div class="header__content">
-                    <div class="header__logo">
-                        <a href="https://leonidfeskov.github.io/hh-school-html/#" class="logo-link">
-                            <img class="logo" src="files/logo.6442b6d6.svg" alt="hh.ru"/>
-                        </a>
-                    </div>
+  <xsl:template match="/doc">
+    <html>
+      <head>
+        <xsl:call-template name="head"/>
+      </head>
+      <body>
+        <xsl:apply-templates select="/doc" mode="body"/>
+        <xsl:call-template name="scripts"/>
+      </body>
+    </html>
+  </xsl:template>
 
-                    <xsl:apply-templates select="menu" mode="header-menu"/>
+  <xsl:template match="doc" mode="body">
 
-                    <div class="header__fill"></div>
-                    <div class="header__button">
-                        <button class="header-button-icon header-button-icon_search">Поиск</button>
-                    </div>
-                    <div class="header__button">
-                        <button class="header-button-icon header-button-icon_login">Войти</button>
-                        <button class="header-button header-button_login">Войти</button>
-                    </div>
-                    <div class="header__button header__button_menu">
-                        <button class="header-button-icon header-button-icon_menu">Меню</button>
-                    </div>
-                </div>
-            </div>
-        </header>
-    </xsl:template>
+    <xsl:apply-templates select="/doc" mode="top-section"/>
+
+    <xsl:apply-templates select="/doc" mode="header"/>
+
+    <xsl:apply-templates select="mainSlider" mode="carousel-section"/>
+
+    <xsl:apply-templates select="/doc" mode="goods-section"/>
+
+    <xsl:apply-templates select="/doc" mode="triggers-section"/>
+
+    <xsl:apply-templates select="/doc" mode="footer"/>
+
+    <xsl:call-template name="popup-order"/>
+
+  </xsl:template>
 
 </xsl:stylesheet>
 

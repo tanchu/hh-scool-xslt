@@ -1,12 +1,152 @@
 <doc>
-    <header>
-        <menu>
-            <item active="true" url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-        </menu>
-        <login/>
-    </header>
+  <location country="россия" currency="rub">Москва</location>
+  <currency>
+    <item name="rub">₽</item>
+    <item name="usd">$</item>
+    <item name="eur">€</item>
+  </currency>
+  <phoneCodes>
+    <code country="россия">+7</code>
+    <code country="казахстан">+7</code>
+    <code country="usa">+1</code>
+  </phoneCodes>
+  <siteNav>
+    <navItem url="/">Шоурум</navItem>
+    <navItem url="/">Оплата</navItem>
+    <navItem url="/">Доставка</navItem>
+    <navItem url="/">Самовывоз</navItem>
+    <navItem url="/">Контактная информация</navItem>
+  </siteNav>
+  <shopNav>
+    <navItem active="true" url="/">Одежда</navItem>
+    <navItem url="/">Сумки</navItem>
+    <navItem url="/">Аксессуары</navItem>
+    <navItem url="/">Офисные принадлежности</navItem>
+  </shopNav>
+  <userInfo>
+    <login auth="true"></login>
+    <name>Matania</name>
+  </userInfo>
+  <mainSlider>
+    <slide id="1" active="true">
+      <description>Мужская и женская одежда с символикой HeadHunter</description>
+      <image src="images/carousel-product-1@1.png" srcset="images/carousel-product-1@1.png 1x, images/carousel-product-1@2x.png 2x, images/carousel-product-1@3x.png 3x">Мужская и женская одежда</image>
+    </slide>
+    <slide id="2">
+      <description>Офисные принадлежности с символикой HeadHunter</description>
+      <image src="images/carousel-product-2@1.png" srcset="images/carousel-product-2@1.png 1x, images/carousel-product-2@2x.png 2x, images/carousel-product-2@3x.png 3x">Офисные принадлежности</image>
+    </slide>
+  </mainSlider>
+  <goods>
+    <item popular="true">
+      <image src="images/product-1.jpg"></image>
+      <name id="umbrella">Зонт</name>
+      <description>Красный элегантный зонт</description>
+      <price>
+        <currentPrice>1 990</currentPrice>
+      </price>
+    </item>
+    <item popular="true">
+      <image src="images/product-2.jpg"></image>
+      <name id="bag">Сумка</name>
+      <description>Красная стильная сумка из переработанного хлопка</description>
+      <price>
+        <currentPrice>290</currentPrice>
+      </price>
+    </item>
+    <item popular="true">
+      <image src="images/product-3.jpg"></image>
+      <name id="slippers">Шлепанцы</name>
+      <description>Красные резиновые шлепанцы</description>
+      <price>
+        <currentPrice>790</currentPrice>
+      </price>
+      <size>
+        <code>35</code>
+        <code>36</code>
+        <code>37</code>
+        <code>38</code>
+      </size>
+    </item>
+    <item popular="true">
+      <image src="images/product-4.jpg"></image>
+      <name id="t-shirt">Футболка</name>
+      <description>Красная хлопоковая футболка с коротким руковом</description>
+      <price>
+        <currentPrice>390</currentPrice>
+        <oldPrice>690</oldPrice>
+      </price>
+      <size>
+        <code>XS</code>
+        <code>S</code>
+        <code>M</code>
+        <code>L</code>
+        <code>XL</code>
+        <code>XXL</code>
+      </size>
+    </item>
+    <item popular="true">
+      <image src="images/product-5.jpg"></image>
+      <name id="hoodie">Толстовка</name>
+      <description>Красная хлопоковая толстовка с карманами</description>
+      <price>
+        <currentPrice>3 990</currentPrice>
+      </price>
+      <size>
+        <code>XS</code>
+        <code>S</code>
+        <code>M</code>
+        <code>L</code>
+        <code>XL</code>
+      </size>
+    </item>
+    <item popular="true">
+      <image src="images/product-6.jpg"></image>
+      <name id="pillow">Подушка</name>
+      <description>Красная декоративная подушка</description>
+      <price>
+        <currentPrice>990</currentPrice>
+      </price>
+    </item>
+  </goods>
+  <serviceTriggers>
+    <item name="delivery">Быстрая доставка по всей России</item>
+    <item name="return">100% гарантия возврата и подлинность товара</item>
+    <item name="support">Круглосуточная служба поддержки</item>
+  </serviceTriggers>
+  <statistics>
+    <vacancies>684 978</vacancies>
+    <resume>34 789 747</resume>
+    <empoyers>858 923</empoyers>
+    <offers>1 211 363</offers>
+  </statistics>
+  <social>
+    <socialItem>
+      <link href="#"></link>
+      <image src="css/blocks/social/icon-fb.svg">Facebook</image>
+    </socialItem>
+    <socialItem>
+      <link href="#"></link>
+      <image src="css/blocks/social/icon-tw.svg">Twitter</image>
+    </socialItem>
+    <socialItem>
+      <link href="#"></link>
+      <image src="css/blocks/social/icon-vk.svg">Vkontakte</image>
+    </socialItem>
+    <socialItem>
+      <link href="#"></link>
+      <image src="css/blocks/social/icon-inst.svg">Instagram</image>
+    </socialItem>
+  </social>
+  <apps>
+    <appsItem>
+      <link href="#"></link>
+      <image src="css/blocks/apps/icon-appstore.svg">App Store</image>
+    </appsItem>
+    <appsItem>
+      <link href="#"></link>
+      <image src="css/blocks/apps/icon-googleplay.svg">Google Play</image>
+    </appsItem>
+  </apps>
 </doc>
+
