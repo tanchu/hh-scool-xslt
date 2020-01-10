@@ -22,6 +22,7 @@
                     <div class="product-card__price">
                         <xsl:apply-templates select="old-price" mode="product-card__old-price"/>
                         <xsl:value-of select="price"/>
+                        <xsl:value-of select="key('key-currency', /doc/accounts/account/user-currency/@type)"/>
                     </div>
                     <div class="checkout__description">
                         <xsl:value-of select="description"/>

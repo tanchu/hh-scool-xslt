@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" 
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <xsl:template match="site__nav" mode="additional-information-items">
+    <xsl:template match="navigation" mode="additional-information-items">
         <div class="additional-information">
             <div class ="columns-wrapper">
                 <div class="additional-information__container">
@@ -17,7 +17,7 @@
             </div>
         </div>
     </xsl:template>
-    <xsl:template match="site__nav/item" mode="additional-information">
+    <xsl:template match="navigation/item" mode="additional-information">
         <li class="nav__item">
             <a href="{@url}" class="additional-information__text">
                 <xsl:value-of select="."/>
