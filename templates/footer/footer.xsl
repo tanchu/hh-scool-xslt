@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <xsl:import href="socials/socials.xsl"/>
-    <xsl:import href="apps/apps.xsl"/>
-    <xsl:import href="copyright/copyright.xsl"/>
-    <xsl:import href="stats/stats.xsl"/>
-    <xsl:import href="second-logo/second-logo.xsl"/>
 
     <xsl:template match="/doc" mode="footer">
         <footer class="footer">
@@ -19,7 +14,7 @@
                                 <xsl:apply-templates select="apps" mode="apps"/>
                             </div>
                             <div class="column column_s-2 column_m-3 column_l-4">
-                                <xsl:apply-templates select="logo" mode="second-logo"/>
+                                <xsl:apply-templates select="logo" mode="footer-logo"/>
                             </div>
                         </div>
                     </div>
@@ -30,4 +25,59 @@
             </div>
         </footer>
     </xsl:template>
+
+    <xsl:template match="socials" mode="socials">
+        <div class="footer-content-social">
+            <xsl:apply-templates select="item" mode="social"/>
+        </div>
+    </xsl:template>
+
+    <xsl:template match="item" mode="social">
+        <div class="footer-content-social__icon-container">
+            <a href="{@url}">
+                <img class="footer-content-social__icon" src="{@img}"/>
+            </a>
+        </div>
+    </xsl:template>
+
+    <xsl:template match="apps" mode="apps">
+        <div class="footer-content-app">
+            <xsl:apply-templates select="item" mode="apps-item"/>
+        </div>
+    </xsl:template>
+
+    <xsl:template match="item" mode="apps-item">
+        <div class="footer-content-app__icon-container">
+            <a href="{@url}">
+                <img class="footer-content-app__icon" src="{@img}"/>
+            </a>
+        </div>
+    </xsl:template>
+
+    <xsl:template match="footer" mode="footer-logo">
+        <div class="footer-content-logo">
+            <div class="footer-content-logo__icon-container">
+                <a href="{@url}">
+                    <img class="footer-content-logo__icon" src="{@img}"/>
+                </a>
+            </div>
+        </div>
+    </xsl:template>
+
+    <xsl:template match="currentYear" mode="copyright">
+        <div class="footer-content__copyright">
+            © <xsl:value-of select="."></xsl:value-of> Группа компаний HeadHunter
+        </div>
+    </xsl:template>
+
+    <xsl:template match="stats" mode="stats">
+        <div class="footer-content__stats">
+            Сегодня на сайте
+            <xsl:value-of select="vacansies"></xsl:value-of>вакансий,
+            <xsl:value-of select="resumes"></xsl:value-of>резюме,
+            <xsl:value-of select="companies"></xsl:value-of>компании и за неделю
+            <xsl:value-of select="invitations"></xsl:value-of>приглашения
+        </div>
+    </xsl:template>
+
 </xsl:stylesheet>

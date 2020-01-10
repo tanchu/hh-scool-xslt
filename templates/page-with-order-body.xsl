@@ -3,8 +3,6 @@
 
     <xsl:import href="top-section/top-section.xsl"/>
     <xsl:import href="header/header.xsl"/>
-    <xsl:import href="slider/slider-to-catalog/slider-to-catalog.xsl"/>
-    <xsl:import href="popular-products/popular-products.xsl"/>
     <xsl:import href="services/services.xsl"/>
     <xsl:import href="footer/footer.xsl"/>
     <xsl:import href="order/order.xsl"/>

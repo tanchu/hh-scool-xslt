@@ -1,6 +1,6 @@
 <doc>
     <currentCity>Москва</currentCity>
-    <account state="1">
+    <account>
         <userID></userID>
         <name>Татьяна</name>
         <surname>Гриценко</surname>
@@ -26,14 +26,22 @@
         <item url="/">Офисные принадлежности</item>
     </catalogNav>
     <sliders>
-        <sliderToCatalog>
-            <slide active="true" img="images/img-01.png" img_x="images/img-01.png 1x, images/img-01@2x.png 2x, images/img-01@3x.png 3x">
-                Мужская и женская одежда с&#160;символикой HeadHunter
+        <mainSlider>
+            <slide active="true" id="1">
+                <image>images/img-01.png</image>
+                <image_2x>images/img-01@2x.png</image_2x>
+                <image_3x>images/img-01@3x.png</image_3x>
+                <text>Мужская и женская одежда с&#160;символикой HeadHunter</text>
+                <button>Перейти в каталог</button>
             </slide>
-            <slide text="" img="" img_x=""></slide>
-            <slide text="" img="" img_x=""></slide>
-            <slide text="" img="" img_x=""></slide>
-        </sliderToCatalog>
+            <slide id="2">
+                <image>images/img-02.png</image>
+                <image_2x>images/img-02@2x.png</image_2x>
+                <image_3x>images/img-02@3x.png</image_3x>
+                <text>Офисные принадлежности с&#160;символикой HeadHunter</text>
+                <button>Перейти в каталог</button>
+            </slide>
+        </mainSlider>
     </sliders>
     <services>
         <item img="icons/services/delivery-icon.svg">Быстрая доставка по&#160;всей России</item>
@@ -59,12 +67,11 @@
     <currentYear>2019</currentYear>
     <products>
         <product id="1" popular="true">
-            <image img="images/product-1.jpg"/>
+            <image>images/product-1.jpg</image>
             <name>Зонт</name>
-            <price val="Рубль">
-                <default>1&#160;990</default>
-                <current sale="0">1&#160;990</current>
-                <val>Рубль</val>
+            <price sale="false">
+                <value>1&#160;990</value>
+                <curr>Рубль</curr>
             </price>
             <description>Красный зонт</description>
             <sizes>
@@ -72,11 +79,11 @@
             </sizes>
         </product>
         <product id="2" popular="true">
-            <image img="images/product-2.jpg"/>
+            <image>images/product-2.jpg</image>
             <name>Сумка</name>
-            <price val="Рубль">
-                <default>290</default>
-                <current sale="0">290</current>
+            <price sale="false">
+                <value>290</value>
+                <curr>Рубль</curr>
             </price>
             <description>Красная сумка</description>
             <sizes>
@@ -84,11 +91,11 @@
             </sizes>
         </product>
         <product id="3" popular="true">
-            <image img="images/product-3.jpg"/>
+            <image>images/product-3.jpg</image>
             <name>Шлепанцы</name>
-            <price val="Рубль">
-                <default>790</default>
-                <current sale="0">790</current>
+            <price sale="false">
+                <value>790</value>
+                <curr>Рубль</curr>
             </price>
             <description>Красные шлепанцы</description>
             <sizes>
@@ -101,11 +108,12 @@
             </sizes>
         </product>
         <product id="4" popular="true">
-            <image img="images/product-4.jpg"/>
+            <image>images/product-4.jpg</image>
             <name>Футболка</name>
-            <price val="Рубль">
-                <default>690</default>
-                <current sale="1">390</current>
+            <price sale="true">
+                <value>390</value>
+                <oldValue>690</oldValue>
+                <curr>Рубль</curr>
             </price>
             <description>Красная хлопковая футболка с&#160;коротким рукавом</description>
             <sizes>
@@ -118,11 +126,11 @@
             </sizes>
         </product>
         <product id="5" popular="true">
-            <image img="images/product-5.jpg"/>
+            <image>images/product-5.jpg</image>
             <name>Толстовка</name>
-            <price val="Рубль">
-                <default>3&#160;990</default>
-                <current sale="0">3&#160;990</current>
+            <price sale="false">
+                <value>3&#160;990</value>
+                <curr>Рубль</curr>
             </price>
             <description>Красная толстовка</description>
             <sizes>
@@ -135,11 +143,11 @@
             </sizes>
         </product>
         <product id="6" popular="true">
-            <image img="images/product-6.jpg"/>
+            <image>images/product-6.jpg</image>
             <name>Подушка</name>
-            <price val="Рубль">
-                <default>990</default>
-                <current sale="0">990</current>
+            <price sale="false">
+                <value>990</value>
+                <curr>Рубль</curr>
             </price>
             <description>Красная подушка</description>
             <sizes>
@@ -148,8 +156,8 @@
         </product>
     </products>
     <logo>
-        <first img="logo/first-logo.svg" alt="hh.ru" url="http://hh.ru"/>
-        <second img="logo/second-logo.svg" alt="hh.ru" url="http://hh.ru/"/>
+        <main img="logo/main-logo.svg" alt="hh.ru" url="http://hh.ru"/>
+        <footer img="logo/footer-logo.svg" alt="hh.ru" url="http://hh.ru/"/>
     </logo>
     <delivery>
         <type label="self-delivery">Самовывоз</type>
