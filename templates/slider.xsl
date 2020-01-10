@@ -59,7 +59,7 @@
         <div>
             <xsl:attribute name="class">
                 <xsl:text>slider-nav__dot</xsl:text>
-                <xsl:if test = "@active">
+                <xsl:if test="@active">
                     <xsl:text> slider-nav__dot__active</xsl:text>
                 </xsl:if>
             </xsl:attribute>
@@ -72,7 +72,7 @@
 
     <xsl:template match="imgset/img" mode="slide-img">
         <xsl:value-of select="." />
-        <xsl:if test = "position() != last()">
+        <xsl:if test="position() != last()">
             <xsl:text>, </xsl:text>
         </xsl:if>
     </xsl:template>

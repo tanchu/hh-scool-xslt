@@ -4,28 +4,20 @@
 
     <xsl:template match="logo" mode="header-logo">
         <div class="header__logo">
-            <xsl:apply-templates select="." mode="logo-red" />
+            <a href="{@url}">
+                <img class="logo" src="{@srcHeader}" alt="hh.ru" />
+            </a>
         </div>
     </xsl:template>
 
     <xsl:template match="logo" mode="footer-logo">
         <div class="column column_l-4">
             <div class="footer__logo">
-                <xsl:apply-templates select="." mode="logo-grey" />
+                <a href="{@url}">
+                    <img class="logo" src="{@srcFooter}" alt="hh.ru" />
+                </a>
             </div>
         </div>
-    </xsl:template>
-
-    <xsl:template match="logo" mode="logo-red">
-        <a href="{@url}">
-            <img class="logo" src="{@srcRed}" alt="hh.ru" />
-        </a>
-    </xsl:template>
-
-    <xsl:template match="logo" mode="logo-grey">
-        <a href="{@url}">
-            <img class="logo" src="{@srcGrey}" alt="hh.ru" />
-        </a>
     </xsl:template>
 
 </xsl:stylesheet>

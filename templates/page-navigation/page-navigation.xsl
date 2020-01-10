@@ -30,14 +30,10 @@
 
     <xsl:template match="location" mode="location">
         <div class="navbar__city">
-            <xsl:apply-templates select="sity" mode="sity" />
-        </div>
-    </xsl:template>
-
-    <xsl:template match="location/sity" mode="sity">
-        <span class="city-text">
-            <xsl:value-of select="." />
+            <span class="city-text">
+            <xsl:value-of select="city" />
         </span>
+        </div>
     </xsl:template>
 
 </xsl:stylesheet>

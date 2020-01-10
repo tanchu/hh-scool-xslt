@@ -13,8 +13,8 @@
         <country>Россия</country>
         <sity>Москва</sity>
     </location>
-    <language>ru</language>
-    <logo srcRed="icons/logo-red.svg" srcGrey="icons/logo-grey.svg" url="" />
+    <documentLanguage>ru</documentLanguage>
+    <logo srcHeader="icons/logo-red.svg" srcFooter="icons/logo-grey.svg" url="" />
     <currency name="RUR">₽</currency>
     <pageNavigation>
         <link url="/#">Шоурум</link>

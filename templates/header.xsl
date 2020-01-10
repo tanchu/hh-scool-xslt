@@ -27,7 +27,7 @@
 
     <xsl:template match="contentNavigation" mode="header-content-navigation-icon-menu">
         <div class="header__button header__button-menu">
-            <xsl:apply-templates select="." mode="content-navigation-icon-menu" />
+            <button class="header-button-icon header-button-icon_menu"></button>
         </div>
     </xsl:template>
 
@@ -56,10 +56,6 @@
                 <xsl:value-of select="." />
             </a>
         </li>
-    </xsl:template>
-
-    <xsl:template match="contentNavigation" mode="content-navigation-icon-menu">
-        <button class="header-button-icon header-button-icon_menu"></button>
     </xsl:template>
 
 </xsl:stylesheet>

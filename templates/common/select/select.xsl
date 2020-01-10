@@ -5,10 +5,7 @@
     <xsl:template name="telephone-field">
         <div class="telephone-input">
             <div class="telephone-input__country-code">
-                <input class="input" type="text" name="code" value="+7">
-                    <xsl:attribute name="disabled">
-                    </xsl:attribute>
-                </input>
+                <input class="input" type="text" name="code" value="+7" disabled="" />
             </div>
             <div class="telephone-input__code">
                 <input class="input" type="text" name="code" placeholder="Код" />
@@ -25,21 +22,14 @@
             <div class="order-form__sity-select">
                 <xsl:apply-templates select="." mode="select" />
             </div>
-            <textarea class="textarea" name="adress" placeholder="Адрес">
-                <xsl:attribute name="required">
-                </xsl:attribute>
-            </textarea>
+            <textarea class="textarea" name="adress" placeholder="Адрес" required="" />
         </fieldset>
     </xsl:template>
 
     <xsl:template match="sities" mode="select">
         <select class="select">
-            <option value="null">
-                <xsl:attribute name="selected">
-                </xsl:attribute>
-                <xsl:attribute name="disabled">
-                </xsl:attribute>
-                    Город
+            <option value="null" selected="" disabled="">
+                Город
             </option>
             <xsl:apply-templates select="sity" mode="select-option" />
         </select>
