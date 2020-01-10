@@ -36,16 +36,7 @@
                 <img class="product-card__image" src="{img}" />
                 <xsl:apply-templates select="oldPrice" mode="sale" />
             </div>
-            <div class="product-card__name">
-                <xsl:value-of select="name" />
-            </div>
-            <div class="product-card__price">
-                <xsl:apply-templates select="oldPrice" mode="old-price" />
-                <xsl:value-of select="price" />
-                <xsl:value-of select="key('keyCurrency','RUR')" />
-            </div>
-            <xsl:apply-templates select="description" mode="description" />
-            <xsl:apply-templates select="sizes" mode="product-sizes" />
+            <xsl:apply-templates select="." mode="product-info" />
         </div>
     </xsl:template>
 
@@ -56,18 +47,21 @@
                 <xsl:apply-templates select="oldPrice" mode="sale" />
                 <xsl:call-template name="close-button-product" />
             </div>
+            <xsl:apply-templates select="." mode="product-info" />
+        </div>
+    </xsl:template>
+
+    <xsl:template match="product" mode="product-info">
             <div class="product-card__name">
                 <xsl:value-of select="name" />
             </div>
             <div class="product-card__price">
                 <xsl:apply-templates select="oldPrice" mode="old-price" />
                 <xsl:value-of select="price" />
-                <xsl:value-of select="key('keyCurrency','RUR')"/>
-
+                <xsl:value-of select="key('keyCurrency', ../../userInfo/currency)" />
             </div>
             <xsl:apply-templates select="description" mode="description" />
             <xsl:apply-templates select="sizes" mode="product-sizes" />
-        </div>
     </xsl:template>
 
     <xsl:template match="description" mode="description">

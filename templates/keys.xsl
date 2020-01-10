@@ -2,7 +2,8 @@
 <xsl:stylesheet version="1.0" 
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-    <xsl:key name="keyCurrency" match="doc/currency" use="@name" />
+    
     <xsl:key name="keyisLoggedIn" match="isLoggedIn" use="text()" />
+    <xsl:key name="keyCurrency" match="doc/currencies/currency" use="@name" />
     
 </xsl:stylesheet>
