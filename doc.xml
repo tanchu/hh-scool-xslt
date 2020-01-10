@@ -1,12 +1,182 @@
 <doc>
-    <header>
-        <menu>
-            <item active="true" url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-        </menu>
-        <login/>
-    </header>
+    <currentCity>Москва</currentCity>
+    <account>
+        <userID></userID>
+        <name>Татьяна</name>
+        <surname>Гриценко</surname>
+        <patronymic>Юрьевна</patronymic>
+        <email>tata997@yandex.ru</email>
+        <phoneNumber>
+            <codeCountry>+7</codeCountry>
+            <code>915</code>
+            <number>059-70-38</number>
+        </phoneNumber>
+    </account>
+    <mainMenu>
+        <item url="/">Шоурум</item>
+        <item url="/">Оплата</item>
+        <item url="/">Доставка</item>
+        <item url="/">Самовывоз</item>
+        <item url="/" >Контактная информация</item>
+    </mainMenu>
+    <catalogNav>
+        <item url="/">Одежда</item>
+        <item url="/">Сумки</item>
+        <item url="/">Аксессуары</item>
+        <item url="/">Офисные принадлежности</item>
+    </catalogNav>
+    <sliders>
+        <mainSlider>
+            <slide active="true" id="1">
+                <image>images/img-01.png</image>
+                <image_2x>images/img-01@2x.png</image_2x>
+                <image_3x>images/img-01@3x.png</image_3x>
+                <text>Мужская и женская одежда с&#160;символикой HeadHunter</text>
+                <button>Перейти в каталог</button>
+            </slide>
+            <slide id="2">
+                <image>images/img-02.png</image>
+                <image_2x>images/img-02@2x.png</image_2x>
+                <image_3x>images/img-02@3x.png</image_3x>
+                <text>Офисные принадлежности с&#160;символикой HeadHunter</text>
+                <button>Перейти в каталог</button>
+            </slide>
+        </mainSlider>
+    </sliders>
+    <services>
+        <item img="icons/services/delivery-icon.svg">Быстрая доставка по&#160;всей России</item>
+        <item img="icons/services/return-icon.svg">100% гарантия возврата и&#160;подлинность товара</item>
+        <item img="icons/services/support-icon.svg">Круглосуточная служба поддержки</item>
+    </services>
+    <socials>
+        <item url="https://ru-ru.facebook.com/" img="icons/socials/facebook-icon.svg">Facebook</item>
+        <item url="https://twitter.com/" img="icons/socials/twitter-icon.svg">Twitter</item>
+        <item url="https://vk.com/" img="icons/socials/vk-icon.svg">VK</item>
+        <item url="https://www.instagram.com/" img="icons/socials/instagram-icon.svg">Instagram</item>
+    </socials>
+    <apps>
+        <item url="https://www.apple.com/ru/ios/app-store/" img="icons/apps/appstore-icon.svg">App Store</item>
+        <item url="https://play.google.com/store" img="icons/apps/googleplay-icon.svg">Google Play</item>
+    </apps>
+    <stats>
+        <vacansies>684&#160;978&#160;</vacansies>
+        <resumes>34&#160;789&#160;747&#160;</resumes>
+        <companies>858&#160;923&#160;</companies>
+        <invitations>1&#160;211&#160;363&#160;</invitations>
+    </stats>
+    <currentYear>2019</currentYear>
+    <products>
+        <product id="1" popular="true">
+            <image>images/product-1.jpg</image>
+            <name>Зонт</name>
+            <price sale="false">
+                <value>1&#160;990</value>
+                <curr>Рубль</curr>
+            </price>
+            <description>Красный зонт</description>
+            <sizes>
+                <size>0</size>
+            </sizes>
+        </product>
+        <product id="2" popular="true">
+            <image>images/product-2.jpg</image>
+            <name>Сумка</name>
+            <price sale="false">
+                <value>290</value>
+                <curr>Рубль</curr>
+            </price>
+            <description>Красная сумка</description>
+            <sizes>
+                <size label="size_0">0</size>
+            </sizes>
+        </product>
+        <product id="3" popular="true">
+            <image>images/product-3.jpg</image>
+            <name>Шлепанцы</name>
+            <price sale="false">
+                <value>790</value>
+                <curr>Рубль</curr>
+            </price>
+            <description>Красные шлепанцы</description>
+            <sizes>
+                <size label="size_36">36</size>
+                <size label="size_37">37</size>
+                <size label="size_38">38</size>
+                <size label="size_39">39</size>
+                <size label="size_40">40</size>
+                <size label="size_41">41</size>
+            </sizes>
+        </product>
+        <product id="4" popular="true">
+            <image>images/product-4.jpg</image>
+            <name>Футболка</name>
+            <price sale="true">
+                <value>390</value>
+                <oldValue>690</oldValue>
+                <curr>Рубль</curr>
+            </price>
+            <description>Красная хлопковая футболка с&#160;коротким рукавом</description>
+            <sizes>
+                <size label="size_XS">XS</size>
+                <size label="size_S">S</size>
+                <size label="size_M">M</size>
+                <size label="size_L">L</size>
+                <size label="size_XL">XL</size>
+                <size label="size_XXL">XXL</size>
+            </sizes>
+        </product>
+        <product id="5" popular="true">
+            <image>images/product-5.jpg</image>
+            <name>Толстовка</name>
+            <price sale="false">
+                <value>3&#160;990</value>
+                <curr>Рубль</curr>
+            </price>
+            <description>Красная толстовка</description>
+            <sizes>
+                <size label="size_XS">XS</size>
+                <size label="size_S">S</size>
+                <size label="size_M">M</size>
+                <size label="size_L">L</size>
+                <size label="size_XL">XL</size>
+                <size label="size_XXL">XXL</size>
+            </sizes>
+        </product>
+        <product id="6" popular="true">
+            <image>images/product-6.jpg</image>
+            <name>Подушка</name>
+            <price sale="false">
+                <value>990</value>
+                <curr>Рубль</curr>
+            </price>
+            <description>Красная подушка</description>
+            <sizes>
+                <size label="size_0">0</size>
+            </sizes>
+        </product>
+    </products>
+    <logo>
+        <main img="logo/main-logo.svg" alt="hh.ru" url="http://hh.ru"/>
+        <footer img="logo/footer-logo.svg" alt="hh.ru" url="http://hh.ru/"/>
+    </logo>
+    <delivery>
+        <type label="self-delivery">Самовывоз</type>
+        <type label="delivery">Доставка</type>
+    </delivery>
+    <cities>
+        <item>Москва</item>
+        <item>Щелково</item>
+        <item>Балашиха</item>
+        <item>Мытищи</item>
+    </cities>
+    <payment>
+        <type label="online">Online-оплата</type>
+        <type label="cash">Наличными</type>
+        <type label="card">Картой при получении</type>
+    </payment>
+    <notification>
+        <type label="sms">Хочу получать SMS уведомления</type>
+    </notification>
+    <currency value="Рубль">₽</currency>
+    <currency value="Доллар">$</currency>
 </doc>
