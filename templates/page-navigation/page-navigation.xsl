@@ -6,7 +6,7 @@
         <section class="navbar">
             <div class="columns-wrapper">
                 <div class="navbar__content">
-                    <xsl:apply-templates select="location" mode="location" />
+                    <xsl:apply-templates select="userInfo" mode="location" />
                     <div class="navbar__fill"></div>
                     <xsl:apply-templates select="pageNavigation" mode="page-navigation" />
                 </div>
@@ -28,7 +28,7 @@
         </li>
     </xsl:template>
 
-    <xsl:template match="location" mode="location">
+    <xsl:template match="userInfo" mode="location">
         <div class="navbar__city">
             <span class="city-text">
             <xsl:value-of select="city" />

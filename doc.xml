@@ -4,6 +4,8 @@
         <isLoggedIn>false</isLoggedIn>
         <email />
         <currency>RUR</currency>
+        <country>Россия</country>
+        <city>Москва</city>
     </userInfo>
     <autorization>
         <token>1VQyAXdjtavSUgW71soISPkqmqc</token>
