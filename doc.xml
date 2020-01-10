@@ -1,12 +1,146 @@
 <doc>
+    <currensy>
+        <item type="rub"> ₽</item>
+        <item type="usd"> $</item>
+        <item name="eur"> €</item>
+    </currensy>
+    <accounts>
+        <account id="1">
+            <surname>Мостовой</surname>
+            <name>Егор</name>
+            <mail>moctegor@mail.ru</mail>
+            <password>xxxxxxxxxxxx</password>
+            <number>8888888888</number>
+            <user-currency type="rub"/>
+        </account>
+    </accounts>
+    <location>Москва</location>
+    <navigation>
+        <item url="#">Шоурум</item>
+        <item url="#">Оплата</item>
+        <item url="#">Доставка</item>
+        <item url="#">Самовывоз</item>
+        <item url="#">Контактная информация</item>
+    </navigation>
     <header>
-        <menu>
-            <item active="true" url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-            <item url="/">одежда</item>
-        </menu>
-        <login/>
+        <item url="#">Одежда</item>
+        <item url="#">Сумки</item>
+        <item url="#">Аксессуары</item>
+        <item url="#">Офисные принадлежности</item>
     </header>
+    <sliders>
+        <slide>
+            <image src="css/blocks/slider/slider.png"/>
+            <title>Мужская и женская одежда с символикой HeadHunter</title>
+        </slide>
+        <slide>
+            <image src="css/blocks/slider/slider.png"/>
+            <title>Офисные принадлежности с символикой HeadHunter</title>
+        </slide>
+    </sliders>
+    <products>
+        <product>
+            <image>images/product-1.jpg</image>
+            <name>Зонт</name>
+            <price>1 990</price>
+        </product>
+        <product>
+            <image>images/product-2.jpg</image>
+            <name>Сумка</name>
+            <price>290</price>
+        </product>
+        <product>
+            <image>images/product-3.jpg</image>
+            <name>Шлепанцы</name>
+            <price>790</price>
+        </product>
+        <product>
+            <image>images/product-4.jpg</image>
+            <name>Футболка</name>
+            <old-price>690&#160;</old-price>
+            <price>390</price>
+            <description>Красная хлопоковая футболка с коротким руковом</description>
+            <sizes>
+                <size>XS</size>
+                <size>S</size>
+                <size>M</size>
+                <size>L</size>
+                <size>XL</size>
+                <size>XXL</size>
+            </sizes>
+        </product>
+        <product>
+            <image>images/product-5.jpg</image>
+            <name>Толстовка</name>
+            <price>3&#160;990</price>
+        </product>
+        <product>
+            <image>images/product-6.jpg</image>
+            <name>Подушка</name>
+            <price>990</price>
+        </product>
+    </products>
+    <customer-support>
+        <item>
+            <image>css/blocks/customer-support/delivery.svg</image>
+            <text>Быстрая доставка по всей России</text>
+        </item>
+        <item>
+            <image>css/blocks/customer-support/return.svg</image>
+            <text>100% гарантия возврата и подлинность товара</text>
+        </item>
+        <item>
+            <image>css/blocks/customer-support/support.svg</image>
+            <text>Круглосуточная служба поддержки</text>
+        </item>
+    </customer-support>
+    <socials>
+        <item url="#" img="css/blocks/footer/facebook.svg">facebook</item>
+        <item url="#" img="css/blocks/footer/twitter.svg">twitter</item>
+        <item url="#" img="css/blocks/footer/vk.svg">вконтакте</item>
+        <item url="#" img="css/blocks/footer/instagram.svg">instagram</item>
+    </socials>
+    <download-application>
+        <item url="#" image="css/blocks/footer/app-store.svg">AppStore</item>
+        <item url="#" image="css/blocks/footer/google-play.svg">Google play</item>
+    </download-application>
+    <statistics>
+        <year>2019</year>
+        <vacancy>6844 9784</vacancy>
+        <resume>34 789 7474</resume>
+        <company>8584 9234</company>
+        <invite>1 2114 3634</invite>
+    </statistics>
+    <cities>
+        <city>Долгопрудный</city>
+        <city>Москва</city>
+        <city>Санкт-Петербург</city>
+        <city>Ижевск</city>
+        <city>Челябинск</city>
+        <city>Омск</city>
+        <city>Казань</city>
+        <city>Сочи</city>
+    </cities>
+    <payment>
+        <item>Online-оплатa</item>
+        <item>Наличными</item>
+        <item>Картой при получении</item>
+    </payment>
+    <checkout-products>
+        <product>
+            <image>images/product-4.jpg</image>
+            <name>Футболка</name>
+            <old-price>690&#160;</old-price>
+            <price>390</price>
+            <description>Красная хлопоковая футболка с коротким руковом</description>
+            <sizes>
+                <size>XS</size>
+                <size>S</size>
+                <size>M</size>
+                <size>L</size>
+                <size>XL</size>
+                <size>XXL</size>
+            </sizes>
+        </product>
+    </checkout-products>
 </doc>
